@@ -1,0 +1,67 @@
+<template>
+        <form id="crear-usuario">
+            <div class="form-group">
+                <label>Nombre de usuario:</label>
+                <input type="text" name="usuario-nuevo" class="form-control" placeholder="Eje. DanielC_INTERSYS" required>
+            </div>
+            <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="text" id="password-autogenerada" name="password-nuevo" value="Generando .." class="form-control" disabled>
+                <small>La contraseña es autogenerada y una vez ingrese el usuario por primera vez tendra que asignar una nueva.</small>
+            </div>
+            <div class="form-group">
+                <label>Email de contacto:</label>
+                <input type="email" name="email-nuevo" class="form-control" placeholder="Eje. Daniel_C@intersys.com.sv" required>
+            </div>
+            <div class="form-group">
+                <label>Perfil</label>
+                <select name="perfil-id" class="form-control" id="perfil_id" style="width: 100%;">
+                    <option value="" selected>Sin Perfil</option>
+                    <option v-for="perfil in perfiles" v-bind:value="perfil.id">
+                        {{ perfil.nombre_perfil }}
+                    </option>
+                </select>
+            </div>
+             <div class="tab-content">
+            <div role="tabpanel" class="tab-pane content" id="asignacion">
+                <h4>Catalogo de Compañias</h4>
+                <hr>
+                <div id="tabla-companias" style="padding: 5px; margin: 5px;"></div>
+            </div>
+             </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </div>
+        </form>
+</template>
+
+<script>
+
+export default {
+    props: [
+        'perfiles'
+    ], 
+    mounted() {
+        $("#ModalCrearUsuario").iziModal({
+            icon: 'icon-list',
+            headerColor: '#607d8b',
+            attached: 'bottom',
+            iconColor: 'white',
+            fullscreen: true,
+            width: 700,
+            padding: 20,
+            onClosed: function() {
+                $('#crear-usuario').trigger("reset");
+            },
+            onOpening: function() {
+                $('#password-autogenerada').val( new usuariosScript().generateRandomPassword(7) );
+            }
+        });
+        console.log("Modal Crear Usuario", this.perfiles);
+    },
+    methods: {
+    }
+}
+</script>

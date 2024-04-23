@@ -1,0 +1,13 @@
+
+.jstree-default .jstree-checkbox-disabled { display: none!important; }
+
+.jstree-icon.fa-folder-plus, .jstree-icon.fa-folder-open{
+    color: #ffcb2d;
+}
+
+.jstree-icon.fa-check{
+    color: green;
+}
+.jstree-icon.fa-exclamation{
+    color: red;
+}

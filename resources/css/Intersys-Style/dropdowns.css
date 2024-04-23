@@ -1,0 +1,18 @@
+.dropdown-icon:after {
+    font: normal normal normal 14px/1 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: -.3em;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    float: right;
+    color: #fff;
+}
+
+.dropdown-icon[aria-expanded="false"]:after {
+    content: "\f104" !important;
+}
+
+.dropdown-icon[aria-expanded="true"]:after {
+    content: "\f107" !important;
+}

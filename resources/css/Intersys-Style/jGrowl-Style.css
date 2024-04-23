@@ -1,0 +1,50 @@
+
+
+.jGrowl{
+    right: initial!important;
+    top: initial!important;
+    right: initial;
+    left: 0px!important;
+    bottom: 0px!important;
+}
+.jGrowl > div{
+    /*
+    opacity: 1;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 320px;
+    margin-top: 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    border-radius: 6px;*/
+}
+
+.jGrowl .success {
+    background: #dff8d3;
+    border: 2px solid #abd397;
+    color: #40871d;
+}
+
+.jGrowl .error {
+    border: 2px solid #f44336;
+    background-color: #f44336;
+    color: #fff;
+}
+
+/*
+.jGrowl.top-right {
+    right: initial;
+    top: 0px;
+    left: 0;
+}
+
+.jGrowl-notification.ui-state-highlight {
+    border: initial;
+}
+
+.jGrowl-notification.alert.ui-state-highlight.ui-corner-all {
+    display: inline-block!important;
+}
+*/

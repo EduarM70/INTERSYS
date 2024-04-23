@@ -1,0 +1,271 @@
+/*
+    SECCIÓN DE BOTONES DE ISSAF
+    > Botones primarios 
+    > Botones de confirmación
+    > Botones de editar
+    > Botones de eliminar
+    > Botones de regresar a la página anterior
+
+    Atte. Martín Carbajal 
+*/
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+
+
+}
+
+
+/* ESTILOS BOTONES */
+
+.btn-base{
+    width: 100% !important;
+    height: auto;
+    border-radius: 0.50rem !important;
+    padding: 0.55rem 1.375rem !important;
+    margin: 0.5rem 0px;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.90rem; /* 16px */
+    font-weight: 600;
+    color: #00314C;
+    line-height: 1.5rem; /* 24px */
+
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+
+/* ESTILOS BOTON  1 */
+
+.btn-base.submit{
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn-base.reset{
+    background-color: var(--gray-second);
+    color: var(--gray-dark);
+}
+
+.btn-base.successful{
+    background-color: var(--green-500);
+    color: white;
+}
+
+.btn-base.delete{
+    background-color: var(--red-500);
+    color: white;
+}
+
+.input-style-1{
+    border-radius: 0.375rem !important;
+    color: var(--gray-dark);
+    padding: 0.5rem 0.7rem;
+    margin-right: 0.25rem;
+}
+
+/* ESTILOS BOTON  2 */
+
+.btn-base.submit-line{
+    font-weight: 500;
+    color:  var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem !important;
+}
+
+.btn-base.reset-line{
+    font-weight: 500;
+    color:  var(--gray-dark);
+    background-color: white;
+    border: 2px solid var(--gray-dark);
+    padding: 0.5rem !important;
+}
+
+.btn-base.successful-line{
+    font-weight: 500;
+    color:  var(--green-500);
+    background-color: white;
+    border: 2px solid var(--green-500);
+    padding: 0.5rem !important;
+}
+
+.btn-base.delete-line{
+    font-weight: 500;
+    color:  var(--red-500);
+    background-color: white;
+    border: 2px solid var(--red-500);
+    padding: 0.5rem !important;
+}
+
+
+/* ESTILOS BOTON  ESPECIALES */
+
+a .btn-base{
+
+}
+
+.btn-spc{
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 2rem !important;
+    border: none;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.btn-spc span{
+    display: none;
+}
+
+
+.btn-spc.edit-sm{
+    padding: 0.25rem 0.75rem;
+    border-color: var(--gold-500);
+    color: var(--gold-500);
+}
+
+.btn-spc.delete-sm{
+    padding: 0.25rem 0.75rem;
+    border-color: var(--red-500);
+    color: var(--red-500);
+}
+
+.btn-spc.edit-sm:hover{
+    background-color: var(--gold-500);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-spc.delete-sm:hover{
+    background-color: var(--red-500);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.btn-spc.normal-sm{
+    color: var(--primary-color);
+    background-color: var(--gray-soft);
+    padding: 0.25rem 0.75rem;
+    padding-top: 0.35rem;
+    border: none;
+    font-size: 0.85rem;
+}
+
+.btn-spc.approved{
+    padding: 0.25rem 0.75rem;
+    background-color: var(--green-500);
+    color: white;
+}
+
+.btn-spc.inprogress{
+    padding: 0.25rem 0.75rem;
+    background-color: var(--gold-500);
+    color: white;
+}
+
+@media screen and (min-width: 720px) {
+    .btn-spc span{
+        display: inline-block;
+    }
+
+    .btn-spc{
+        border: 1px solid;
+        font-size: 0.75rem;
+    }
+    
+}
+
+
+
+/* ESTILOS BOTON : HOVER  */
+
+.btn-base.submit:hover{
+    background-color: var(--primary-color);
+}
+
+.btn-base.reset:hover{
+    background-color: var(--gray-second);
+}
+
+.btn-base.successful:hover{
+    background-color: #5ba132cc;
+}
+
+.btn-base.delete:hover{
+    background-color: #c93241c8;
+}
+
+
+/* LINE:HOVER */
+
+.submit-line:hover{
+    background-color: #00314C;
+    color: white;
+}
+
+.reset-line:hover{
+    background-color: var(--gray-second);
+}
+
+.successful-line:hover{
+    background-color: var(--green-500);
+    color: white;
+}
+
+.delete-line:hover{
+    background-color: var(--red-500);
+    color: white;
+}
+
+.btn-spc.normal-sm:hover{
+    background-color: var(--gray-second);
+}
+
+
+/* 
++ ---------------------------- ESTILOS DE BOTONES
++-------------------- EDICION 3
+*/
+
+.btn-spc-2{
+    background-color: var(--slate-200);
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem !important;
+}

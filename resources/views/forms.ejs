@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body class="p-4 font-poppins p-2 bg-slate-50 container-loyout">
+    <div class="container-shadow-lg">
+        <div class="">
+            <h2 class="text-3xl text-blue-primary font-bold">Formulario de Prueba</h2>
+            <p class="text-sm text-slate-500">Clases Utilizadas: <span class="bg-slate-50 p-1 px-2 text-slate-500 rounded-md text-xs">fm-base text-sm</span></p>
+            <form action="" class="fm-base text-sm" method="post">
+                <div class="group-inputs">
+                    <div class="">
+                        <label for="parameter">Parametro</label>
+                        <input type="text" name="parameter">
+                    </div>
+                    <div class="">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha">
+                    </div>
+                    <div class="">
+                        <label for="number">Numero</label>
+                        <input type="number" name="numero">
+                    </div>
+                    <div class="">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <span class="">¿Frontend o BackEnd?</span>
+                        <div class="flex gap-2 text-sm">
+                            <div class="check-1">
+                                <input type="checkbox" name="check1" id="check1">
+                                <label for="check1">Frontend</label>
+                            </div>
+                            <div class="check-1">
+                                <input type="checkbox" id="check" name="check">
+                                <label for="check">BackEnd</label>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="">
+                        <label for="select">Selecciona</label>
+                        <select name="" id="select">
+                            <option>Holaa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group-btn lg:w-1_2 xl:w-1_4 ">
+                    <button type="submit" class="btn-base submit"><i class="fi fi-rr-check mr-2"></i>Registrar</button>
+                    <button type="submit" class="btn-base reset"><i class="fi fi-rr-check mr-2"></i>Registrar</button>
+                </div>
+            </form>
+        </div>
+        <p class="text-sm text-slate-300 my-2">Toda esta página está construida con Markstyles</p>
+    </div>
+</body>
+</html>

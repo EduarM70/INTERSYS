@@ -1,0 +1,2832 @@
+/*
+    SECCIÓN DE BOTONES DE ISSAF
+    > Botones primarios 
+    > Botones de confirmación
+    > Botones de editar
+    > Botones de eliminar
+    > Botones de regresar a la página anterior
+
+    Atte. Martín Carbajal 
+*/
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+
+
+}
+
+
+/* ESTILOS BOTONES */
+
+.btn-base{
+    width: 100% !important;
+    height: auto;
+    border-radius: 0.50rem !important;
+    padding: 0.55rem 1.375rem !important;
+    margin: 0.5rem 0px;
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.90rem; /* 16px */
+    font-weight: 600;
+    color: #00314C;
+    line-height: 1.5rem; /* 24px */
+
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+
+/* ESTILOS BOTON  1 */
+
+.btn-base.submit{
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.btn-base.reset{
+    background-color: var(--gray-second);
+    color: var(--gray-dark);
+}
+
+.btn-base.successful{
+    background-color: var(--green-500);
+    color: white;
+}
+
+.btn-base.delete{
+    background-color: var(--red-500);
+    color: white;
+}
+
+.input-style-1{
+    border-radius: 0.375rem !important;
+    color: var(--gray-dark);
+    padding: 0.5rem 0.7rem;
+    margin-right: 0.25rem;
+}
+
+/* ESTILOS BOTON  2 */
+
+.btn-base.submit-line{
+    font-weight: 500;
+    color:  var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem !important;
+}
+
+.btn-base.reset-line{
+    font-weight: 500;
+    color:  var(--gray-dark);
+    background-color: white;
+    border: 2px solid var(--gray-dark);
+    padding: 0.5rem !important;
+}
+
+.btn-base.successful-line{
+    font-weight: 500;
+    color:  var(--green-500);
+    background-color: white;
+    border: 2px solid var(--green-500);
+    padding: 0.5rem !important;
+}
+
+.btn-base.delete-line{
+    font-weight: 500;
+    color:  var(--red-500);
+    background-color: white;
+    border: 2px solid var(--red-500);
+    padding: 0.5rem !important;
+}
+
+
+/* ESTILOS BOTON  ESPECIALES */
+
+a .btn-base{
+
+}
+
+.btn-spc{
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 2rem !important;
+    border: none;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.btn-spc span{
+    display: none;
+}
+
+
+.btn-spc.edit-sm{
+    padding: 0.25rem 0.75rem;
+    border-color: var(--gold-500);
+    color: var(--gold-500);
+}
+
+.btn-spc.delete-sm{
+    padding: 0.25rem 0.75rem;
+    border-color: var(--red-500);
+    color: var(--red-500);
+}
+
+.btn-spc.edit-sm:hover{
+    background-color: var(--gold-500);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-spc.delete-sm:hover{
+    background-color: var(--red-500);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.btn-spc.normal-sm{
+    color: var(--primary-color);
+    background-color: var(--gray-soft);
+    padding: 0.25rem 0.75rem;
+    padding-top: 0.35rem;
+    border: none;
+    font-size: 0.85rem;
+}
+
+.btn-spc.approved{
+    padding: 0.25rem 0.75rem;
+    background-color: var(--green-500);
+    color: white;
+}
+
+.btn-spc.inprogress{
+    padding: 0.25rem 0.75rem;
+    background-color: var(--gold-500);
+    color: white;
+}
+
+@media screen and (min-width: 720px) {
+    .btn-spc span{
+        display: inline-block;
+    }
+
+    .btn-spc{
+        border: 1px solid;
+        font-size: 0.75rem;
+    }
+    
+}
+
+
+
+/* ESTILOS BOTON : HOVER  */
+
+.btn-base.submit:hover{
+    background-color: var(--primary-color);
+}
+
+.btn-base.reset:hover{
+    background-color: var(--gray-second);
+}
+
+.btn-base.successful:hover{
+    background-color: #5ba132cc;
+}
+
+.btn-base.delete:hover{
+    background-color: #c93241c8;
+}
+
+
+/* LINE:HOVER */
+
+.submit-line:hover{
+    background-color: #00314C;
+    color: white;
+}
+
+.reset-line:hover{
+    background-color: var(--gray-second);
+}
+
+.successful-line:hover{
+    background-color: var(--green-500);
+    color: white;
+}
+
+.delete-line:hover{
+    background-color: var(--red-500);
+    color: white;
+}
+
+.btn-spc.normal-sm:hover{
+    background-color: var(--gray-second);
+}
+
+
+/* 
++ ---------------------------- ESTILOS DE BOTONES
++-------------------- EDICION 3
+*/
+
+.btn-spc-2{
+    background-color: var(--slate-200);
+    color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem !important;
+}
+/* 
++
++ ---------------------------- DISPLAY
++
+*/
+
+.block{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
+*/
+
+.grid{
+    display: grid;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- GRID TEMPLETE COLUMNS
+*/
+
+.grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+
+.grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-7{
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-8{
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- GAP
+*/
+
+.gap-0{
+    gap: 0px;
+}
+
+.gap-05{
+    gap: 0.125rem; /* 2px */
+}
+
+.gap-1{
+    gap: 0.25rem; /* 4px */
+}
+.gap-2{
+    gap: 0.5rem; /* 8px */
+}
+
+
+.gap-4{
+    gap: 1rem; /* 16px */
+}
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- Grid Column Start / End
+*/
+
+
+.col-auto{
+    grid-column: auto;
+}
+
+.col-span-1{
+    grid-column: span 1 / span 1;
+}
+
+.col-span-2{
+    grid-column: span 2 / span 2;
+}
+
+.col-span-3{
+    grid-column: span 3 / span 3;
+}
+
+.col-span-4{
+    grid-column: span 4 / span 4;
+}
+
+.col-span-5{
+    grid-column: span 5 / span 5;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- Grid Row Start / End
+*/
+
+.row-auto{
+    grid-row: auto;
+}
+
+.row-span-1{
+    grid-row: span 1 / span 1;
+}
+
+.row-span-2{
+    grid-row: span 2 / span 2;
+}
+
+.row-span-3{
+    grid-row: span 3 / span 3;
+}
+
+.row-span-4{
+    grid-row: span 4 / span 4;
+}
+
+.row-span-5{
+    grid-row: span 5 / span 5;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
+*/
+
+.flex{
+    display: flex !important;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- Flex Basis
+*/
+
+.basis-1_2{
+    flex-basis: 50%;
+}
+
+.basis-1_3{
+    flex-basis: 33.333333%;
+}
+
+.basis-2_3{
+    flex-basis: 66.666667%;
+}
+
+.basis-1_4{
+    flex-basis: 25%;
+}
+
+.basis-2_4{
+    flex-basis: 50%;
+}
+
+.basis-3_4{
+    flex-basis: 75%;
+}
+
+.basis-1_5{
+    flex-basis: 20%;
+}
+
+.basis-2_5{
+    flex-basis: 40%;
+}
+
+.basis-3_5{
+    flex-basis: 60%;
+}
+
+.basis-4_5{
+    flex-basis: 80%;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- FLEX WRAP
+*/
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- FLEX DIRECTION
+*/
+
+.flex-col{
+    flex-direction: column;
+}
+
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- JUSTIFY CONTENT
+*/
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN ITEMS
+*/
+
+.items-center{
+    align-items: center;
+}
+
+.items-end{
+    align-items: end;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- RESPONSIVE FLEXBOX & GRID
++-------------------- SCREEN SM
+*/
+
+@media (min-width: 640px) {
+    
+    .sm\:inline{
+        display: inline;
+    }
+
+    .sm\:inline-block{
+        display: inline-block;
+    }
+
+    .sm\:inline-block{
+        display: block;
+    }
+    
+    
+    .sm\:flex{
+        display: flex !important;
+    }
+    
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .sm\:grid-cols-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+    .sm\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-5{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-6{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-7{
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .sm\:grid-cols-8{
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .sm\:gap-0{
+        gap: 0px;
+    }
+
+    .sm\:gap-05{
+        gap: 0.125rem; /* 2px */
+    }
+
+    .sm\:gap-1{
+        gap: 0.25rem; /* 4px */
+    }
+    .sm\:gap-2{
+        gap: 0.5rem; /* 8px */
+    }
+
+
+    .sm\:gap-4{
+        gap: 1rem; /* 16px */
+    }
+    
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .sm\:col-auto{
+        grid-column: auto;
+    }
+
+    .sm\:col-span-1{
+        grid-column: span 1 / span 1;
+    }
+
+    .sm\:col-span-2{
+        grid-column: span 2 / span 2;
+    }
+
+    .sm\:col-span-3{
+        grid-column: span 3 / span 3;
+    }
+
+    .sm\:col-span-4{
+        grid-column: span 4 / span 4;
+    }
+
+    .sm\:col-span-5{
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .sm\:row-auto{
+        grid-row: auto;
+    }
+
+    .sm\:row-span-1{
+        grid-row: span 1 / span 1;
+    }
+
+    .sm\:row-span-2{
+        grid-row: span 2 / span 2;
+    }
+
+    .sm\:row-span-3{
+        grid-row: span 3 / span 3;
+    }
+
+    .sm\:row-span-4{
+        grid-row: span 4 / span 4;
+    }
+
+    .sm\:row-span-5{
+        grid-row: span 5 / span 5;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    
+    .md\:inline{
+        display: inline;
+    }
+
+    .md\:inline-block{
+        display: inline-block;
+    }
+
+    .md\:inline-block{
+        display: block;
+    }
+    
+    
+    .md\:flex{
+        display: flex !important;
+    }
+    
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .md\:grid-cols-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+    .md\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-5{
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-6{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-7{
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .md\:grid-cols-8{
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .md\:gap-0{
+        gap: 0px;
+    }
+
+    .md\:gap-05{
+        gap: 0.125rem; /* 2px */
+    }
+
+    .md\:gap-1{
+        gap: 0.25rem; /* 4px */
+    }
+    .md\:gap-2{
+        gap: 0.5rem; /* 8px */
+    }
+
+
+    .md\:gap-4{
+        gap: 1rem; /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .md\:col-auto{
+        grid-column: auto;
+    }
+
+    .md\:col-span-1{
+        grid-column: span 1 / span 1;
+    }
+
+    .md\:col-span-2{
+        grid-column: span 2 / span 2;
+    }
+
+    .md\:col-span-3{
+        grid-column: span 3 / span 3;
+    }
+
+    .md\:col-span-4{
+        grid-column: span 4 / span 4;
+    }
+
+    .md\:col-span-5{
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+    .md\:row-auto{
+        grid-row: auto;
+    }
+
+    .md\:row-span-1{
+        grid-row: span 1 / span 1;
+    }
+
+    .md\:row-span-2{
+        grid-row: span 2 / span 2;
+    }
+
+    .md\:row-span-3{
+        grid-row: span 3 / span 3;
+    }
+
+    .md\:row-span-4{
+        grid-row: span 4 / span 4;
+    }
+
+    .md\:row-span-5{
+        grid-row: span 5 / span 5;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    
+    .lg\:inline{
+        display: inline;
+    }
+
+    .lg\:inline-block{
+        display: inline-block;
+    }
+
+    .lg\:inline-block{
+        display: block;
+    }
+    
+    
+    .lg\:flex{
+        display: flex !important;
+    }
+    
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .lg\:grid-cols-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+    .lg\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-5{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-6{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-7{
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .lg\:grid-cols-8{
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .lg\:gap-0{
+        gap: 0px;
+    }
+
+    .lg\:gap-05{
+        gap: 0.125rem; /* 2px */
+    }
+
+    .lg\:gap-1{
+        gap: 0.25rem; /* 4px */
+    }
+    .lg\:gap-2{
+        gap: 0.5rem; /* 8px */
+    }
+
+
+    .lg\:gap-4{
+        gap: 1rem; /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .lg\:col-auto{
+        grid-column: auto;
+    }
+
+    .lg\:col-span-1{
+        grid-column: span 1 / span 1;
+    }
+
+    .lg\:col-span-2{
+        grid-column: span 2 / span 2;
+    }
+
+    .lg\:col-span-3{
+        grid-column: span 3 / span 3;
+    }
+
+    .lg\:col-span-4{
+        grid-column: span 4 / span 4;
+    }
+
+    .lg\:col-span-5{
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .lg\:row-auto{
+        grid-row: auto;
+    }
+
+    .lg\:row-span-1{
+        grid-row: span 1 / span 1;
+    }
+
+    .lg\:row-span-2{
+        grid-row: span 2 / span 2;
+    }
+
+    .lg\:row-span-3{
+        grid-row: span 3 / span 3;
+    }
+
+    .lg\:row-span-4{
+        grid-row: span 4 / span 4;
+    }
+
+    .lg\:row-span-5{
+        grid-row: span 5 / span 5;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .xl\:inline{
+        display: inline;
+    }
+
+    .xl\:inline-block{
+        display: inline-block;
+    }
+
+    .xl\:inline-block{
+        display: block;
+    }
+    
+    
+    .xl\:flex{
+        display: flex !important;
+    }
+    
+    
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .xl\:grid-cols-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+
+    .xl\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-3{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-5{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-6{
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-7{
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+    }
+
+    .xl\:grid-cols-8{
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .xl\:gap-0{
+        gap: 0px;
+    }
+
+    .xl\:gap-05{
+        gap: 0.125rem; /* 2px */
+    }
+
+    .xl\:gap-1{
+        gap: 0.25rem; /* 4px */
+    }
+    .xl\:gap-2{
+        gap: 0.5rem; /* 8px */
+    }
+
+
+    .xl\:gap-4{
+        gap: 1rem; /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .xl\:col-auto{
+        grid-column: auto;
+    }
+
+    .xl\:col-span-1{
+        grid-column: span 1 / span 1;
+    }
+
+    .xl\:col-span-2{
+        grid-column: span 2 / span 2;
+    }
+
+    .xl\:col-span-3{
+        grid-column: span 3 / span 3;
+    }
+
+    .xl\:col-span-4{
+        grid-column: span 4 / span 4;
+    }
+
+    .xl\:col-span-5{
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .xl\:row-auto{
+        grid-row: auto;
+    }
+
+    .xl\:row-span-1{
+        grid-row: span 1 / span 1;
+    }
+
+    .xl\:row-span-2{
+        grid-row: span 2 / span 2;
+    }
+
+    .xl\:row-span-3{
+        grid-row: span 3 / span 3;
+    }
+
+    .xl\:row-span-4{
+        grid-row: span 4 / span 4;
+    }
+
+    .xl\:row-span-5{
+        grid-row: span 5 / span 5;
+    }
+}
+/* CLASES PARA ELEMENTOS DEL FORMULARIO (INPUTS, SELECTS)*/
+/* 
++ ---------------------------- ESTILOS DE FORMULARIOS
++-------------------- form-1
+*/
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F4F4F4;
+    --gray-dark: #656E70;
+    --blue-50: #EDF0F9;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+}
+
+form label,
+form input{
+    margin-bottom: 0rem !important;
+}
+
+form.fm-base{
+    padding: 1rem;
+    line-height: 1.625;
+}
+
+form.fm-base label,
+form.fm-base a,
+form.fm-base p,
+form.fm-base span{
+    color: var(--slate-500);
+    font-weight: 700;
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */ 
+}
+
+form.fm-base input{
+    outline: none;
+    border: 1px solid var(--slate-200);
+    display: block;
+    padding: 0.35rem 0.75rem;
+    width: 100%;
+    background-color: var(--slate-50);
+    margin: 0.5rem 0rem !important;
+    border-radius: 0.375rem !important;
+    transition: all ease-in-out 300ms;
+    color: var(--slate-600);
+}
+
+form.fm-base input:focus{
+    outline: none;
+    border: 1px solid var(--slate-300);
+    background-color: var(--slate-100) !important;
+}
+
+form.fm-base input[type="checkbox"]{
+    display: inline-block;
+    width: auto !important;
+    margin: 0rem 0.5rem !important;
+}
+
+form.fm-base input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+    color: #00314C;
+}
+form.fm-base input[type="date"],
+form.fm-base input[type="datetime"]{
+    font-size: small !important;
+}
+
+
+form .group-inputs{
+    margin-bottom: 0.80rem;
+}
+
+form .group-btn{
+    margin-top: 1rem !important;
+}
+
+
+.check-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--blue-50);
+    color: var(--primary-color);
+    line-height: 1;
+    border-radius: 0.5rem !important;
+
+    color: var(--primary-color);
+    font-weight: bold !important;
+
+    margin: 0.356rem !important;
+    padding: 0.70rem !important;
+}
+
+
+@media screen and (min-width: 640px) {
+    form.fm-base .group-inputs{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    form.fm-base .group-btn{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    form.fm-base .group-inputs{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    form.fm-base .group-inputs{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    form.fm-base .group-inputs{
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+/*
+
+.container-loyout input{
+    background-color: var(--gray-soft);
+    border: none;
+    outline: none;
+    border-radius: 0.375rem !important;
+    width: 100%;
+}
+
+.container-loyout select{
+    background-color: var(--gray-soft);
+    border: none;
+    outline: none;
+    border-radius: 0.375rem !important;
+    width: 100%;
+}
+
+.container-loyout input:focus{
+    background-color: var(--gray-soft) !important;
+    outline: none;
+}
+.container-loyout select:focus{
+    background-color: var(--gray-soft) !important;
+    outline: none;
+}
+
+*/
+
+/* 
++ ---------------------------- ESTILOS DE FORMULARIOS
++-------------------- SELECT
+*/
+
+select{
+    margin: 0.5rem 0rem !important;
+    background-color: var(--slate-100);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem !important;
+    color: var(--slate-600);
+    text-align: center;
+    font-size: small;
+}
+
+select:focus{
+    background-color: var(--slate-100) !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0.5rem;
+    border-radius: 0.5rem !important;
+    color: var(--slate-600);
+}
+
+form.fm-base select{
+    width: 100% !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+* VARIABLES
+*/
+html {
+    font-size: 16px !important; /* Establece el tamaño base del texto en 16px */
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
+    /*font-size: 1rem; 16px 
+    line-height: 1.5rem;  24px */
+    vertical-align: middle !important;
+}
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+}
+
+
+.font-poppins{
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* CLASES PARA CONTENEDORES */
+
+.container-loyout{
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.5rem !important; /* 24px */
+}
+
+.box-1{
+    padding: 1rem; /* 6px */
+    border-radius: 0.375rem !important; /* 6px */
+    border: 1px solid;
+    border-color: var(--slate-200);
+    margin: 0.375rem !important;
+}
+
+.box-2{
+    padding: 1.375rem; /* 6px */
+    border-radius: 0.5rem !important; /* 6px */
+    border: 1px solid;
+    border-color: var(--slate-200);
+    margin: 0.375rem !important;
+}
+
+.box-3{
+    padding: 1.5rem; /* 6px */
+    border-radius: 0.75rem !important; /* 6px */
+    border: 1px solid;
+    border-color: var(--slate-200);
+    margin: 0.375rem !important;
+}
+
+.box-4{
+    padding: 2rem; /* 6px */
+    border-radius: 1rem !important; /* 6px */
+    border: 1px solid;
+    border-color: var(--slate-200);
+    margin: 0.375rem !important;
+}
+
+
+.container-shadow-lg{
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 0.5rem !important;
+    /*filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));*/
+}
+
+
+
+/*
+*
+* GENERAL STYLES
+*
+*/
+
+
+
+/* 
++
++ ---------------------------- BACKGROUNDS 
++
+*/
+
+/* 
++ ---------------------------- BACKGROUNDS 
++-------------------- BG-SLATE
+*/
+
+
+.bg-slate-700{
+    background-color: var(--gray-700);
+}
+
+.bg-slate-200{
+    background-color: var(--slate-200);
+}
+
+.bg-slate-100{
+    background-color: var(--slate-100);
+}
+
+.bg-slate-50{
+    background-color: var(--slate-50);
+}
+
+
+
+.bg-gray-100{
+    background-color: var(--gray-soft);
+}
+
+.bg-gold-500{
+    background-color: var(--gold-500);
+}
+
+.bg-red-500{
+    background-color: var(--red-500);
+}
+
+
+
+/* WIDHT */
+
+
+.w-0{
+    width: 0px;
+}
+
+.w-auto{
+    width: auto !important;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.w-full{
+    width: 100%;
+}
+
+.w-1_2{
+    width: 50%;
+}
+.w-3_4{
+    width: 75%;
+}
+
+.w-1_4{
+    width: 25%;
+}
+.w-9{
+    width: 2.25rem; /* 36px */
+}
+
+.w-40{
+    width: 10rem; /* 160px */
+}
+
+/* 
++
++ ---------------------------- HEIGHT
++
+*/
+
+
+.h-full{
+    height: 100% !important;
+}
+
+/* 
++
++ ---------------------------- MARGINS
++
+*/
+
+
+.m-1{
+    margin: 0.25rem;
+}
+
+
+/**/
+
+.my-1{
+    margin-top: 0.25rem; /* 16px */
+    margin-bottom: 0.25rem; /* 16px */
+}
+
+.my-2{
+    margin-top: 0.5rem; /* 16px */
+    margin-bottom: 0.5rem; /* 16px */
+}
+
+.my-3{
+    margin-top: 0.75rem; /* 16px */
+    margin-bottom: 0.75rem; /* 16px */
+}
+
+.my-4{
+    margin-top: 1rem; /* 16px */
+    margin-bottom: 1rem; /* 16px */
+}
+
+.my-5{
+    margin-top: 1.25rem; /* 16px */
+    margin-bottom: 1.25rem; /* 16px */
+}
+
+.my-6{
+    margin-top: 1.5rem; /* 16px */
+    margin-bottom: 1.5rem; /* 16px */
+}
+
+
+
+/*  MARGIN LEFT & RIGTH  */
+.mx-auto{
+    margin: 0% auto;
+}
+
+
+
+/* 
++ ---------------------------- MARGIN 
++--------------------mr-...
+*/
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.mr-0{
+    margin-right: 0rem;
+}
+
+.mr-1{
+    margin-right: 0.25rem;
+}
+
+
+/* 
++ ---------------------------- MARGIN 
++--------------------ml-...
+*/
+
+.ml-auto{
+    margin-left: auto;
+}
+
+
+
+/* MARGIN BOTTON */
+.mb-4{
+    margin-bottom: 1rem;
+}
+
+.mb-5{
+    margin-bottom: 1.25rem;
+}
+
+/* 
++
++ ---------------------------- PADDING
++
+*/
+
+/* 
++ ---------------------------- PADDING 
++-------------------- P-...
+*/
+
+.p-0{
+    padding: 0%;
+}
+
+.p-1{
+    padding: 0.25rem !important; /* 4px */
+}
+
+.p-2{
+    padding: 0.5rem !important; /* 8px */
+}
+
+.p-4{
+    padding: 1rem !important; /* 16px */
+}
+
+.p-5{
+    padding: 1.25rem !important; /* 16px */
+}
+
+.p-6{
+    padding: 1.5rem !important; /* 16px */
+}
+
+.p-7{
+    padding: 1.75rem !important; /* 16px */
+}
+
+.p-8{
+    padding: 2rem !important; /* 16px */
+}
+
+
+/* 
++ ---------------------------- PADDING 
++-------------------- px-...
+*/
+
+.px-1{
+    padding-left: 0.25rem !important; /* 4px */
+    padding-right: 0.25rem !important; /* 4px */
+}
+
+.px-2{
+    padding-left: 0.5rem !important; /* 8px */
+    padding-right: 0.5rem !important; /* 8px */
+}
+
+.px-3{
+    padding-left: 0.75rem !important; /* 12px */
+    padding-right: 0.75rem !important; /* 12px */
+}
+
+.px-4{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.px-5{
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+.px-6{
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.px-7{
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+}
+
+.px-8{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+
+/* 
++ ---------------------------- PADDING 
++-------------------- py-...
+*/
+
+
+.py-1{
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+}
+
+.py-2{
+    padding-top: 0.5rem; /* 8px */
+    padding-bottom: 0.5rem; /* 8px */
+}
+
+.py-3{
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+}
+
+.py-4{
+    padding-top: 1rem; /* 16px */
+    padding-bottom: 1rem; /* 16px */
+}
+
+.py-4{
+    padding-top: 1rem; /* 16px */
+    padding-bottom: 1rem; /* 16px */
+}
+
+.py-5{
+    padding-top: 1.25rem; /* 20px */
+    padding-bottom: 1.25rem; /* 20px */
+}
+
+.py-6{
+    padding-top: 1.5rem; /* 24px */
+    padding-bottom: 1.5rem; /* 24px */
+}
+
+/* 
++
++ ---------------------------- BORDER RADIUS
++
+*/
+
+.rounded{
+    border-radius: 0.25rem; /* 4px */
+}	
+
+.rounded-md{
+    border-radius: 0.375rem !important; /* 6px */
+}
+
+.rounded-lg{
+    border-radius: 0.5rem; /* 8px */
+}
+.rounded-xl{
+    border-radius: 0.75rem; /* 12px */
+}
+
+.rounded-2xl{
+    border-radius: 1rem; /* 16px */
+}	
+.rounded-3xl{
+    border-radius: 1.5rem; /* 24px */
+}
+
+/* 
++
++ ---------------------------- OVERFLOW
++
+*/
+
+.overflow-auto{
+    overflow: auto;
+}
+
+.overflow-scroll{
+    overflow: scroll;
+}
+
+.overflow-y-auto{
+    overflow-y: auto;
+}
+
+.overflow-x-scroll{
+    overflow-x: scroll;
+}
+
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
+
+.overflow-y-hidden{
+    overflow-y: hidden;
+}
+
+/* 
+*
+* RESPOSIVE DESIGNS 
+*
+*/
+
+@media (min-width: 640px) {
+    
+    .sm\:mr-0{
+        margin-right: 0rem;
+    }
+    
+    .sm\:mr-1{
+        margin-right: 0.25rem;
+    }
+
+    .sm\:flex{
+        display: flex;
+    }
+
+    .sm\:w-1_4{
+        width: 25%;
+    }
+
+    .sm\:w-3_4{
+        width: 75%;
+    }
+
+    .sm\:block{
+        display: block;
+    }
+
+    .sm\:w-full{
+        width: 100% !important;
+    }
+
+    .sm\:w-1_2{
+        width: 50% !important;
+    }
+
+    .sm\:flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .sm\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .sm\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    
+    .md\:mr-0{
+        margin-right: 0rem;
+    }
+    
+    .md\:mr-1{
+        margin-right: 0.25rem;
+    }
+
+    .md\:flex{
+        display: flex;
+    }
+
+    .md\:w-1_4{
+        width: 25%;
+    }
+
+    .md\:w-3_4{
+        width: 75%;
+    }
+
+    .md\:block{
+        display: block;
+    }
+
+    .md\:w-full{
+        width: 100% !important;
+    }
+
+    .md\:w-1_2{
+        width: 50% !important;
+    }
+
+    .md\:flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .md\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .md\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    
+    .lg\:mr-0{
+        margin-right: 0rem;
+    }
+    
+    .lg\:flex{
+        display: flex;
+    }
+
+    .lg\:w-1_4{
+        width: 25%;
+    }
+
+    .lg\:w-3_4{
+        width: 75%;
+    }
+
+    .lg\:block{
+        display: block;
+    }
+
+    .lg\:w-full{
+        width: 100% !important;
+    }
+
+    .lg\:w-1_2{
+        width: 50% !important;
+    }
+
+    .lg\:flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .lg\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .lg\:grid-cols-2{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .xl\:flex{
+        display: flex;
+    }
+
+    .xl\:block{
+        display: block;
+    }
+
+    .xl\:w-1_4{
+        width: 25%;
+    }
+
+    .xl\:w-3_4{
+        width: 75%;
+    }
+
+    .xl\:w-full{
+        width: 100%;
+    }
+
+    .xl\:w-1_2{
+        width: 50% !important;
+    }
+
+
+    .xl\:w-1_4{
+        width: 25% !important;
+    }
+
+    .xl\:flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .xl\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .xl\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    
+}
+
+
+@media (min-width: 1536px) {
+    .xl2\:flex{
+        display: flex;
+    }
+
+    .\xl2\:block{
+        display: block;
+    }
+
+    .xl2\:w-1_4{
+        width: 25%;
+    }
+
+    .xl2\:w-3_4{
+        width: 75%;
+    }
+
+    .xl2\:w-full{
+        width: 100%;
+    }
+
+    .xl2\:w-1_2{
+        width: 50%;
+    }
+
+    .xl2\:w-auto{
+        width: auto;
+    }
+
+    .xl2\:w-1_4{
+        width: 25%;
+    }
+
+    .xl2\:flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .xl2\:flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .xl2\:grid-cols-4{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    
+    
+}
+
+/*
+*-------------------------------- ESTILO DE MODALES
+*/
+
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+}
+
+/* ESTILO DE TABLAS */
+
+table.dataTable{
+    border-collapse: collapse;
+
+    background-color: white;
+
+    vertical-align: middle;
+}
+
+/* ---------- ESTILOS THEAD ----- */
+
+table.dataTable thead th,
+table.dataTable tfoot th{
+    color: var(--slate-400);
+    font-size: 0.75rem;
+    text-align: center !important;
+    border-bottom: 1px solid var(--gray-soft) !important;
+    padding: 1rem;
+}
+
+table.dataTable thead th:active,
+table.dataTable thead td:active {
+    outline: none;
+}
+
+
+/* TABLES STYLES  TD */
+
+table.dataTable tbody td{
+    text-align: center !important;
+    font-size: 0.875rem;
+    border-bottom: 1px solid var(--gray-soft) !important;
+    padding: 1rem 0.25rem;
+}
+
+table.dataTable tbody tr{
+    transition: all ease-in-out 300ms;
+}
+
+table.dataTable tbody tr:hover{
+    background-color: var(--slate-100);
+}
+
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+    white-space: nowrap;
+}
+
+
+table.dataTable thead .sorting {
+    background-image: url("../images/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+    background-image: url("../images/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+    background-image: url("../images/sort_desc.png");
+}
+table.dataTable thead .sorting_asc_disabled {
+    background-image: url("../images/sort_asc_disabled.png");
+}
+table.dataTable thead .sorting_desc_disabled {
+    background-image: url("../images/sort_desc_disabled.png");
+}
+
+table.dataTable tbody td.accion-tabla.acciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* DATABLES WRAPPER */
+
+.dataTables_wrapper{
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    width: 100%;
+    padding: 0.25rem;
+    margin-top: 1.5rem;
+}
+
+
+/* LENGTH & FILTER */
+
+.dataTables_wrapper .dataTables_length{
+    color: var(--slate-600);
+    display: flex;
+    justify-content: end;
+}
+
+.dataTables_wrapper .dataTables_length select{
+    background-color: var(--slate-100);
+    color: var(--gray-dark);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    margin: 0% 0.25rem;
+    border-radius: 0.5rem !important;
+}
+
+.dataTables_wrapper .dataTables_length select:focus{
+    background-color: var(--slate-100) !important;
+    outline: none;
+}
+
+
+/* FILTER */
+
+.dataTables_wrapper .dataTables_filter{
+    margin-top: 0.25rem;
+}
+
+.dataTables_wrapper .dataTables_filter label{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--slate-100);
+    color: white;
+    font-size: 0px;
+    border-radius: 0.5rem !important;
+    display: flex;
+    align-items: center;
+} 
+
+.dataTables_wrapper .dataTables_filter label i {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    margin: 0% 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_filter label input {
+    width: 100%;
+    color: black;
+    font-size: 0.75rem !important;
+    outline: none;
+    border: none;
+    background-color: var(--slate-100);
+}
+
+.dataTables_wrapper .dataTables_filter label input:focus{
+    background-color: var(--slate-100) !important;
+}
+
+
+/* DATATABLES INFO & PAGINATE */
+
+.dataTables_wrapper .dataTables_info{
+    width: 100%;
+    font-size: 0.85rem;
+    color: var(--gray-dark);
+    margin: 1.5rem 0;
+}
+
+.dataTables_wrapper .dataTables_paginate{
+    width: 100%;
+    display: block;
+    font-size: 0.85rem;
+    height: 45px;
+}
+
+.dataTables_wrapper .dataTables_paginate a{
+    color: var(--gray-dark) !important;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 1rem;
+    transition: all ease-in-out 300ms;
+    border-radius: 0.5rem !important;
+    padding: 0.25rem 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_paginate a:hover{
+    background-color: var(--slate-50);
+}
+
+.dataTables_wrapper .dataTables_paginate span{
+    margin: 0% 1rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    background-color: var(--slate-200);
+    padding: 0.5rem 1.5rem;
+    margin: 0%;
+    border-radius: 0.5rem !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    color: #00314C !important;
+    transition: all ease-in-out 0.5s;
+}
+
+@media screen and (min-width: 720px){
+    .dataTables_wrapper .dataTables_length{
+        width: fit-content;
+        float: right;
+    }
+    .dataTables_wrapper .dataTables_filter{
+        width: 30%;
+        float: left;
+    }
+
+    .dataTables_wrapper .dataTables_info{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .dataTables_wrapper .dataTables_paginate{
+        padding: 1rem;
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+    }
+}
+
+
+
+
+:root{
+    --primary-color: #00314C;
+    --second-color: #026390;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+}
+
+
+/* 
++ --------------------------------- TEXT
++-------------------- TEXT-ALIGN
+*/
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* 
++ --------------------------------- TEXT
++-------------------- FONT SIZE 
+*/
+
+.text-xs{
+    font-size: 0.75rem; /* 12px */
+    line-height: 1rem; /* 16px */ 
+}
+
+.text-sm{
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */    
+}
+
+.text-base{
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+
+.text-lg{
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.text-xl{
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl{
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+.text-3xl{
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+.text-4xl{
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+}
+
+.text-5xl{
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+}
+
+.text-6xl{
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+}
+
+.text-7xl{
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+
+.text-8xl{
+    font-size: 6rem; /* 96px */
+    line-height: 1;
+}
+
+.text-9xl{
+    font-size: 8rem; /* 128px */
+    line-height: 1;
+}
+
+/* 
++ --------------------------------- TEXT
++-------------------- LINE HEIGH 
+*/
+
+.leading-normal{
+    line-height: 1.5;
+}
+
+.leading-relaxed{
+    line-height: 1.625;
+}
+
+.leading-loose{
+    line-height: 2;
+}
+
+/* FONTS WEIGHT */
+.font-bold{
+    font-weight: 700;
+}
+
+.font-light{
+    font-weight: 300;
+}
+
+/* TRANSFORM TEXT */
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/* 
++
++ ----------------------------------------- TEXT COLOR 
++
+*/
+
+
+/* 
++ ---------------------------- TEXT COLOR  
++-------------------- TEXT-SLATE-...
+*/
+
+.text-gold{
+    color: var(--gold-500);
+}
+
+.text-red-500{
+    color: var(--red-500);
+}
+
+.text-green-500{
+    color: var(--green-500);
+}
+
+.text-blue-second{
+    color: var(--second-color);
+}
+
+/* 
++ ---------------------------- TEXT COLOR  
++-------------------- TEXT-SLATE-...
+*/
+
+.text-slate-800{
+    color: var(--slate-800);
+}
+.text-slate-500{
+    color: var(--slate-500);
+}
+
+.text-slate-400{
+    color: var(--slate-400);
+}
+
+.text-slate-300{
+    color: var(--slate-300);
+}
+
+.text-slate-200{
+    color: var(--slate-200);
+}
+
+.text-slate-100{
+    color: var(--slate-100);
+}
+
+.text-slate-50{
+    color: var(--slate-50);
+}
+
+.text-blue-primary{
+    color: var(--primary-color);
+}
+
+.text-gray-700{
+    color: var(--gray-700);
+}
+
+
+.text-white{
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- TEXT-ALIGN
+    */
+
+    .md\:text-center{
+        text-align: center;
+    }
+
+    .md\:text-left{
+        text-align: left;
+    }
+
+    .md\:text-right{
+        text-align: right;
+    }
+
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- FONT SIZE 
+    */
+
+    .md\:text-xs{
+        font-size: 0.75rem; /* 12px */
+        line-height: 1rem; /* 16px */ 
+    }
+
+    .md\:text-sm{
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */    
+    }
+
+    .md\:text-base{
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+
+    .md\:text-lg{
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .md\:text-xl{
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .md\:text-2xl{
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+    }
+
+    .md\:text-3xl{
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+    }
+
+    .md\:text-4xl{
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+    }
+
+    .md\:text-5xl{
+        font-size: 3rem !important; /* 48px */
+        line-height: 1;
+    }
+
+    .md\:text-6xl{
+        font-size: 3.75rem; /* 60px */
+        line-height: 1;
+    }
+
+    .md\:text-7xl{
+        font-size: 4.5rem; /* 72px */
+        line-height: 1;
+    }
+
+    .md\:text-8xl{
+        font-size: 6rem; /* 96px */
+        line-height: 1;
+    }
+
+    .md\:text-9xl{
+        font-size: 8rem; /* 128px */
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- TEXT-ALIGN
+    */
+
+    .lg\:text-center{
+        text-align: center;
+    }
+
+    .lg\:text-left{
+        text-align: left;
+    }
+
+    .lg\:text-right{
+        text-align: right;
+    }
+
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- FONT SIZE 
+    */
+
+    .lg\:text-xs{
+        font-size: 0.75rem; /* 12px */
+        line-height: 1rem; /* 16px */ 
+    }
+
+    .lg\:text-sm{
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */    
+    }
+
+    .lg\:text-base{
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+
+    .lg\:text-lg{
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .lg\:text-xl{
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .lg\:text-2xl{
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+    }
+
+    .lg\:text-3xl{
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+    }
+
+    .lg\:text-4xl{
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+    }
+
+    .lg\:text-5xl{
+        font-size: 3rem; /* 48px */
+        line-height: 1;
+    }
+
+    .lg\:text-6xl{
+        font-size: 3.75rem; /* 60px */
+        line-height: 1;
+    }
+
+    .lg\:text-7xl{
+        font-size: 4.5rem; /* 72px */
+        line-height: 1;
+    }
+
+    .lg\:text-8xl{
+        font-size: 6rem; /* 96px */
+        line-height: 1;
+    }
+
+    .lg\:text-9xl{
+        font-size: 8rem; /* 128px */
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- TEXT-ALIGN
+    */
+
+    .xl\:text-center{
+        text-align: center;
+    }
+
+    .xl\:text-left{
+        text-align: left;
+    }
+
+    .xl\:text-right{
+        text-align: right;
+    }
+
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- FONT SIZE 
+    */
+
+    .xl\:text-xs{
+        font-size: 0.75rem; /* 12px */
+        line-height: 1rem; /* 16px */ 
+    }
+
+    .xl\:text-sm{
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */    
+    }
+
+    .xl\:text-base{
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+
+    .xl\:text-lg{
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .xl\:text-xl{
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .xl\:text-2xl{
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+    }
+
+    .xl\:text-3xl{
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+    }
+
+    .xl\:text-4xl{
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+    }
+
+    .xl\:text-5xl{
+        font-size: 3rem; /* 48px */
+        line-height: 1;
+    }
+
+    .xl\:text-6xl{
+        font-size: 3.75rem; /* 60px */
+        line-height: 1;
+    }
+
+    .xl\:text-7xl{
+        font-size: 4.5rem; /* 72px */
+        line-height: 1;
+    }
+
+    .xl\:text-8xl{
+        font-size: 6rem; /* 96px */
+        line-height: 1;
+    }
+
+    .xl\:text-9xl{
+        font-size: 8rem; /* 128px */
+        line-height: 1;
+    }
+}
+/* 
++ ---------------------------- TRANSITIONS & ANIMATION 
++-------------------- TRANSITION
+*/
+
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.transition-transform {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* 
++ ---------------------------- TRANSITIONS & ANIMATION 
++-------------------- DURATION
+*/
+
+
+.duration-150{
+    transition-duration: 150ms;
+}
+.duration-200{
+    transition-duration: 200ms;
+}
+
+.duration-300{
+    transition-duration: 300ms;
+}
+
+.duration-500{
+    transition-duration: 500ms;
+}
+
+
+.ease-linear{
+    transition-timing-function: linear;
+}
+
+.ease-in{
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out{
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out{
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

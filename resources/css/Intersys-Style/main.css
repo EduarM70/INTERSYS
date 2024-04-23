@@ -1,0 +1,243 @@
+
+@-o-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+ul {
+    list-style-type: none;
+}
+
+*{
+    border-radius: 0!important;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url("../fonts/Bebas/BebasNeue.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: #fafcfe !important;
+    font-family: 'Arial' !important;
+    font-size: 12px !important;
+}
+
+.transparent-input {
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 2px 6px;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.transparent-input:focus {
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+
+    background-color: #ffffee;
+    border: 1px solid #ebebeb;
+}
+
+
+.accion-tabla {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.background_rest {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+    background: #EEF1F4;
+}
+
+.action-header-button {
+    margin-top: 8px;
+}
+
+/* Icono personalizado para dropDowns */
+.tools-in li {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+#user-seccion {
+    float: right;
+    margin-top: 3px;
+}
+
+[version-responsive="movil"] #user-seccion {
+    position: absolute;
+    right: 6px;
+    top: -2px;
+}
+
+#user-seccion .dropdown-menu{
+    left: -1.8em!important;
+    min-width: initial!important;
+}
+
+#logo {
+    width: 205px;
+}
+
+#logo:hover {
+    filter: drop-shadow(2px 4px 6px #fff);
+}
+
+.selcom{
+    list-style-type: none;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.selcol li{
+    display: block;
+}
+
+.selcom li a{
+    background-color: #fff;
+    color: #1f1f1f;
+    line-height: 35px;
+    padding: 0px 25px;
+    font-size: 15px;
+    display: block;
+    transition: all 150ms ease-in-out;
+    text-decoration: none;
+}
+
+.selcom li a:hover{
+    background-color: #2FA0BC;
+    color: #fff;
+}
+
+.selcom li[modulo-activo="6"] a{
+    
+    background-color: #007bff;
+    color: #fff;
+}
+
+select.search-compania{
+    border-radius: 0!important;
+}
+
+select.search-compania{
+    margin: 10px auto;
+    display: block;
+}
+
+[version-responsive="movil"] .mostrar-perfiles .jstree.jstree-default {
+    max-width: 160px;
+    overflow-x: auto;
+}
+
+div.lista-acciones{
+    padding: 2px 25px;
+}
+
+div.lista-acciones ul li{
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 3px 5px;
+    background-color: #e8e8e8;
+    padding: 3px 4px;
+    font-size: 12px;
+}
+
+div.lista-acciones input[type="checkbox"]:checked ~ label{
+    font-weight: 600;
+    color: green;
+}
+
+div.lista-acciones label{
+    margin-bottom: 0!important;
+}
+
+td[id-estado] {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td[id-estado="0"] {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+td[id-estado="1"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+td[id-estado="4"] {
+    background-color: #ba2320;
+    color: #fff;
+}
+
+td[id-estado="2"] {
+    background-color: #205dba;
+    color: #fff;
+}
+
+
+
+.tab-pane.content {
+    padding: 25px 5px;
+}
+
+.ui-autocomplete { position: absolute; z-index:99999 !important;} 
+
+.lista-resultados {
+    margin: 4px; 
+    padding: 5px;
+}
+
+.marginar-al-centro-vh{
+    margin: 200px auto;
+    width: min-content;
+}
+
+.marginar-al-centro-vh.mtop{
+    margin: 100px auto;
+}
+
+.marginar-al-centro-vh.w400 > * {
+    width: 350px;
+}
+
+.m-centrar{
+    margin: 0 auto!important;
+}

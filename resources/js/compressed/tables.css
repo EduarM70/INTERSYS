@@ -1,0 +1,497 @@
+/*
+
+table tbody tr.agregado {
+    transition: all 500ms ease;
+    background-color: #addeaf;
+}
+
+.accion-tabla[accion="borrar"] i {
+    color: red;
+}
+
+.accion-tabla [accion="editar"]  i {
+    color: orange;
+}
+
+.accion-tabla [accion="activarlo"] i {
+    color: green;
+
+}
+.accion-tabla [accion="desactivarlo"] i {
+    color: red;
+}
+
+.accion-tabla .btn-inactivo i{
+   color: gray;
+}
+
+.table tr {
+    background: #fff;
+}
+
+.table tr: nth-child(2n+2) {
+    background: #e8e8e8;
+}
+
+----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+
+/*.table {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 1);
+    box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 1);
+}*/
+
+/*
+table.table:not(.table-light) th{
+    background-color: #3e5a6a;
+    border-color: #435e6d;
+}
+----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+
+table.table-intersys th {
+    background-color: red;
+    border-color: rgb(71, 8, 8);
+}
+
+table.table.table-light th{
+    color: #fff;    
+    background-color: #aabcc7;
+    border: 0;
+}
+
+table.table.table-transparent th{
+    color: #1f1f1f;
+    background-color: transparent!important;
+}
+table.table.table-transparent th, table.table.table-transparent > tbody > tr > td{
+    border-color: #ebebeb!important;
+}
+
+table.table.table-light > thead > tr > th, table.table.table-light > tbody > tr > td{
+    border-bottom: 1px solid #ebebeb;
+    border: 1px solid #ebebeb;
+
+    border-right: 0;
+    border-bottom: 0;
+}
+
+table.table.table-light > thead > tr > th:last-child, table.table.table-light > tbody > tr > td:last-child{
+    border-right: 1px solid #ebebeb;
+}
+
+/* ----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+table.table.table-light > thead > tr:last-child > th, table.table.table-light > tbody > tr:last-child > td{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.table-dark tr, .table-dark thead th {
+    border-color: #517184!important;
+    background-color: #3e5a6a!important;
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(81, 113, 132)!important;
+}
+
+.table-dark th, .table-dark td, .table-dark thead th {
+    border-color: #6c8b9c!important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05)!important;
+}
+
+.tab-pane table{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.tab-pane table.table th{
+    color: #fff;
+    background-color: #2f9fbb!important;
+    border: 1px solid #2f9bbc!important;
+}
+
+table.table th{
+    color: #fff;
+}
+
+.container-table-floating-scroll {
+    width: 100%!important;
+    overflow-x: auto!important; 
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+}
+
+#example tbody [id-estado="1"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#example tbody [id-estado="0"] {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+#example tbody [id-estado="2"] {
+    background-color: #146276;
+    color: #fff;
+}
+
+#example tbody [id-estado="4"] {
+    background-color: #471eb5;
+    color: #fff;
+}
+
+
+
+
+
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 40px;
+    margin-left: -50%;
+    margin-top: -25px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(25%, rgba(255,255,255,0.9)), color-stop(75%, rgba(255,255,255,0.9)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 75%, rgba(255,255,255,0) 100%);
+}
+
+.dimmer{
+  position: relative;
+}
+
+.dimmer.active #loading-data{
+    display: block;
+}
+
+.dimmer.active .dimmer-content{
+  opacity: 0.5;
+}
+
+.dimmer #loading-data {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+.dimmer #loading-data {
+    display: none;
+    /*height: 2.5rem;
+    width: 2.5rem;
+     ----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+    height: 100%;
+    text-align: center;
+    width: 100%;
+
+    color: #467fcf;
+}
+
+.dimmer #loading-data:before {
+    border-radius: 50%;
+    border: 3px solid currentColor;
+    opacity: .15;
+}
+.dimmer #loading-data:before, #loading-data:after {
+    width: 5.5rem;
+    height: 5.5rem;
+    
+    /*width: 10%;
+    height: 50%;----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+
+    margin: -1.25rem 0 0 -1.25rem;
+    position: absolute;
+    content: '';
+    top: 50%;
+    /*left: 50%; ----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+}
+.dimmer #loading-data:after {
+    -webkit-animation: loader .6s linear;
+    animation: loader .6s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: transparent;
+    border-top-color: currentColor;
+    box-shadow: 0 0 0 1px transparent;
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: normal!important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding-right: 18px!important;
+    padding-top: 1px!important;
+    padding-bottom: 1px!important;
+    padding-left: 2px!important;
+}
+
+/*
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 2px 4px!important;
+} ----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #ebebeb!important;
+}
+
+.dataTable_PreHeader{
+    margin-top: 5px;
+    background-color: #fff;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+}
+
+.dataTable_PreHeader table{
+    padding: 0;
+}
+
+.dataTable_PreHeader .dataTable_Header{
+    color: #fff;    
+    background-color: #aabcc7;
+    font-size: 16px;
+    text-align: center;
+    padding: 2px 6px;
+    width: 100%;
+}
+
+.dataTable_PreHeader .dataTable_PreBody{
+    padding: 2px 4px;
+}
+
+table tbody tr.row-active{
+    background-color: #fff7ae!important;
+    color: #1f1f1f;
+}
+
+/*
+table tbody tr.row-active i[class*='fa-'] {
+    color: #fff;
+}*/
+
+/*
+  * Agregar integracion con font-awesome
+----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+.dataTables_wrapper > div input[type="text"], .dataTables_wrapper > div input[type="search"], .dataTables_wrapper > div input[type="numbeer"] {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: 0;
+}
+
+.dataTables_wrapper > div.dataTables_length, .dataTables_wrapper > div.dataTables_filter, .dataTables_wrapper > div.dataTables_info, .dataTables_wrapper > div.dataTables_processing, .dataTables_wrapper > div.dataTables_paginate {
+    color: #949494;
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #333;
+}
+
+.dataTables_wrapper .dataTables_length {
+    float: right!important;
+    margin-left: 10px;
+}
+
+.dataTables_wrapper .dataTables_length select{
+    display: inline-block;
+    min-width: 85px;
+    margin: 0 10px;    
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: 0;
+}
+
+.dataTables_wrapper .dataTables_length select{
+  display: inline-block;
+    min-width: 85px;
+    margin: 0 10px;
+}
+
+.dataTables_wrapper > div label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #949494;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+}
+
+table.dataTable {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.dataTables_wrapper > div {
+    padding: 0;
+}
+
+table.dataTable thead th {
+  position: relative;
+  background-image: none !important;
+  /* Remover interaccion de estilo con boostrap ----------------------------------------------------------------------------------------------------- AQUI CIERRA COMENTARIO
+}
+
+table.dataTable thead th[class*="sorting"]{
+}
+
+table.dataTable thead th[class*="sorting"]:after{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+
+  position: absolute;
+  top: 50% !important;
+  right: 8px;
+  display: block;
+  
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+table.dataTable thead th.sorting_asc:after {
+  content: "\f106";
+}
+
+table.dataTable thead th.sorting_desc:after {
+  content: "\f107";
+}
+
+table.dataTable thead th.sorting:after {
+  content: "\f0dc";
+  font-size: 1em;
+}
+
+div.dataTables_paginate li.next a {
+  padding-right: 24px;  
+}
+
+div.dataTables_paginate li.previous a {
+  padding-left: 24px;
+}
+
+div.dataTables_paginate li.next a:after {
+  right: 10px;
+}
+
+div.dataTables_paginate li.previous a:before {
+  left: 10px;
+}
+
+div.dataTables_paginate li.next a:after,
+div.dataTables_paginate li.previous a:before {
+  font-family: 'Font Awesome 5 Free';
+  
+  font-weight: 900;
+
+  position: absolute;
+  
+  top: 50%;
+
+  display: block;
+  
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+div.dataTables_paginate li.previous a:before {
+  content: "\f104";
+}
+div.dataTables_paginate li.next a:after {
+  content: "\f105";
+}
+
+
+
+.arrows.only{
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: #ccc;
+}
+.table{
+  border-bottom: 1px solid #ccc;
+}
+.ui-widget-header {
+  border: 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background: transparent;
+}
+.ui-tabs .ui-tabs-panel { 
+  padding: 1em 2px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default:not(.ui-state-active):not(.ui-state-hover){
+    background: transparent; 
+}
+
+table.dataTable{
+  margin-top: 4px;
+    display: inline-table;
+    width: 100%;
+}
+table.dataTable, table.dataTable tbody {
+  border-collapse: collapse!important;
+}
+
+table.table.table-light#pendientes th {
+    background-color: rgb(62, 90, 106);
+}
+table.table.table-light#enaprobacion th {
+    background-color: rgb(62, 90, 106);
+}

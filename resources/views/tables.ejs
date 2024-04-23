@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body class="p-4">
+    <div class="font-poppins container-shadow-lg">
+        <h3 class="text-2xl font-bold text-blue-primary">Prueba en Tablas con Data Table</h3>
+        <table class="styleTables my-4" id="example">
+            <thead>
+                <th>Data 1</th>
+                <th>Data 2</th>
+                <th>Data 3</th>
+                <th>Data 4</th>
+                <th>Data 5</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, reiciendis? Sed soluta ullam atque cum ducimus ab corrupti porro omnis, nesciunt, sequi ipsum! Commodi atque amet distinctio consequatur maxime quo?</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="/dist/exDepends.js"></script>
+    <script src="/dist/depends.js"></script>
+    <script src="/dist/app.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#example').DataTable();
+        })
+    </script>
+
+    <script>
+
+        setTimeout(function(){
+            const filter_div = document.querySelector('.dataTables_filter');
+            
+            const label = filter_div.getElementsByTagName('label');
+            const input = label[0].getElementsByTagName('input');
+            
+            const i = document.createElement('i');
+
+            i.classList.add("fi", "fi-rr-search");
+            input[0].setAttribute('placeholder', 'Buscar algo');
+            //label[0].textContent =  "";
+            /*
+            const input = document.createElement('input');
+            input.setAttribute('type', 'search');
+            input.setAttribute('placeholder', 'Buscar algo');
+            input.setAttribute('aria-controls', 'example'); 
+            */
+            label[0].insertBefore(i, input[0]);
+
+        }, 500)
+        
+    </script>
+</body>
+</html>

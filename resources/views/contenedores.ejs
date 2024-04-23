@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body class="p-4 font-poppins p-2 bg-slate-50 container-loyout">
+    <div class="container-shadow-lg">
+        <div class="">
+            <h2 class="text-xl text-blue-primary font-bold">Utilizando Grid</h2>
+            <p class="text-sm text-slate-300">grid gap-2 md__grid-cols-2 lg__grid-cols-3 xl__grid-cols-4</p>
+            <div class="grid grid-cols-1 gap-2 md__grid-cols-2 lg__grid-cols-3 xl__grid-cols-4">
+                <div class="box-1">
+                    <h4 class="text-xl font-bold text-slate-800">Box-1</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                    <button class="btn-base successful w-auto">Confirmar</button>
+                </div>
+                <div class="box-2 lg__col-span-2">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                    <button class="btn-base delete w-auto">Eliminar</button>
+                </div>
+                <div class="box-3 md__col-span-2 xl__col-span-1 xl__row-span-2">
+                    <h4 class="text-xl font-bold text-slate-800">Box-3</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-4">
+                    <h4 class="text-xl font-bold text-slate-800">Box-4</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-2">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-2">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <h2 class="text-xl text-blue-primary font-bold">Utilizando Flexbox</h2>
+            <p class="text-sm text-slate-300">flex w-full flex-wrap</p>
+            <div class="flex w-full flex-wrap">
+                <div class="box-1 basis-1_2">
+                    <h4 class="text-xl font-bold text-slate-800">Box-1</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                    <button class="btn-base successful w-auto">Confirmar</button>
+                </div>
+                <div class="box-2 basis-1_3">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                    <button class="btn-base delete w-auto">Eliminar</button>
+                </div>
+                <div class="box-3 basis-1_3">
+                    <h4 class="text-xl font-bold text-slate-800">Box-3</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-4 basis-1_3">
+                    <h4 class="text-xl font-bold text-slate-800">Box-4</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-2 basis-1_3">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+                <div class="box-2 basis-1_3">
+                    <h4 class="text-xl font-bold text-slate-800">Box-2</h4>
+                    <p class="text-slate-500 leading-loose text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nesciunt doloremque veritatis, quasi reiciendis ab! Voluptas illum quas consectetur dolore laudantium quam, officiis provident quisquam accusantium libero consequuntur nostrum sit.</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-sm text-slate-300 my-2">Toda esta página está construida con Markstyles</p>
+    </div>
+</body>
+</html>

@@ -13,28 +13,17 @@ app.set('views', __dirname + "\\views");
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
-
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/tables', (req, res) => {
-    res.render('tables');
+const routes = ['tables', 'botones', 'contenedores', 'formularios'];
+
+routes.forEach(route => {
+    app.get(`/${route}`, (req, res) => {
+        res.render(route);
+    });
 });
-
-app.get('/botones', (req, res) => {
-    res.render('botones');
-});
-
-app.get('/contenedores', (req, res) => {
-    res.render('contenedores');
-});
-
-app.get('/formularios', (req, res) => {
-    res.render('forms');
-});
-
-
 
 app.listen(port, () => {
     console.log(`http://localhost:${port}`);

@@ -184,6 +184,20 @@ table.dataTable tbody td.accion-tabla.acciones{
 }
 
 
+/* PROCESING */
+
+.dataTables_processing{
+    /*margin-top: 4rem;
+    color: var(--slate-600);
+    text-align: center;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--slate-100);*/
+    display: none;
+    opacity: 0;
+}
+
 /* DATATABLES INFO & PAGINATE */
 
 .dataTables_wrapper .dataTables_info{

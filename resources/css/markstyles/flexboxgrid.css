@@ -722,7 +722,7 @@
     }
 
     .xl\:grid-cols-3{
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     }
 
     .xl\:grid-cols-4{
@@ -798,6 +798,18 @@
         grid-column: span 5 / span 5;
     }
 
+    .xl\:col-start-1{
+        grid-column-start: 1;
+    }
+
+    .xl\:col-end-3{
+        grid-column-end: 3;
+    }
+
+    .xl\:col-end-4{
+        grid-column-end: 4;
+    }
+    
     /* 
     +-------------------- RESPONSIVE Grid Row Start / End
     */

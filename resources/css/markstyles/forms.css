@@ -206,4 +206,5 @@ select:focus{
 
 form.fm-base select{
     width: 100% !important;
+    border: 1px solid var(--slate-200) !important;
 }

@@ -133,6 +133,14 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     background-color: var(--gray-soft);
 }
 
+.bg-blue-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-blue-second{
+    background-color: var(--second-color);
+}
+
 .bg-gold-500{
     background-color: var(--gold-500);
 }
@@ -141,10 +149,17 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     background-color: var(--red-500);
 }
 
+.bg-white{
+    background-color: white;
+}
 
 
-/* WIDHT */
 
+/* 
++
++ ---------------------------- WIDTH
++
+*/
 
 .w-0{
     width: 0px;
@@ -176,12 +191,57 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .w-1_4{
     width: 25%;
 }
+
+.w-4{
+    width: 1rem; /* 16px */
+}
+
+.w-5{
+    width: 1.25rem; /* 20px */
+}
+
+.w-6{
+    width: 1.5rem; /* 24px */
+}
+
+.w-7{
+	width: 1.75rem; /* 28px */
+}
+
 .w-9{
     width: 2.25rem; /* 36px */
 }
 
 .w-40{
     width: 10rem; /* 160px */
+}
+
+/* 
++
++ ---------------------------- WIDTH
++
+*/
+.min-w-1{
+    min-width: 0.25rem; /* 16px */
+}
+
+
+.min-w-2{
+    min-width: 0.5rem; /* 16px */
+}
+
+.min-w-3{
+    min-width: 0.75rem; /* 16px */
+}
+
+
+.min-w-4{
+    min-width: 1rem; /* 16px */
+}
+
+
+.min-w-5{
+    min-width: 1.25rem; /* 16px */
 }
 
 /* 
@@ -195,226 +255,44 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     height: 100% !important;
 }
 
-/* 
-+
-+ ---------------------------- MARGINS
-+
-*/
-
-
-.m-1{
-    margin: 0.25rem;
+.h-5{
+    height: 1.25rem; /* 20px */
 }
 
-
-/**/
-
-.my-1{
-    margin-top: 0.25rem; /* 16px */
-    margin-bottom: 0.25rem; /* 16px */
+.h-6{
+    height: 1.5rem; /* 24px */
 }
 
-.my-2{
-    margin-top: 0.5rem; /* 16px */
-    margin-bottom: 0.5rem; /* 16px */
+.h-7{
+    height: 1.75rem; /* 28px */
 }
 
-.my-3{
-    margin-top: 0.75rem; /* 16px */
-    margin-bottom: 0.75rem; /* 16px */
+.h-8{
+    height: 2rem; /* 32px */
 }
 
-.my-4{
-    margin-top: 1rem; /* 16px */
-    margin-bottom: 1rem; /* 16px */
+.h-9{
+    height: 2.25rem; /* 36px */
 }
 
-.my-5{
-    margin-top: 1.25rem; /* 16px */
-    margin-bottom: 1.25rem; /* 16px */
+.h-12{
+    height: 3rem; /* 48px */
 }
 
-.my-6{
-    margin-top: 1.5rem; /* 16px */
-    margin-bottom: 1.5rem; /* 16px */
+.h-14{
+    height: 3.5rem; /* 56px */
 }
 
-
-
-/*  MARGIN LEFT & RIGTH  */
-.mx-auto{
-    margin: 0% auto;
+.h-16{
+    height: 4rem; /* 64px */
 }
 
-
-
-/* 
-+ ---------------------------- MARGIN 
-+--------------------mr-...
-*/
-
-.mr-auto{
-    margin-right: auto;
+.h-20{
+    height: 5rem; /* 80px */
 }
 
-.mr-0{
-    margin-right: 0rem;
-}
-
-.mr-1{
-    margin-right: 0.25rem;
-}
-
-
-/* 
-+ ---------------------------- MARGIN 
-+--------------------ml-...
-*/
-
-.ml-auto{
-    margin-left: auto;
-}
-
-
-
-/* MARGIN BOTTON */
-.mb-4{
-    margin-bottom: 1rem;
-}
-
-.mb-5{
-    margin-bottom: 1.25rem;
-}
-
-/* 
-+
-+ ---------------------------- PADDING
-+
-*/
-
-/* 
-+ ---------------------------- PADDING 
-+-------------------- P-...
-*/
-
-.p-0{
-    padding: 0%;
-}
-
-.p-1{
-    padding: 0.25rem !important; /* 4px */
-}
-
-.p-2{
-    padding: 0.5rem !important; /* 8px */
-}
-
-.p-4{
-    padding: 1rem !important; /* 16px */
-}
-
-.p-5{
-    padding: 1.25rem !important; /* 16px */
-}
-
-.p-6{
-    padding: 1.5rem !important; /* 16px */
-}
-
-.p-7{
-    padding: 1.75rem !important; /* 16px */
-}
-
-.p-8{
-    padding: 2rem !important; /* 16px */
-}
-
-
-/* 
-+ ---------------------------- PADDING 
-+-------------------- px-...
-*/
-
-.px-1{
-    padding-left: 0.25rem !important; /* 4px */
-    padding-right: 0.25rem !important; /* 4px */
-}
-
-.px-2{
-    padding-left: 0.5rem !important; /* 8px */
-    padding-right: 0.5rem !important; /* 8px */
-}
-
-.px-3{
-    padding-left: 0.75rem !important; /* 12px */
-    padding-right: 0.75rem !important; /* 12px */
-}
-
-.px-4{
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
-
-.px-5{
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-}
-
-.px-6{
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-}
-
-.px-7{
-    padding-left: 1.75rem !important;
-    padding-right: 1.75rem !important;
-}
-
-.px-8{
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-}
-
-
-/* 
-+ ---------------------------- PADDING 
-+-------------------- py-...
-*/
-
-
-.py-1{
-    padding-top: 0.25rem; /* 4px */
-    padding-bottom: 0.25rem; /* 4px */
-}
-
-.py-2{
-    padding-top: 0.5rem; /* 8px */
-    padding-bottom: 0.5rem; /* 8px */
-}
-
-.py-3{
-    padding-top: 0.75rem; /* 12px */
-    padding-bottom: 0.75rem; /* 12px */
-}
-
-.py-4{
-    padding-top: 1rem; /* 16px */
-    padding-bottom: 1rem; /* 16px */
-}
-
-.py-4{
-    padding-top: 1rem; /* 16px */
-    padding-bottom: 1rem; /* 16px */
-}
-
-.py-5{
-    padding-top: 1.25rem; /* 20px */
-    padding-bottom: 1.25rem; /* 20px */
-}
-
-.py-6{
-    padding-top: 1.5rem; /* 24px */
-    padding-bottom: 1.5rem; /* 24px */
+.h-24{
+    height: 6rem; /* 96px */
 }
 
 /* 
@@ -445,6 +323,22 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     border-radius: 1.5rem; /* 24px */
 }
 
+
+.rounded-r-xl{
+    border-top-right-radius: 0.75rem; /* 12px */
+    border-bottom-right-radius: 0.75rem; /* 12px */
+}
+
+
+.rounded-r-2xl{
+    border-top-right-radius: 1rem; /* 16px */
+    border-bottom-right-radius: 1rem; /* 16px */
+}
+
+.rounded-r-3xl{
+    border-top-right-radius: 1.5rem; /* 24px */
+    border-bottom-right-radius: 1.5rem; /* 24px */
+}
 /* 
 +
 + ---------------------------- OVERFLOW
@@ -515,6 +409,31 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
         width: 50% !important;
     }
 
+    .sm\:min-w-1{
+        min-width: 0.25rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-2{
+        min-width: 0.5rem; /* 16px */
+    }
+    
+    .sm\:min-w-3{
+        min-width: 0.75rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-4{
+        min-width: 1rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-5{
+        min-width: 1.25rem; /* 16px */
+    }
+
+
+
     .sm\:flex-wrap{
         flex-wrap: wrap;
     }
@@ -564,6 +483,30 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
         width: 50% !important;
     }
 
+    .md\:min-w-1{
+        min-width: 0.25rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-2{
+        min-width: 0.5rem; /* 16px */
+    }
+    
+    .md\:min-w-3{
+        min-width: 0.75rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-4{
+        min-width: 1rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-5{
+        min-width: 1.25rem; /* 16px */
+    }
+
+
     .md\:flex-wrap{
         flex-wrap: wrap;
     }
@@ -575,6 +518,85 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     .md\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+ 
+    /* PADDING RESPONSIVE */
+
+    .md\:p-0{
+        padding: 0%;
+    }
+    
+    .md\:p-1{
+        padding: 0.25rem !important; /* 4px */
+    }
+    
+    .md\:p-2{
+        padding: 0.5rem !important; /* 8px */
+    }
+    
+    .md\:p-4{
+        padding: 1rem !important; /* 16px */
+    }
+    
+    .md\:p-5{
+        padding: 1.25rem !important; /* 16px */
+    }
+    
+    .md\:p-6{
+        padding: 1.5rem !important; /* 16px */
+    }
+    
+    .md\:p-7{
+        padding: 1.75rem !important; /* 16px */
+    }
+    
+    .md\:p-8{
+        padding: 2rem !important; /* 16px */
+    }
+
+    .md\:h-full{
+        height: 100% !important;
+    }
+    
+    .md\:h-5{
+        height: 1.25rem; /* 20px */
+    }
+    
+    .md\:h-6{
+        height: 1.5rem; /* 24px */
+    }
+    
+    .md\:h-7{
+        height: 1.75rem; /* 28px */
+    }
+    
+    .md\:h-8{
+        height: 2rem; /* 32px */
+    }
+    
+    .md\:h-9{
+        height: 2.25rem; /* 36px */
+    }
+    
+    .md\:h-12{
+        height: 3rem; /* 48px */
+    }
+    
+    .md\:h-14{
+        height: 3.5rem; /* 56px */
+    }
+    
+    .md\:h-16{
+        height: 4rem; /* 64px */
+    }
+    
+    .md\:h-20{
+        height: 5rem; /* 80px */
+    }
+    
+    .md\:h-24{
+        height: 6rem; /* 96px */
+    }
+    
 }
 
 

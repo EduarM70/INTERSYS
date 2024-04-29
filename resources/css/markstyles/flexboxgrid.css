@@ -282,7 +282,7 @@
         display: inline-block;
     }
 
-    .sm\:inline-block{
+    .sm\:block{
         display: block;
     }
     
@@ -422,7 +422,7 @@
         display: inline-block;
     }
 
-    .md\:inline-block{
+    .md\:block{
         display: block;
     }
     
@@ -560,7 +560,7 @@
         display: inline-block;
     }
 
-    .lg\:inline-block{
+    .lg\:block{
         display: block;
     }
     
@@ -698,7 +698,7 @@
         display: inline-block;
     }
 
-    .xl\:inline-block{
+    .xl\:block{
         display: block;
     }
     

@@ -117,6 +117,18 @@
 +-------------------- LINE HEIGH 
 */
 
+.leading-none{
+    line-height: 1;
+}
+
+.leading-tight{
+    line-height: 1.25;
+}
+
+.leading-snug{
+    line-height: 1.375;
+}
+
 .leading-normal{
     line-height: 1.5;
 }

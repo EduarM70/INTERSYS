@@ -382,6 +382,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     border-radius: 1.5rem; /* 24px */
 }
 
+.rounded-full{
+    border-radius: 9999px;
+}
+
+
 
 .rounded-r-xl{
     border-top-right-radius: 0.75rem; /* 12px */
@@ -427,6 +432,16 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .overflow-y-hidden{
     overflow-y: hidden;
 }
+
+/* 
++
++ ---------------------------- CURSOR
++
+*/
+
+
+
+
 
 /* 
 *
@@ -593,6 +608,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 
 
 
+
 @media (min-width: 768px) {
     
     .md\:mr-0{
@@ -647,12 +663,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     .md\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
-
-
-
-
-@media (min-width: 1024px) {
+    
     
     .lg\:mr-0{
         margin-right: 0rem;

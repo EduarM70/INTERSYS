@@ -23020,7 +23020,6 @@ td[id-estado] {
     vertical-align: middle;
 }
 
-/*
 td[id-estado="0"] {
     background-color: #ff5722;
     color: #fff;
@@ -23039,7 +23038,7 @@ td[id-estado="4"] {
 td[id-estado="2"] {
     background-color: #205dba;
     color: #fff;
-}*/
+}
 
 
 
@@ -23841,6 +23840,10 @@ td[id-estado="2"] {
     justify-content: space-around;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- FLEXBOX
@@ -23863,6 +23866,10 @@ td[id-estado="2"] {
 
 @media (min-width: 640px) {
     
+    .sm\:hidden{
+        display: none;
+    }
+
     .sm\:inline{
         display: inline;
     }
@@ -24003,6 +24010,10 @@ td[id-estado="2"] {
 
 @media (min-width: 768px) {
     
+    .md\:hidden{
+        display: none;
+    }
+
     .md\:inline{
         display: inline;
     }
@@ -24140,6 +24151,10 @@ td[id-estado="2"] {
 
 
 @media (min-width: 1024px) {
+    
+    .lg\:hidden{
+        display: none;
+    }
     
     .lg\:inline{
         display: inline;
@@ -24279,6 +24294,10 @@ td[id-estado="2"] {
 
 
 @media (min-width: 1280px) {
+    .xl\:hidden{
+        display: none;
+    }
+    
     .xl\:inline{
         display: inline;
     }
@@ -24829,9 +24848,60 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .w-1\/4{
     width: 25%;
 }
-.w-9{
-    width: 2.25rem; /* 36px */
+
+.w-3\/4{
+    width: 75%;
 }
+
+.w-1\/5{
+    width: 20%;
+}
+
+.w-2\/5{
+    width: 40%;
+}
+
+.w-3\/5{
+    width: 60%;
+}
+
+.w-4\/5{
+    width: 80%;
+}
+
+
+.w-1\/6{
+    width: 16.666667%;
+}
+
+.w-2\/6{
+    width: 33.333333%;
+}
+
+.w-3\/6{
+    width: 50%;
+}
+
+.w-4\/6{
+    width: 66.666667%;
+}
+
+.w-5\/6{
+    width: 83.333333%;
+}
+
+.w-1\/12{
+    width: 8.333333%;
+}
+
+.w-2\/12{
+    width: 16.666667%;
+}
+
+.w-3\/12{
+    width: 25%;
+}
+
 
 .w-4{
     width: 1rem; /* 16px */
@@ -24964,6 +25034,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     border-radius: 1.5rem; /* 24px */
 }
 
+.rounded-full{
+    border-radius: 9999px;
+}
+
+
 
 .rounded-r-xl{
     border-top-right-radius: 0.75rem; /* 12px */
@@ -24974,6 +25049,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .rounded-r-2xl{
     border-top-right-radius: 1rem; /* 16px */
     border-bottom-right-radius: 1rem; /* 16px */
+}
+
+.rounded-r-3xl{
+    border-top-right-radius: 1.5rem; /* 24px */
+    border-bottom-right-radius: 1.5rem; /* 24px */
 }
 /* 
 +
@@ -25004,6 +25084,16 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .overflow-y-hidden{
     overflow-y: hidden;
 }
+
+/* 
++
++ ---------------------------- CURSOR
++
+*/
+
+
+
+
 
 /* 
 *
@@ -25105,9 +25195,34 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     .sm\:w-1\/6{
         width: 16.666667%;
     }
+    
+    .sm\:min-w-1{
+        min-width: 0.25rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-2{
+        min-width: 0.5rem; /* 16px */
+    }
+    
+    .sm\:min-w-3{
+        min-width: 0.75rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-4{
+        min-width: 1rem; /* 16px */
+    }
+    
+    
+    .sm\:min-w-5{
+        min-width: 1.25rem; /* 16px */
+    }
 
-    .sm\:flex-wrap{
-        flex-wrap: wrap;
+
+
+    .sm\:w-2\/6{
+        width: 33.333333%;
     }
     
     .sm\:w-3\/6{
@@ -25145,6 +25260,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 
 
 
+
 @media (min-width: 768px) {
     
     .md\:mr-0{
@@ -25164,13 +25280,29 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
         display: block;
     }
 
-    .md\:w-full{
-        width: 100% !important;
+    .md\:min-w-1{
+        min-width: 0.25rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-2{
+        min-width: 0.5rem; /* 16px */
+    }
+    
+    .md\:min-w-3{
+        min-width: 0.75rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-4{
+        min-width: 1rem; /* 16px */
+    }
+    
+    
+    .md\:min-w-5{
+        min-width: 1.25rem; /* 16px */
     }
 
-    .md\:w-1_2{
-        width: 50% !important;
-    }
 
     .md\:flex-wrap{
         flex-wrap: wrap;
@@ -25183,12 +25315,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     .md\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
-
-
-
-
-@media (min-width: 1024px) {
+    
     
     .lg\:mr-0{
         margin-right: 0rem;
@@ -28841,6 +28968,7 @@ table.dataTable tbody td.accion-tabla.acciones{
 }
 
 /* FONTS WEIGHT */
+
 .font-bold{
     font-weight: 700;
 }

@@ -705,6 +705,10 @@
     justify-content: space-around;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- FLEXBOX
@@ -727,6 +731,10 @@
 
 @media (min-width: 640px) {
     
+    .sm\:hidden{
+        display: none;
+    }
+
     .sm\:inline{
         display: inline;
     }
@@ -867,6 +875,10 @@
 
 @media (min-width: 768px) {
     
+    .md\:hidden{
+        display: none;
+    }
+
     .md\:inline{
         display: inline;
     }
@@ -1004,6 +1016,10 @@
 
 
 @media (min-width: 1024px) {
+    
+    .lg\:hidden{
+        display: none;
+    }
     
     .lg\:inline{
         display: inline;
@@ -1143,6 +1159,10 @@
 
 
 @media (min-width: 1280px) {
+    .xl\:hidden{
+        display: none;
+    }
+    
     .xl\:inline{
         display: inline;
     }
@@ -1879,6 +1899,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     border-radius: 1.5rem; /* 24px */
 }
 
+.rounded-full{
+    border-radius: 9999px;
+}
+
+
 
 .rounded-r-xl{
     border-top-right-radius: 0.75rem; /* 12px */
@@ -1889,6 +1914,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .rounded-r-2xl{
     border-top-right-radius: 1rem; /* 16px */
     border-bottom-right-radius: 1rem; /* 16px */
+}
+
+.rounded-r-3xl{
+    border-top-right-radius: 1.5rem; /* 24px */
+    border-bottom-right-radius: 1.5rem; /* 24px */
 }
 /* 
 +
@@ -1919,6 +1949,16 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 .overflow-y-hidden{
     overflow-y: hidden;
 }
+
+/* 
++
++ ---------------------------- CURSOR
++
+*/
+
+
+
+
 
 /* 
 *
@@ -2085,6 +2125,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
 
 
 
+
 @media (min-width: 768px) {
     
     .md\:mr-0{
@@ -2139,91 +2180,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     .md\:grid-cols-2{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
- 
-    /* PADDING RESPONSIVE */
-
-    .md\:p-0{
-        padding: 0%;
-    }
     
-    .md\:p-1{
-        padding: 0.25rem !important; /* 4px */
-    }
-    
-    .md\:p-2{
-        padding: 0.5rem !important; /* 8px */
-    }
-    
-    .md\:p-4{
-        padding: 1rem !important; /* 16px */
-    }
-    
-    .md\:p-5{
-        padding: 1.25rem !important; /* 16px */
-    }
-    
-    .md\:p-6{
-        padding: 1.5rem !important; /* 16px */
-    }
-    
-    .md\:p-7{
-        padding: 1.75rem !important; /* 16px */
-    }
-    
-    .md\:p-8{
-        padding: 2rem !important; /* 16px */
-    }
-
-    .md\:h-full{
-        height: 100% !important;
-    }
-    
-    .md\:h-5{
-        height: 1.25rem; /* 20px */
-    }
-    
-    .md\:h-6{
-        height: 1.5rem; /* 24px */
-    }
-    
-    .md\:h-7{
-        height: 1.75rem; /* 28px */
-    }
-    
-    .md\:h-8{
-        height: 2rem; /* 32px */
-    }
-    
-    .md\:h-9{
-        height: 2.25rem; /* 36px */
-    }
-    
-    .md\:h-12{
-        height: 3rem; /* 48px */
-    }
-    
-    .md\:h-14{
-        height: 3.5rem; /* 56px */
-    }
-    
-    .md\:h-16{
-        height: 4rem; /* 64px */
-    }
-    
-    .md\:h-20{
-        height: 5rem; /* 80px */
-    }
-    
-    .md\:h-24{
-        height: 6rem; /* 96px */
-    }
-    
-}
-
-
-
-
-@media (min-width: 1024px) {
     
     .lg\:mr-0{
         margin-right: 0rem;
@@ -5876,6 +5833,7 @@ table.dataTable tbody td.accion-tabla.acciones{
 }
 
 /* FONTS WEIGHT */
+
 .font-bold{
     font-weight: 700;
 }

@@ -1758,7 +1758,6 @@ td[id-estado] {
     vertical-align: middle;
 }
 
-/*
 td[id-estado="0"] {
     background-color: #ff5722;
     color: #fff;
@@ -1777,7 +1776,7 @@ td[id-estado="4"] {
 td[id-estado="2"] {
     background-color: #205dba;
     color: #fff;
-}*/
+}
 
 
 

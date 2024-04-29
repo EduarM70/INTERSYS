@@ -252,6 +252,10 @@
     justify-content: space-around;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- FLEXBOX
@@ -274,6 +278,10 @@
 
 @media (min-width: 640px) {
     
+    .sm\:hidden{
+        display: none;
+    }
+
     .sm\:inline{
         display: inline;
     }
@@ -414,6 +422,10 @@
 
 @media (min-width: 768px) {
     
+    .md\:hidden{
+        display: none;
+    }
+
     .md\:inline{
         display: inline;
     }
@@ -551,6 +563,10 @@
 
 
 @media (min-width: 1024px) {
+    
+    .lg\:hidden{
+        display: none;
+    }
     
     .lg\:inline{
         display: inline;
@@ -690,6 +706,10 @@
 
 
 @media (min-width: 1280px) {
+    .xl\:hidden{
+        display: none;
+    }
+    
     .xl\:inline{
         display: inline;
     }

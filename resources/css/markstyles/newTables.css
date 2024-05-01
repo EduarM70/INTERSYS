@@ -209,16 +209,19 @@ table.dataTable tbody td.accion-tabla.acciones{
 
 .dataTables_wrapper .dataTables_paginate{
     width: 100%;
-    display: block;
-    font-size: 0.85rem;
+    /* display: block; */
+    font-size: 0.65rem;
     height: 45px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .dataTables_wrapper .dataTables_paginate a{
     color: var(--gray-dark) !important;
     cursor: pointer;
     text-decoration: none;
-    margin: 0px 1rem;
+    /* margin: 0px 0.25rem; */
     transition: all ease-in-out 300ms;
     border-radius: 0.5rem !important;
     padding: 0.25rem 0.5rem;
@@ -234,7 +237,7 @@ table.dataTable tbody td.accion-tabla.acciones{
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current{
     background-color: var(--slate-200);
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     margin: 0%;
     border-radius: 0.5rem !important;
 }
@@ -256,13 +259,14 @@ table.dataTable tbody td.accion-tabla.acciones{
 
     .dataTables_wrapper .dataTables_info{
         display: inline-block;
-        width: 50%;
+        width: 30%;
     }
 
     .dataTables_wrapper .dataTables_paginate{
-        padding: 1rem;
+        /* padding: 1rem;*/
+        font-size: 0.85rem;
         display: inline-block;
-        width: 50%;
+        width: 70%;
         text-align: right;
     }
 }

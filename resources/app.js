@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-const routes = ['tables', 'botones', 'contenedores', 'forms'];
+const routes = ['tables', 'botones', 'contenedores', 'forms', 'tabs'];
 
 routes.forEach(route => {
     app.get(`/${route}`, (req, res) => {

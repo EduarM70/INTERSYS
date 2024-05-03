@@ -5,5 +5,41 @@
 */
 
 .tabs {
-  background-color: red !important;
+  background-color: white !important;
+}
+
+.tab-base {
+  width: 100% !important;
+  /* height: 100%; */
+  border-radius: 0.5rem !important;
+  padding: 0.55rem 1.375rem !important;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #00314c;
+  line-height: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.tab-active {
+  background-color: #00314c;
+  color: white;
+}
+
+.tab-inactive {
+  color: #212529;
+  /* background-color: white; */
+}
+
+.tab-inactive:hover {
+  color: #212529;
+  background-color: #e2e6ea;
 }

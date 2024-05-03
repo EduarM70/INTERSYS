@@ -11,26 +11,26 @@
 </head>
 
 <body class="p-4">
-    <div class="font-poppins container-shadow-lg">
+    <div class="font-poppins">
         <h3 class="text-2xl font-bold text-blue-primary">Tabs dinámicas</h3>
 
-        <div class="mt-4 ">
+        <div class="mt-4">
             <div class="">
-                <nav class="grid gap-0 md:gap-2 md:grid-cols-3 grid-cols-1 tabs">
-                    <button data-parent="tab1" class="navItem py-4 px-6 text-center btn-base btn-spc-2">
+                <nav class="tabs grid md:grid-cols-3 grid-cols-1">
+                    <button data-parent="tab1" class="navItem tab-base tab-inactive h-14">
                         Profile
                     </button>
-                    <button data-parent="tab2" class="navItem py-4 px-6 text-center btn-base btn-spc-2">
+                    <button data-parent="tab2" class="navItem tab-base tab-inactive h-14">
                         Dashboard
                     </button>
-                    <button data-parent="tab3" class="navItem py-4 px-6 text-center btn-base btn-spc-2">
+                    <button data-parent="tab3" class="navItem tab-base tab-inactive h-14">
                         Settings
                     </button>
                 </nav>
             </div>
 
             <div id="container" class="py-6 box-4">
-                <div class="hidden tabContent " data-child="tab1">
+                <div class="hidden tabContent" data-child="tab1">
                     <div class="mb-4">
                         <h4 class="text-lg font-bold text-gray-700">Tab 1 Content</h4>
                         <p class="text-gray-500">This is the content for Tab 1.</p>
@@ -64,13 +64,13 @@
             tab.addEventListener("click", () => {
                 // Elimina la clase 'active' de todos los botones
                 tabs.forEach((tab) => {
-                    tab.classList.remove("submit");
-                    tab.classList.add("btn-spc-2");
+                    tab.classList.remove("tab-active");
+                    tab.classList.add("tab-inactive");
                 });
 
                 // Agrega la clase 'active' al botón clickeado
-                tab.classList.add("submit");
-                tab.classList.remove("btn-spc-2");
+                tab.classList.add("tab-active");
+                tab.classList.remove("tab-inactive");
 
                 // Obtiene el nombre de la pestaña desde data-parent
                 const tabName = tab.getAttribute("data-parent");

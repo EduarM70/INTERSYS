@@ -5897,6 +5897,16 @@ table.dataTable tbody td.accion-tabla.acciones{
 
 
 }
+/* 
++
++ ---------------------------- diseño tabs
++
+*/
+
+.tabs {
+  background-color: red !important;
+}
+
 :root{
     --primary-color: #00314C;
     --second-color: #026390;

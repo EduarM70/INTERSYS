@@ -1759,22 +1759,22 @@ td[id-estado] {
 }
 
 td[id-estado="0"] {
-    /* background-color: #ff5722; */
+    background-color: #ff5722;
     color: #fff;
 }
 
 td[id-estado="1"] {
-    /* background-color: #4caf50;*/
+    background-color: #4caf50;
     color: #fff;
 }
 
 td[id-estado="4"] {
-    /* background-color: #ba2320; */
+    background-color: #ba2320;
     color: #fff;
 }
 
 td[id-estado="2"] {
-    /* background-color: #205dba;*/
+    background-color: #205dba;
     color: #fff;
 }
 

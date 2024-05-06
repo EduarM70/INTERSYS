@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     /*font-size: 1rem; 16px 
     line-height: 1.5rem;  24px */
     vertical-align: middle !important;
+    padding: 0 !important;
 }
 
 :root{

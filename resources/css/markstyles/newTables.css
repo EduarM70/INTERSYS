@@ -53,9 +53,9 @@ table.dataTable thead td:active {
 
 table.dataTable tbody td{
     text-align: center !important;
-    font-size: 0.875rem;
+    font-size: 0.80rem;
     border-bottom: 1px solid var(--gray-soft) !important;
-    padding: 1rem 0.25rem;
+    padding: 0.35rem 0.25rem;
 }
 
 table.dataTable tbody tr{

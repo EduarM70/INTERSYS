@@ -4,34 +4,34 @@
 +-------------------- form-1
 */
 
-:root{
-    --primary-color: #00314C;
-    --second-color: #026390;
-    --gray-primary: #f1f4fb;
-    --gray-second: #CCD7DB;
-    --gray-soft: #F4F4F4;
-    --gray-dark: #656E70;
-    --blue-50: #EDF0F9;
+:root {
+  --primary-color: #00314c;
+  --second-color: #026390;
+  --gray-primary: #f1f4fb;
+  --gray-second: #ccd7db;
+  --gray-soft: #f4f4f4;
+  --gray-dark: #656e70;
+  --blue-50: #edf0f9;
 
-    --gray-700: #4D4D4D;
-    --gold-500: #C2872B;
-    --green-500: #5BA132;
-    --red-500: #C93240;
+  --gray-700: #4d4d4d;
+  --gold-500: #c2872b;
+  --green-500: #5ba132;
+  --red-500: #c93240;
 
-    /* SLATE */
-    --slate-50: #f8fafc;
-    --slate-100: #f1f5f9;
-    --slate-200: #e2e8f0;
-    --slate-300: #cbd5e1;
-    --slate-400: #94a3b8;
-    --slate-500: #64748b;
-    --slate-600: #475569;
-    --slate-800: #1e293b;
+  /* SLATE */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-800: #1e293b;
 }
 
 form label,
-form input{
-    margin-bottom: 0rem !important;
+form input {
+  margin-bottom: 0rem !important;
 }
 
 form.fm-base{
@@ -41,11 +41,11 @@ form.fm-base{
 form.fm-base label,
 form.fm-base a,
 form.fm-base p,
-form.fm-base span{
-    color: var(--slate-500);
-    font-weight: 700;
-    font-size: 0.75rem; /* 12px */
-    line-height: 1rem; /* 16px */ 
+form.fm-base span {
+  color: var(--slate-500);
+  font-weight: 700;
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
 }
 
 form.fm-base input{
@@ -62,25 +62,25 @@ form.fm-base input{
     font-size: 0.825rem;
 }
 
-form.fm-base input:focus{
-    outline: none;
-    border: 1px solid var(--slate-300);
-    background-color: var(--slate-100) !important;
+form.fm-base input:focus {
+  outline: none;
+  border: 1px solid var(--slate-300);
+  background-color: var(--slate-100) !important;
 }
 
-form.fm-base input[type="checkbox"]{
-    display: inline-block;
-    width: auto !important;
-    margin: 0rem 0.5rem !important;
+form.fm-base input[type="checkbox"] {
+  display: inline-block;
+  width: auto !important;
+  margin: 0rem 0.5rem !important;
 }
 
-form.fm-base input[type="checkbox"]:checked{
-    background-color: var(--primary-color);
-    color: #00314C;
+form.fm-base input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  color: #00314c;
 }
 form.fm-base input[type="date"],
-form.fm-base input[type="datetime"]{
-    font-size: small !important;
+form.fm-base input[type="datetime"] {
+  font-size: small !important;
 }
 
 
@@ -88,59 +88,57 @@ form .group-inputs{
     margin-bottom: 0.35rem;
 }
 
-form .group-btn{
-    margin-top: 1rem !important;
+form .group-btn {
+  margin-top: 1rem !important;
 }
 
+.check-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--blue-50);
+  color: var(--primary-color);
+  line-height: 1;
+  border-radius: 0.5rem !important;
 
-.check-1{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--blue-50);
-    color: var(--primary-color);
-    line-height: 1;
-    border-radius: 0.5rem !important;
+  color: var(--primary-color);
+  font-weight: bold !important;
 
-    color: var(--primary-color);
-    font-weight: bold !important;
-
-    margin: 0.356rem !important;
-    padding: 0.70rem !important;
+  margin: 0.356rem !important;
+  padding: 0.7rem !important;
 }
-
 
 @media screen and (min-width: 640px) {
-    form.fm-base .group-inputs{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-    }
+  form.fm-base .group-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    form.fm-base .group-inputs{
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1rem;
-    }
+  form.fm-base .group-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    form.fm-base .group-inputs{
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1.25rem;
-    }
+  form.fm-base .group-inputs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 1240px) {
-    form.fm-base .group-inputs{
-        display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 1.25rem;
-    }
+  form.fm-base .group-inputs {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
 }
 
 /*
@@ -177,28 +175,28 @@ form .group-btn{
 +-------------------- SELECT
 */
 
-select{
-    margin: 0.5rem 0rem !important;
-    background-color: var(--slate-100);
-    border: none;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 0.5rem !important;
-    color: var(--slate-600);
-    text-align: center;
-    font-size: small;
+select {
+  margin: 0.5rem 0rem !important;
+  background-color: var(--slate-100);
+  border: none;
+  outline: none;
+  padding: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  color: var(--slate-600) !important;
+  text-align: center;
+  font-size: small;
 }
 
-select:focus{
-    background-color: var(--slate-100) !important;
-    border: none !important;
-    outline: none !important;
-    padding: 0.5rem;
-    border-radius: 0.5rem !important;
-    color: var(--slate-600);
+select:focus {
+  background-color: var(--slate-100) !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0.5rem;
+  border-radius: 0.5rem !important;
+  color: var(--slate-600);
 }
 
-form.fm-base select{
-    width: 100% !important;
-    border: 1px solid var(--slate-200) !important;
+form.fm-base select {
+  width: 100% !important;
+  border: 1px solid var(--slate-200) !important;
 }

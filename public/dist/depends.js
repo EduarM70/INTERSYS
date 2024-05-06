@@ -239,7 +239,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\INTERSYS\resources\js\dependencias.js */"./resources/js/dependencias.js");
+module.exports = __webpack_require__(/*! D:\MT\GitHub\INTERSYS\resources\js\dependencias.js */"./resources/js/dependencias.js");
 
 
 /***/ })

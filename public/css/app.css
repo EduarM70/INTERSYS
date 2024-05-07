@@ -6137,11 +6137,6 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -6415,13 +6410,6 @@ template {
 
 [hidden] {
   display: none !important;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 h1, .h1 {
@@ -23170,22 +23158,21 @@ td[id-estado="2"] {
 
 }
 
-
 /* ESTILOS BOTONES */
 
 .btn-base {
     width: 100% !important;
     height: auto;
     border-radius: 0.50rem !important;
-    padding: 0.55rem 1.375rem !important;
+    padding: 0.45rem 1.375rem !important;
     margin: 0.5rem 0px;
     border: none;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.35rem;
     justify-content: center;
     align-items: center;
 
-    font-size: 0.90rem;
+    font-size: 0.80rem;
     /* 16px */
     font-weight: 600;
     color: #00314C;
@@ -24866,7 +24853,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, table, th, td, tr{
     /*font-size: 1rem; 16px 
     line-height: 1.5rem;  24px */
     vertical-align: middle !important;
-    padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 0% !important;
 }
 
 :root{

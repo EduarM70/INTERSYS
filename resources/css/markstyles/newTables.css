@@ -272,4 +272,29 @@ table.dataTable tbody td.accion-tabla.acciones{
 }
 
 
+/* EXCEPTIOS */
 
+td[id-estado] {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td[id-estado="0"] {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+td[id-estado="1"] {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+td[id-estado="4"] {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+td[id-estado="2"] {
+    background-color: transparent !important;
+    color: #fff;
+}

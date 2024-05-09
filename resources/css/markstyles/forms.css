@@ -180,11 +180,11 @@ select {
   background-color: var(--slate-100);
   border: none;
   outline: none;
-  padding: 0.5rem !important;
+  padding: 0.35rem 0.75rem !important;
   border-radius: 0.5rem !important;
   color: var(--slate-600) !important;
   text-align: center;
-  font-size: small;
+  font-size: 0.825rem;
 }
 
 select:focus {

@@ -1,6 +1,6 @@
-:root{
-    --primary-color: #00314C;
-    --second-color: #026390;
+:root {
+    --primary-color: #1e3a8a;
+    --second-color: #3b82f6;
     --gray-primary: #f1f4fb;
     --gray-second: #CCD7DB;
     --gray-soft: #F2F2F2;
@@ -30,15 +30,15 @@
 
 
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.text-left{
+.text-left {
     text-align: left;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
@@ -47,68 +47,89 @@
 +-------------------- FONT SIZE 
 */
 
-.text-xs{
-    font-size: 0.75rem; /* 12px */
-    line-height: 1rem; /* 16px */ 
+.text-xs {
+    font-size: 0.75rem;
+    /* 12px */
+    line-height: 1rem;
+    /* 16px */
 }
 
-.text-sm{
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.25rem; /* 20px */    
+.text-sm {
+    font-size: 0.875rem;
+    /* 14px */
+    line-height: 1.25rem;
+    /* 20px */
 }
 
-.text-base{
-    font-size: 1rem; /* 16px */
-    line-height: 1.5rem; /* 24px */
+.text-base {
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+    /* 24px */
 }
 
-.text-lg{
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem; /* 28px */
+.text-lg {
+    font-size: 1.125rem;
+    /* 18px */
+    line-height: 1.75rem;
+    /* 28px */
 }
 
-.text-xl{
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.75rem; /* 28px */
+.text-xl {
+    font-size: 1.25rem;
+    /* 20px */
+    line-height: 1.75rem;
+    /* 28px */
 }
 
-.text-2xl{
-    font-size: 1.5rem; /* 24px */
-    line-height: 2rem; /* 32px */
+.text-2xl {
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
 }
 
-.text-3xl{
-    font-size: 1.875rem; /* 30px */
-    line-height: 2.25rem; /* 36px */
+.text-3xl {
+    font-size: 1.875rem;
+    /* 30px */
+    line-height: 2.25rem;
+    /* 36px */
 }
 
-.text-4xl{
-    font-size: 2.25rem; /* 36px */
-    line-height: 2.5rem; /* 40px */
+.text-4xl {
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 2.5rem;
+    /* 40px */
 }
 
-.text-5xl{
-    font-size: 3rem; /* 48px */
+.text-5xl {
+    font-size: 3rem;
+    /* 48px */
     line-height: 1;
 }
 
-.text-6xl{
-    font-size: 3.75rem; /* 60px */
+.text-6xl {
+    font-size: 3.75rem;
+    /* 60px */
     line-height: 1;
 }
 
-.text-7xl{
-    font-size: 4.5rem; /* 72px */
+.text-7xl {
+    font-size: 4.5rem;
+    /* 72px */
     line-height: 1;
 }
 
-.text-8xl{
-    font-size: 6rem; /* 96px */
+.text-8xl {
+    font-size: 6rem;
+    /* 96px */
     line-height: 1;
 }
 
-.text-9xl{
-    font-size: 8rem; /* 128px */
+.text-9xl {
+    font-size: 8rem;
+    /* 128px */
     line-height: 1;
 }
 
@@ -117,43 +138,43 @@
 +-------------------- LINE HEIGH 
 */
 
-.leading-none{
+.leading-none {
     line-height: 1;
 }
 
-.leading-tight{
+.leading-tight {
     line-height: 1.25;
 }
 
-.leading-snug{
+.leading-snug {
     line-height: 1.375;
 }
 
-.leading-normal{
+.leading-normal {
     line-height: 1.5;
 }
 
-.leading-relaxed{
+.leading-relaxed {
     line-height: 1.625;
 }
 
-.leading-loose{
+.leading-loose {
     line-height: 2;
 }
 
 /* FONTS WEIGHT */
 
-.font-bold{
+.font-bold {
     font-weight: 700;
 }
 
-.font-light{
+.font-light {
     font-weight: 300;
 }
 
 /* TRANSFORM TEXT */
 
-.uppercase{
+.uppercase {
     text-transform: uppercase;
 }
 
@@ -169,20 +190,24 @@
 +-------------------- TEXT-SLATE-...
 */
 
-.text-gold{
+.text-gold {
     color: var(--gold-500);
 }
 
-.text-red-500{
+.text-red-500 {
     color: var(--red-500);
 }
 
-.text-green-500{
+.text-green-500 {
     color: var(--green-500);
 }
 
-.text-blue-second{
+.text-blue-second {
     color: var(--second-color);
+}
+
+.text-blue-primary {
+    color: var(--primary-color);
 }
 
 /* 
@@ -190,43 +215,41 @@
 +-------------------- TEXT-SLATE-...
 */
 
-.text-slate-800{
+.text-slate-800 {
     color: var(--slate-800);
 }
-.text-slate-500{
+
+.text-slate-500 {
     color: var(--slate-500);
 }
 
-.text-slate-400{
+.text-slate-400 {
     color: var(--slate-400);
 }
 
-.text-slate-300{
+.text-slate-300 {
     color: var(--slate-300);
 }
 
-.text-slate-200{
+.text-slate-200 {
     color: var(--slate-200);
 }
 
-.text-slate-100{
+.text-slate-100 {
     color: var(--slate-100);
 }
 
-.text-slate-50{
+.text-slate-50 {
     color: var(--slate-50);
 }
 
-.text-blue-primary{
-    color: var(--primary-color);
-}
 
-.text-gray-700{
+.text-gray-700 {
     color: var(--gray-700);
 }
 
 
-.text-white{
+.text-white {
     color: white;
 }
 
@@ -237,15 +260,15 @@
     +-------------------- TEXT-ALIGN
     */
 
-    .md\:text-center{
+    .md\:text-center {
         text-align: center;
     }
 
-    .md\:text-left{
+    .md\:text-left {
         text-align: left;
     }
 
-    .md\:text-right{
+    .md\:text-right {
         text-align: right;
     }
 
@@ -254,68 +277,89 @@
     +-------------------- FONT SIZE 
     */
 
-    .md\:text-xs{
-        font-size: 0.75rem; /* 12px */
-        line-height: 1rem; /* 16px */ 
+    .md\:text-xs {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1rem;
+        /* 16px */
     }
 
-    .md\:text-sm{
-        font-size: 0.875rem; /* 14px */
-        line-height: 1.25rem; /* 20px */    
+    .md\:text-sm {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
     }
 
-    .md\:text-base{
-        font-size: 1rem; /* 16px */
-        line-height: 1.5rem; /* 24px */
+    .md\:text-base {
+        font-size: 1rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
     }
 
-    .md\:text-lg{
-        font-size: 1.125rem; /* 18px */
-        line-height: 1.75rem; /* 28px */
+    .md\:text-lg {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .md\:text-xl{
-        font-size: 1.25rem; /* 20px */
-        line-height: 1.75rem; /* 28px */
+    .md\:text-xl {
+        font-size: 1.25rem;
+        /* 20px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .md\:text-2xl{
-        font-size: 1.5rem; /* 24px */
-        line-height: 2rem; /* 32px */
+    .md\:text-2xl {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
     }
 
-    .md\:text-3xl{
-        font-size: 1.875rem; /* 30px */
-        line-height: 2.25rem; /* 36px */
+    .md\:text-3xl {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
     }
 
-    .md\:text-4xl{
-        font-size: 2.25rem; /* 36px */
-        line-height: 2.5rem; /* 40px */
+    .md\:text-4xl {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
     }
 
-    .md\:text-5xl{
-        font-size: 3rem !important; /* 48px */
+    .md\:text-5xl {
+        font-size: 3rem !important;
+        /* 48px */
         line-height: 1;
     }
 
-    .md\:text-6xl{
-        font-size: 3.75rem; /* 60px */
+    .md\:text-6xl {
+        font-size: 3.75rem;
+        /* 60px */
         line-height: 1;
     }
 
-    .md\:text-7xl{
-        font-size: 4.5rem; /* 72px */
+    .md\:text-7xl {
+        font-size: 4.5rem;
+        /* 72px */
         line-height: 1;
     }
 
-    .md\:text-8xl{
-        font-size: 6rem; /* 96px */
+    .md\:text-8xl {
+        font-size: 6rem;
+        /* 96px */
         line-height: 1;
     }
 
-    .md\:text-9xl{
-        font-size: 8rem; /* 128px */
+    .md\:text-9xl {
+        font-size: 8rem;
+        /* 128px */
         line-height: 1;
     }
 }
@@ -326,15 +370,15 @@
     +-------------------- TEXT-ALIGN
     */
 
-    .lg\:text-center{
+    .lg\:text-center {
         text-align: center;
     }
 
-    .lg\:text-left{
+    .lg\:text-left {
         text-align: left;
     }
 
-    .lg\:text-right{
+    .lg\:text-right {
         text-align: right;
     }
 
@@ -343,68 +387,89 @@
     +-------------------- FONT SIZE 
     */
 
-    .lg\:text-xs{
-        font-size: 0.75rem; /* 12px */
-        line-height: 1rem; /* 16px */ 
+    .lg\:text-xs {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1rem;
+        /* 16px */
     }
 
-    .lg\:text-sm{
-        font-size: 0.875rem; /* 14px */
-        line-height: 1.25rem; /* 20px */    
+    .lg\:text-sm {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
     }
 
-    .lg\:text-base{
-        font-size: 1rem; /* 16px */
-        line-height: 1.5rem; /* 24px */
+    .lg\:text-base {
+        font-size: 1rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
     }
 
-    .lg\:text-lg{
-        font-size: 1.125rem; /* 18px */
-        line-height: 1.75rem; /* 28px */
+    .lg\:text-lg {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .lg\:text-xl{
-        font-size: 1.25rem; /* 20px */
-        line-height: 1.75rem; /* 28px */
+    .lg\:text-xl {
+        font-size: 1.25rem;
+        /* 20px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .lg\:text-2xl{
-        font-size: 1.5rem; /* 24px */
-        line-height: 2rem; /* 32px */
+    .lg\:text-2xl {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
     }
 
-    .lg\:text-3xl{
-        font-size: 1.875rem; /* 30px */
-        line-height: 2.25rem; /* 36px */
+    .lg\:text-3xl {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
     }
 
-    .lg\:text-4xl{
-        font-size: 2.25rem; /* 36px */
-        line-height: 2.5rem; /* 40px */
+    .lg\:text-4xl {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
     }
 
-    .lg\:text-5xl{
-        font-size: 3rem; /* 48px */
+    .lg\:text-5xl {
+        font-size: 3rem;
+        /* 48px */
         line-height: 1;
     }
 
-    .lg\:text-6xl{
-        font-size: 3.75rem; /* 60px */
+    .lg\:text-6xl {
+        font-size: 3.75rem;
+        /* 60px */
         line-height: 1;
     }
 
-    .lg\:text-7xl{
-        font-size: 4.5rem; /* 72px */
+    .lg\:text-7xl {
+        font-size: 4.5rem;
+        /* 72px */
         line-height: 1;
     }
 
-    .lg\:text-8xl{
-        font-size: 6rem; /* 96px */
+    .lg\:text-8xl {
+        font-size: 6rem;
+        /* 96px */
         line-height: 1;
     }
 
-    .lg\:text-9xl{
-        font-size: 8rem; /* 128px */
+    .lg\:text-9xl {
+        font-size: 8rem;
+        /* 128px */
         line-height: 1;
     }
 }
@@ -415,15 +480,15 @@
     +-------------------- TEXT-ALIGN
     */
 
-    .xl\:text-center{
+    .xl\:text-center {
         text-align: center;
     }
 
-    .xl\:text-left{
+    .xl\:text-left {
         text-align: left;
     }
 
-    .xl\:text-right{
+    .xl\:text-right {
         text-align: right;
     }
 
@@ -432,68 +497,89 @@
     +-------------------- FONT SIZE 
     */
 
-    .xl\:text-xs{
-        font-size: 0.75rem; /* 12px */
-        line-height: 1rem; /* 16px */ 
+    .xl\:text-xs {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1rem;
+        /* 16px */
     }
 
-    .xl\:text-sm{
-        font-size: 0.875rem; /* 14px */
-        line-height: 1.25rem; /* 20px */    
+    .xl\:text-sm {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
     }
 
-    .xl\:text-base{
-        font-size: 1rem; /* 16px */
-        line-height: 1.5rem; /* 24px */
+    .xl\:text-base {
+        font-size: 1rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
     }
 
-    .xl\:text-lg{
-        font-size: 1.125rem; /* 18px */
-        line-height: 1.75rem; /* 28px */
+    .xl\:text-lg {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .xl\:text-xl{
-        font-size: 1.25rem; /* 20px */
-        line-height: 1.75rem; /* 28px */
+    .xl\:text-xl {
+        font-size: 1.25rem;
+        /* 20px */
+        line-height: 1.75rem;
+        /* 28px */
     }
 
-    .xl\:text-2xl{
-        font-size: 1.5rem; /* 24px */
-        line-height: 2rem; /* 32px */
+    .xl\:text-2xl {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
     }
 
-    .xl\:text-3xl{
-        font-size: 1.875rem; /* 30px */
-        line-height: 2.25rem; /* 36px */
+    .xl\:text-3xl {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
     }
 
-    .xl\:text-4xl{
-        font-size: 2.25rem; /* 36px */
-        line-height: 2.5rem; /* 40px */
+    .xl\:text-4xl {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
     }
 
-    .xl\:text-5xl{
-        font-size: 3rem; /* 48px */
+    .xl\:text-5xl {
+        font-size: 3rem;
+        /* 48px */
         line-height: 1;
     }
 
-    .xl\:text-6xl{
-        font-size: 3.75rem; /* 60px */
+    .xl\:text-6xl {
+        font-size: 3.75rem;
+        /* 60px */
         line-height: 1;
     }
 
-    .xl\:text-7xl{
-        font-size: 4.5rem; /* 72px */
+    .xl\:text-7xl {
+        font-size: 4.5rem;
+        /* 72px */
         line-height: 1;
     }
 
-    .xl\:text-8xl{
-        font-size: 6rem; /* 96px */
+    .xl\:text-8xl {
+        font-size: 6rem;
+        /* 96px */
         line-height: 1;
     }
 
-    .xl\:text-9xl{
-        font-size: 8rem; /* 128px */
+    .xl\:text-9xl {
+        font-size: 8rem;
+        /* 128px */
         line-height: 1;
     }
 }

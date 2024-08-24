@@ -193,6 +193,20 @@ h6 {
 +
 */
 
+.rounded-none {
+    border-radius: 0px;
+}
+
+.rounded-l-none {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.rounded-r-none {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
 .rounded {
     border-radius: 0.25rem;
     /* 4px */
@@ -230,9 +244,9 @@ h6 {
 
 
 .rounded-r-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0.75rem !important;
     /* 12px */
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem !important;
     /* 12px */
 }
 
@@ -248,6 +262,29 @@ h6 {
     border-top-right-radius: 1.5rem;
     /* 24px */
     border-bottom-right-radius: 1.5rem;
+    /* 24px */
+}
+
+
+.rounded-l-xl {
+    border-top-left-radius: 0.75rem !important;
+    /* 12px */
+    border-bottom-left-radius: 0.75rem !important;
+    /* 12px */
+}
+
+
+.rounded-l-2xl {
+    border-top-left-radius: 1rem;
+    /* 16px */
+    border-bottom-left-radius: 1rem;
+    /* 16px */
+}
+
+.rounded-l-3xl {
+    border-top-left-radius: 1.5rem;
+    /* 24px */
+    border-bottom-left-radius: 1.5rem;
     /* 24px */
 }
 

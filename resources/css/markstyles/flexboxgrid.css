@@ -280,7 +280,9 @@
     flex-direction: column;
 }
 
-
+.flex-row {
+    flex-direction: row;
+}
 
 /* 
 + ---------------------------- DISPLAY 
@@ -332,8 +334,25 @@
 +-------------------- ALIGN SELF
 */
 
+.self-start {
+    align-self: flex-start;
+}
 
+.self-end {
+    align-self: flex-end;
+}
 
+.self-center {
+    align-self: center;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
 
 
 /* 
@@ -363,6 +382,20 @@
 
     .sm\:flex {
         display: flex !important;
+    }
+
+        /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .sm\:flex-col {
+        flex-direction: column;
+    }
+
+    .sm\:flex-row {
+        flex-direction: row;
     }
 
     /* 
@@ -573,6 +606,32 @@
         align-items: end;
     }
 
+    /*
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+*/
+
+    .sm\:self-start {
+        align-self: flex-start;
+    }
+
+    .sm\:self-end {
+        align-self: flex-end;
+    }
+
+    .sm\:self-center {
+        align-self: center;
+    }
+
+    .sm\:self-stretch {
+        align-self: stretch;
+    }
+
+    .sm\:self-baseline {
+        align-self: baseline;
+    }
+
 }
 
 
@@ -598,6 +657,20 @@
 
     .md\:flex {
         display: flex !important;
+    }
+
+            /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .md\:flex-col {
+        flex-direction: column;
+    }
+
+    .md\:flex-row {
+        flex-direction: row;
     }
 
     /* 
@@ -805,6 +878,33 @@
     .md\:items-end {
         align-items: end;
     }
+
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+*/
+    
+    .md\:self-start {
+        align-self: flex-start;
+    }
+
+    .md\:self-end {
+        align-self: flex-end;
+    }
+
+    .md\:self-center {
+        align-self: center;
+    }
+
+    .md\:self-stretch {
+        align-self: stretch;
+    }
+
+    .md\:self-baseline {
+        align-self: baseline;
+    }
 }
 
 
@@ -829,6 +929,20 @@
 
     .lg\:flex {
         display: flex !important;
+    }
+
+            /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .lg\:flex-col {
+        flex-direction: column;
+    }
+
+    .lg\:flex-row {
+        flex-direction: row;
     }
 
     /* 
@@ -1037,6 +1151,34 @@
     .lg\:items-end {
         align-items: end;
     }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+
+*/
+
+    .lg\:self-start {
+        align-self: flex-start;
+    }
+
+    .lg\:self-end {
+        align-self: flex-end;
+    }
+
+    .lg\:self-center {
+        align-self: center;
+    }
+
+    .lg\:self-stretch {
+        align-self: stretch;
+    }
+
+    .lg\:self-baseline {
+        align-self: baseline;
+    }
+
 }
 
 
@@ -1060,6 +1202,20 @@
 
     .xl\:flex {
         display: flex !important;
+    }
+
+            /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .xl\:flex-col {
+        flex-direction: column;
+    }
+
+    .xl\:flex-row {
+        flex-direction: row;
     }
 
 
@@ -1276,4 +1432,32 @@
     .xl\:items-end {
         align-items: end;
     }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+
+*/
+
+    .xl\:self-start {
+        align-self: flex-start;
+    }
+
+    .xl\:self-end {
+        align-self: flex-end;
+    }
+
+    .xl\:self-center {
+        align-self: center;
+    }
+
+    .xl\:self-stretch {
+        align-self: stretch;
+    }
+
+    .xl\:self-baseline {
+        align-self: baseline;
+    }
+
 }

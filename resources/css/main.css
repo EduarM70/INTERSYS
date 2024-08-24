@@ -515,6 +515,49 @@
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- GRID
++-------------------- GRID TEMPLETE ROWS
+*/
+
+
+.grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+}
+
+
+.grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+}
+
+
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
 +-------------------- GAP
 */
 
@@ -737,6 +780,16 @@
 
 /* 
 + ---------------------------- DISPLAY 
++-------------------- FLEX y GRID
++-------------------- ALIGN SELF
+*/
+
+
+
+
+
+/* 
++ ---------------------------- DISPLAY 
 +-------------------- RESPONSIVE FLEXBOX & GRID
 +-------------------- SCREEN SM
 */
@@ -799,6 +852,47 @@
 
     .sm\:grid-cols-8 {
         grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE SM
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .sm\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .sm\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
     }
 
     /* 
@@ -996,6 +1090,46 @@
     }
 
     /* 
+    + ---------------------------- DISPLAY RESPONSIVE MD
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .md\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .md\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
     +-------------------- RESPONSIVE GAP
     */
 
@@ -1184,6 +1318,46 @@
 
     .lg\:grid-cols-8 {
         grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE LG
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .lg\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .lg\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
     }
 
     /* 
@@ -1377,6 +1551,47 @@
     .xl\:grid-cols-8 {
         grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
     }
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE XL
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .xl\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .xl\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
 
     /* 
     +-------------------- RESPONSIVE GAP

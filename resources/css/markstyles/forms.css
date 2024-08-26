@@ -189,6 +189,7 @@ select.base-sl {
 
   font-size: 0.75rem; /* 12px text-xs */
   line-height: 1.25rem;
+  width: 100%;
 }
 
 select.base-sl:focus {

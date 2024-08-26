@@ -632,6 +632,22 @@
         align-self: baseline;
     }
 
+    
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- WRAP
+    */
+
+
+    .sm\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .sm\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
 }
 
 
@@ -880,11 +896,6 @@
     }
 
 
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-*/
     
     .md\:self-start {
         align-self: flex-start;
@@ -905,6 +916,23 @@
     .md\:self-baseline {
         align-self: baseline;
     }
+
+
+    
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- NOWROP
+    */
+
+    .md\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .md\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
 }
 
 
@@ -1177,6 +1205,20 @@
 
     .lg\:self-baseline {
         align-self: baseline;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- WRAP
+    */
+    
+    .lg\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .lg\:flex-nowrap {
+        flex-wrap: nowrap;
     }
 
 }

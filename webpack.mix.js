@@ -50,7 +50,7 @@ mix.sourceMaps(false);
 // Crear Style App
 mix.combine(['resources/css/Intersys-Style/*.css'], 'resources/css/intersys.css');
 
-mix.combine(['resources/css/markstyles/*.css'],  'resources/css/main.css');
+mix.combine(['resources/css/markstyles/**/*.css'],  'resources/css/main.css');
 
 // App.js
 mix.js('resources/js/app.js', 'public/dist/app.js');

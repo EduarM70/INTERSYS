@@ -163,13 +163,24 @@
 }
 
 /* FONTS WEIGHT */
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal{
+    font-weight: 400;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
 
 .font-bold {
     font-weight: 700;
 }
 
-.font-light {
-    font-weight: 300;
+.font-extrabold{
+    font-weight: 800;
 }
 
 /* TRANSFORM TEXT */

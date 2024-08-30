@@ -35,10 +35,10 @@
 
 }
 
-/* CLASES PARA DIFERENTES TIPOS DE BOTONES
 /* 
-+ ---------------------------- ESTILOS PARA BOTONES
-+-------------------- BASE DE TODOS LOS BOTONES
++ ------- CLASES PARA DIFERENTES TIPOS DE BOTONES ----
++ -------------------------- ESTILOS PARA BOTONES ---
++ --------------------- BASE DE TODOS LOS BOTONES -
 */
 
 .btn-base {
@@ -2359,7 +2359,7 @@ h6 {
 
 .container-shadow-lg {
     background-color: white;
-    padding: 1.25rem;
+    padding: 1.1rem;
     border-radius: 0.5rem !important;
     /*filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));*/
 }
@@ -2461,27 +2461,32 @@ h6 {
 }
 
 .rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem !important;
     /* 8px */
 }
 
+.rounded-l-lg{
+    border-top-left-radius: 0.5rem !important; /* 8px */
+    border-bottom-left-radius: 0.5rem !important; /* 8px */
+}
+
 .rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0.75rem !important;
     /* 12px */
 }
 
 .rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 1rem !important;
     /* 16px */
 }
 
 .rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 1.5rem !important;
     /* 24px */
 }
 
 .rounded-full {
-    border-radius: 9999px;
+    border-radius: 9999px !important;
 }
 
 
@@ -7230,13 +7235,24 @@ td[id-estado="2"] {
 }
 
 /* FONTS WEIGHT */
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal{
+    font-weight: 400;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
 
 .font-bold {
     font-weight: 700;
 }
 
-.font-light {
-    font-weight: 300;
+.font-extrabold{
+    font-weight: 800;
 }
 
 /* TRANSFORM TEXT */

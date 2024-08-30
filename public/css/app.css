@@ -23170,7 +23170,11 @@ td[id-estado="2"] {
 
 }
 
-/* ESTILOS BOTONES */
+/* 
++ ------- CLASES PARA DIFERENTES TIPOS DE BOTONES ----
++ -------------------------- ESTILOS PARA BOTONES ---
++ --------------------- BASE DE TODOS LOS BOTONES -
+*/
 
 .btn-base {
     width: 100% !important;
@@ -23200,6 +23204,13 @@ td[id-estado="2"] {
 
 /* ESTILOS BOTON  1 */
 
+.input-style-1 {
+    border-radius: 0.375rem !important;
+    color: var(--gray-dark);
+    padding: 0.5rem 0.7rem;
+    margin-right: 0.25rem;
+}
+
 .btn-base.submit {
     color: white;
     background-color: var(--second-color);
@@ -23219,141 +23230,6 @@ td[id-estado="2"] {
     background-color: #dd4554;
     color: white;
 }
-
-.input-style-1 {
-    border-radius: 0.375rem !important;
-    color: var(--gray-dark);
-    padding: 0.5rem 0.7rem;
-    margin-right: 0.25rem;
-}
-
-/* ESTILOS BOTON  2 */
-
-.btn-base.submit-line {
-    font-weight: 500;
-    color: var(--primary-color);
-    background-color: white;
-    border: 2px solid var(--primary-color);
-    padding: 0.5rem !important;
-}
-
-.btn-base.reset-line {
-    font-weight: 500;
-    color: var(--gray-dark);
-    background-color: white;
-    border: 2px solid var(--gray-dark);
-    padding: 0.5rem !important;
-}
-
-.btn-base.successful-line {
-    font-weight: 500;
-    color: var(--green-500);
-    background-color: white;
-    border: 2px solid var(--green-500);
-    padding: 0.5rem !important;
-}
-
-.btn-base.delete-line {
-    font-weight: 500;
-    color: var(--red-500);
-    background-color: white;
-    border: 2px solid var(--red-500);
-    padding: 0.5rem !important;
-}
-
-
-/* ESTILOS BOTON  ESPECIALES */
-
-.btn-spc {
-    background-color: white;
-    font-size: 1rem;
-    border-radius: 2rem !important;
-    border: none;
-    margin: 0.25rem;
-    cursor: pointer;
-    transition: all ease-in-out 500ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.25rem;
-    width: fit-content;
-}
-
-.btn-spc span {
-    display: none;
-}
-
-/* ESTILOS BOTON  ESPECIALES: EDITAR, ELIMINAR Y SUS HOVERS */
-
-.btn-spc.edit-sm {
-    padding: 0.25rem 0.75rem;
-    border-color: var(--gold-500);
-    color: var(--gold-500);
-}
-
-.btn-spc.delete-sm {
-    padding: 0.25rem 0.75rem;
-    border-color: var(--red-500);
-    color: var(--red-500);
-}
-
-.btn-spc.edit-sm:hover {
-    background-color: var(--gold-500);
-    color: white;
-    text-decoration: none;
-}
-
-.btn-spc.delete-sm:hover {
-    background-color: var(--red-500);
-    color: white;
-    text-decoration: none;
-}
-
-
-
-.btn-spc.normal-sm {
-    color: var(--primary-color);
-    background-color: var(--gray-soft);
-    padding: 0.25rem 0.75rem;
-    padding-top: 0.35rem;
-    border: none;
-    font-size: 0.85rem;
-}
-
-
-/* ESTILOS BOTON  ESPECIALES: ESTADOS (APROBADO, EN PROGRESO)*/
-
-.btn-spc.approved {
-    padding: 0.25rem 0.75rem;
-    background-color: var(--green-500);
-    color: white;
-}
-
-.btn-spc.inprogress {
-    padding: 0.25rem 0.75rem;
-    background-color: var(--gold-500);
-    color: white;
-}
-
-.btn-spc.danger {
-    padding: 0.25rem 0.75rem;
-    background-color: var(--red-500);
-    color: white;
-}
-
-@media screen and (min-width: 720px) {
-    .btn-spc span {
-        display: inline-block;
-    }
-
-    .btn-spc {
-        border: 1px solid;
-        font-size: 0.75rem;
-    }
-
-}
-
-
 
 /* ESTILOS BOTON : HOVER  */
 
@@ -23463,6 +23339,46 @@ td[id-estado="2"] {
 }
 
 
+
+/* ESTILOS BOTON  2 */
+
+.btn-base.submit-line {
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding: 0.325rem !important;
+    transition: 500ms all ease-in-out;
+}
+
+.btn-base.reset-line {
+    font-weight: 500;
+    color: var(--gray-dark);
+    background-color: white;
+    border: 2px solid var(--gray-dark);
+    padding: 0.325rem !important;
+    transition: 500ms all ease-in-out;
+}
+
+.btn-base.successful-line {
+    font-weight: 500;
+    color: var(--green-500);
+    background-color: white;
+    border: 2px solid var(--green-500);
+    padding: 0.325rem !important;
+    transition: 500ms all ease-in-out;
+}
+
+.btn-base.delete-line {
+    font-weight: 500;
+    color: var(--red-500);
+    background-color: white;
+    border: 2px solid var(--red-500);
+    padding: 0.325rem !important;
+    transition: 500ms all ease-in-out;
+}
+
+
 /* LINE:HOVER */
 
 .submit-line:hover {
@@ -23476,17 +23392,21 @@ td[id-estado="2"] {
     z-index: -1;
     padding: 1rem 1.25rem;
     display: block;
-    left: -20%;
-    right: -20%;
+    left: -100%;
+    right: 100%;
     top: 0;
     bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
+    -webkit-transition: all 1.2s;
+    border-radius: 0.50rem !important;
     transition: all 1.2s ease;
 }
 
 .submit-line:hover:after {
-    transition: all 1.2s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease-out;
 }
 
 .reset-line:hover {
@@ -23500,17 +23420,21 @@ td[id-estado="2"] {
     z-index: -1;
     padding: 1rem 1.25rem;
     display: block;
-    left: -20%;
-    right: -20%;
+    left: -100%;
+    right: 100%;
     top: 0;
     bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
+    -webkit-transition: all 1.2s;
+    border-radius: 0.50rem !important;
     transition: all 1.2s ease;
 }
 
 .reset-line:hover:after {
-    transition: all 1.2s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease-out;
 }
 
 
@@ -23525,17 +23449,21 @@ td[id-estado="2"] {
     z-index: -1;
     padding: 1rem 1.25rem;
     display: block;
-    left: -20%;
-    right: -20%;
+    left: -100%;
+    right: 100%;
     top: 0;
     bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
+    -webkit-transition: all 1.2s;
+    border-radius: 0.50rem !important;
     transition: all 1.2s ease;
 }
 
 .successful-line:hover:after {
-    transition: all 1.2s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease-out;
 }
 
 
@@ -23551,19 +23479,115 @@ td[id-estado="2"] {
     z-index: -1;
     padding: 1rem 1.25rem;
     display: block;
-    left: -20%;
-    right: -20%;
+    left: -100%;
+    right: 100%;
     top: 0;
     bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
+    -webkit-transition: all 1.2s;
+    border-radius: 0.50rem !important;
     transition: all 1.2s ease;
 }
 
 .delete-line:hover:after {
-    transition: all 1.2s ease-out;
-    transform: skewX(-45deg) scale(1, 1);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s ease-out;
 }
 
+
+
+/* ESTILOS BOTON  ESPECIALES */
+
+.btn-spc {
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 2rem !important;
+    border: none;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: all ease-in-out 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    width: fit-content;
+}
+
+.btn-spc span {
+    display: none;
+}
+
+/* ESTILOS BOTON  ESPECIALES: EDITAR, ELIMINAR Y SUS HOVERS */
+
+.btn-spc.edit-sm {
+    padding: 0.25rem 0.75rem;
+    border-color: var(--gold-500);
+    color: var(--gold-500);
+}
+
+.btn-spc.delete-sm {
+    padding: 0.25rem 0.75rem;
+    border-color: var(--red-500);
+    color: var(--red-500);
+}
+
+.btn-spc.edit-sm:hover {
+    background-color: var(--gold-500);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-spc.delete-sm:hover {
+    background-color: var(--red-500);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.btn-spc.normal-sm {
+    color: var(--primary-color);
+    background-color: var(--gray-soft);
+    padding: 0.25rem 0.75rem;
+    padding-top: 0.35rem;
+    border: none;
+    font-size: 0.85rem;
+}
+
+
+/* ESTILOS BOTON  ESPECIALES: ESTADOS (APROBADO, EN PROGRESO)*/
+
+.btn-spc.approved {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--green-500);
+    color: white;
+}
+
+.btn-spc.inprogress {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--gold-500);
+    color: white;
+}
+
+.btn-spc.danger {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--red-500);
+    color: white;
+}
+
+@media screen and (min-width: 720px) {
+    .btn-spc span {
+        display: inline-block;
+    }
+
+    .btn-spc {
+        border: 1px solid;
+        font-size: 0.75rem;
+    }
+
+}
 
 .btn-spc.normal-sm:hover {
     background-color: var(--gray-second);
@@ -24410,7 +24434,6 @@ td[id-estado="2"] {
     +-------------------- RESPONSIVE Grid Column Start / End
     */
 
-
     .md\:col-auto {
         grid-column: auto;
     }
@@ -25164,34 +25187,37 @@ form input {
   margin-bottom: 0rem !important;
 }
 
-form{
-    padding: 0.5rem;
+form {
+  padding: 0.5rem;
 }
 
 form.fm-base a,
 form.fm-base p,
 form.fm-base span,
-label.base-lb{
+label.base-lb {
   display: block;
   color: var(--slate-600);
   font-weight: 500;
-  font-size: 0.75rem; /* 12px text-xs */
+  font-size: 0.7rem;
+  /* 12px text-xs */
   line-height: 1rem;
 }
 
-input.base-input{
-    outline: none;
-    border: 1px solid var(--slate-200);
-    display: block;
-    padding: 0.35rem 0.75rem;
-    width: 100%;
-    background-color: var(--slate-50);
-    margin: 0.25rem 0rem 0rem 0rem !important;
-    border-radius: 0.375rem !important; /* 6px */
-    transition: all ease-in-out 300ms;
-    color: var(--slate-600);
-    font-size: 0.75rem; /* 12px text-xs */
-    line-height: 1.25rem;
+input.base-input {
+  outline: none;
+  border: 1px solid var(--slate-200);
+  display: block;
+  padding: 0.35rem 0.75rem;
+  width: 100%;
+  background-color: var(--slate-50);
+  /* margin: 0.25rem 0rem 0rem 0rem !important; */
+  border-radius: 0.375rem !important;
+  /* 6px */
+  transition: all ease-in-out 300ms;
+  color: var(--slate-600);
+  font-size: 0.75rem;
+  /* 12px text-xs */
+  line-height: 1.1rem;
 }
 
 input.base-input:focus {
@@ -25210,14 +25236,16 @@ input.base-input[type="checkbox"]:checked {
   background-color: var(--primary-color);
   color: #00314c;
 }
+
 input.base-input[type="date"],
 input.base-input[type="datetime"] {
-  font-size: 0.75rem !important; /* 12px text-xs */
-    line-height: 1.25rem;
+  font-size: 0.7rem !important;
+  /* 12px text-xs */
+  line-height: 1rem;
 }
 
-form .group-inputs{
-    margin-bottom: 0.35rem;
+form .group-inputs {
+  margin-bottom: 0.35rem;
 }
 
 form .group-btn {
@@ -25232,12 +25260,12 @@ form .group-btn {
   background-color: var(--blue-50);
   color: var(--primary-color);
   line-height: 1;
+  font-size: 0.7rem;
   border-radius: 0.5rem !important;
 
   color: var(--primary-color);
 
-  margin: 0.25rem !important;
-  padding: 0.55rem !important;
+  padding: 0.465rem !important;
 }
 
 @media screen and (min-width: 640px) {
@@ -25307,18 +25335,19 @@ form .group-btn {
 */
 
 select.base-sl {
-  margin: 0.25rem 0rem !important;
   background-color: var(--slate-100);
   border: none;
   outline: none;
 
-  padding: 0.35rem 0.75rem !important;
-  border-radius: 0.375rem !important; /* 6px */
+  padding: 0.335rem 0.75rem !important;
+  border-radius: 0.375rem !important;
+  /* 6px */
   color: var(--slate-600) !important;
   text-align: center;
 
-  font-size: 0.75rem; /* 12px text-xs */
-  line-height: 1.25rem;
+  font-size: 0.7rem;
+  /* 12px text-xs */
+  line-height: 1.1rem;
   width: 100%;
 }
 
@@ -25334,6 +25363,55 @@ select.base-sl:focus {
 form.fm-base select {
   width: 100% !important;
   border: 1px solid var(--slate-200) !important;
+}
+
+
+/*
+
+BOTONES PRIMARIOS
+
+inline-flex items-center justify-center gap-1 px-4 py-1 dark:bg-blue-500 border border-transparent 
+rounded-md font-semibold text-sm text-white uppercase tracking-widest hover:bg-blue-950 focus:bg-blue-950 
+active:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 
+transition ease-in-out duration-150
+
+*/
+
+
+.buttton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.225rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  transition: 200ms ease-in-out all;
+}
+
+
+.buttton .primary {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.buttton .primary:hover {
+  background-color: var(--primary-color);
+}
+
+.buttton .primary:focus {
+  background-color: var(--primary-color);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.buttton .primary:active {
+  background-color: var(--primary-color);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -25454,7 +25532,7 @@ h6 {
 
 .container-shadow-lg {
     background-color: white;
-    padding: 1.25rem;
+    padding: 1.1rem;
     border-radius: 0.5rem !important;
     /*filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));*/
 }
@@ -25559,29 +25637,39 @@ h6 {
 }
 
 .rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem !important;
     /* 8px */
 }
 
+.rounded-l-lg{
+    border-top-left-radius: 0.5rem !important; /* 8px */
+    border-bottom-left-radius: 0.5rem !important; /* 8px */
+}
+
 .rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0.75rem !important;
     /* 12px */
 }
 
 .rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 1rem !important;
     /* 16px */
 }
 
 .rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 1.5rem !important;
     /* 24px */
 }
 
 .rounded-full {
-    border-radius: 9999px;
+    border-radius: 9999px !important;
 }
 
+
+.rounded-r-lg {
+    border-top-right-radius: 0.5rem !important; /* 8px */
+    border-bottom-right-radius: 0.5rem !important; /* 8px */
+}
 
 
 .rounded-r-xl {
@@ -25941,6 +26029,7 @@ h6 {
 
     .\32xl\:w-4\/6 {
         width: 66.666667%;
+        
     }
 
     .\32xl\:w-5\/6 {
@@ -29105,6 +29194,370 @@ td[id-estado="2"] {
 }
 /* 
 +
++ ---------------------------- POSITIONS
++
+*/
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.static{
+    position: static;
+}
+
+/* 
++
++ ---------------------------- POSITIONS
++ ------------------------- TOP, LETF, RIGTH, BOTTOM
++
+*/
+
+.inset-0{
+    inset: 0px;
+}
+
+.inset-x-0{
+    left: 0px;
+    right: 0px;
+}
+
+.inset-y-0{
+    top: 0px;
+    bottom: 0px;
+}
+
+.start-0{
+    inset-inline-start: 0px;
+}
+
+.end-0{
+    inset-inline-end: 0px;
+}
+
+.top-0{
+    top: 0px;
+}
+
+.right-0{
+    right: 0px;
+}
+
+.bottom-0{
+    bottom: 0px;
+}
+
+.left-0{
+    left: 0px;
+}
+
+/* 1px */
+
+.inset-px{
+    inset: 1px;
+}
+
+.inset-x-px{
+    left: 1px;
+    right: 1px;
+}
+
+.inset-y-px{
+    top: 1px;
+    bottom: 1px;
+}
+
+.start-px{
+    inset-inline-start: 1px;
+}
+
+.end-px{
+    inset-inline-end: 1px;
+}
+
+.top-px{
+    top: 1px;
+}
+
+.right-px{
+    right: 1px;
+}
+
+.bottom-px{
+    bottom: 1px;
+}
+
+.left-px{
+    left: 1px;
+}
+
+/* 2px */
+
+.inset-0\.5{
+    inset: 2px;
+}
+
+.inset-x-0\.5{
+    left: 2px;
+    right: 2px;
+}
+
+.inset-y-0\.5{
+    top: 2px;
+    bottom: 2px;
+}
+
+.start-0\.5{
+    inset-inline-start: 2px;
+}
+
+.end-0\.5{
+    inset-inline-end: 2px;
+}
+
+.top-0\.5{
+    top: 2px;
+}
+
+.right-0\.5{
+    right: 2px;
+}
+
+.bottom-0\.5{
+    bottom: 2px;
+}
+
+.left-0\.5{
+    left: 2px;
+}
+
+/* 4px */
+
+.inset-1{
+    inset: 0.25rem;
+}
+
+.inset-x-1{
+    left: 0.25rem;
+    right: 0.25rem;
+}
+
+.inset-y-1{
+    top: 0.25rem;
+    bottom: 0.25rem;
+}
+
+.start-1{
+    inset-inline-start: 0.25rem;
+}
+
+.end-1{
+    inset-inline-end: 0.25rem;
+}
+
+.top-1{
+    top: 0.25rem;
+}
+
+.right-1{
+    right: 0.25rem;
+}
+
+.bottom-1{
+    bottom: 0.25rem;
+}
+
+.left-1{
+    left: 0.25rem;
+}
+
+/* 6px */
+
+.inset-1\.5{
+    inset: 0.375rem;
+}
+
+.inset-x-1\.5{
+    left: 0.375rem;
+    right: 0.375rem;
+}
+
+.inset-y-1\.5{
+    top: 0.375rem;
+    bottom: 0.375rem;
+}
+
+.start-1\.5{
+    inset-inline-start: 0.375rem;
+}
+
+.end-1\.5{
+    inset-inline-end: 0.375rem;
+}
+
+.top-1\.5{
+    top: 0.375rem;
+}
+
+.right-1\.5{
+    right: 0.375rem;
+}
+
+.bottom-1\.5{
+    bottom: 0.375rem;
+}
+
+.left-1\.5{
+    left: 0.375rem;
+}
+
+/* 8px */
+
+.inset-2{
+    inset: 0.5rem;
+}
+
+.inset-x-2{
+    left: 0.5rem;
+    right: 0.5rem;
+}
+
+.inset-y-2{
+    top: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.start-2{
+    inset-inline-start: 0.5rem;
+}
+
+.end-2{
+    inset-inline-end: 0.5rem;
+}
+
+.top-2{
+    top: 0.5rem;
+}
+
+.right-2{
+    right: 0.5rem;
+}
+
+.bottom-2{
+    bottom: 0.5rem;
+}
+
+.left-2{
+    left: 0.5rem;
+}
+
+
+/* 10px */
+
+.inset-2\.5{
+    inset: 0.625rem;
+}
+
+.inset-x-2\.5{
+    left: 0.625rem;
+    right: 0.625rem;
+}
+
+.inset-y-2\.5{
+    top: 0.625rem;
+    bottom: 0.625rem;
+}
+
+.start-2\.5{
+    inset-inline-start: 0.625rem;
+}
+
+.end-2\.5{
+    inset-inline-end: 0.625rem;
+}
+
+.top-2\.5{
+    top: 0.625rem;
+}
+
+.right-2\.5{
+    right: 0.625rem;
+}
+
+.bottom-2\.5{
+    bottom: 0.625rem;
+}
+
+.left-2\.5{
+    left: 0.625rem;
+}
+
+
+/* 12px */
+
+.inset-3{
+    inset: 0.75rem;
+}
+
+.inset-x-3{
+    left: 0.75rem;
+    right: 0.75rem;
+}
+
+.inset-y-3{
+    top: 0.75rem;
+    bottom: 0.75rem;
+}
+
+.start-3{
+    inset-inline-start: 0.75rem;
+}
+
+.end-3{
+    inset-inline-end: 0.75rem;
+}
+
+.top-3{
+    top: 0.75rem;
+}
+
+.right-3{
+    right: 0.75rem;
+}
+
+.bottom-3{
+    bottom: 0.75rem;
+}
+
+.left-3{
+    left: 0.75rem;
+}
+
+/*
+* -------------------- PERSONALIZADOS
+*/
+
+.top-\[0\.60rem\]{
+    top: 0.6rem;
+}
+
+@media (min-width: 1536px) {
+    .\32xl\:top-3{
+        top: 0.75rem !important;
+    }
+}
+
+
+/* 
++
 + ---------------------------- HEIGHT
 +
 */
@@ -29121,6 +29574,30 @@ td[id-estado="2"] {
 
 .h-1\/2 {
     height: 50%;
+}
+
+.h-11\/12{
+    height: 91.666667%;
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
+@media (min-width: 640px) { 
+    .sm\:h-full{
+        max-height: 70%;
+    }
+    
+    .sm\:h-1\/2{
+        max-height: 70%;
+    }
+    
+    .sm\:h-11\/12{
+        height: 83.333333%;
+    }
+    
 }
 
 /* 
@@ -29178,6 +29655,99 @@ td[id-estado="2"] {
     height: 6rem;
     /* 96px */
 }
+
+
+/* 
++
++ ---------------------------- MAX HEIGHT
++
+*/
+
+
+.max-h-1\/10{
+    max-height: 70%;
+}
+
+.max-h-10\/12{
+    height: 83.333333%;
+}
+
+/* 
++
++ ---------------------------- MAX HEIGHT
++ ---------------------------- RESPONSIVE
++
+*/
+
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
+@media (min-width: 640px) { 
+    .sm\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .sm\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+
+/* 
++
++ ---------------------------- RESPONSIVE MD
++
+*/
+@media (min-width: 768px) {
+    .md\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .md\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE LG
++
+*/
+@media (min-width: 1024px) {
+    .lg\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .lg\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+/* 
++
++ ---------------------------- RESPONSIV XL
++
+*/
+@media (min-width: 1280px) {
+    .lg\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .lg\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+
+
+
+
 
 /* 
 +
@@ -29990,13 +30560,24 @@ td[id-estado="2"] {
 }
 
 /* FONTS WEIGHT */
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal{
+    font-weight: 400;
+}
+
+.font-semibold{
+    font-weight: 600;
+}
 
 .font-bold {
     font-weight: 700;
 }
 
-.font-light {
-    font-weight: 300;
+.font-extrabold{
+    font-weight: 800;
 }
 
 /* TRANSFORM TEXT */
@@ -30080,6 +30661,116 @@ td[id-estado="2"] {
     color: white;
 }
 
+
+@media screen and (min-width: 1024px) {
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- TEXT-ALIGN
+    */
+
+    .sm\:text-center {
+        text-align: center;
+    }
+
+    .sm\:text-left {
+        text-align: left;
+    }
+
+    .sm\:text-right {
+        text-align: right;
+    }
+
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- FONT SIZE 
+    */
+
+    .sm\:text-xs {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1rem;
+        /* 16px */
+    }
+
+    .sm\:text-sm {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
+    }
+
+    .sm\:text-base {
+        font-size: 1rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
+    }
+
+    .sm\:text-lg {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
+    }
+
+    .sm\:text-xl {
+        font-size: 1.25rem;
+        /* 20px */
+        line-height: 1.75rem;
+        /* 28px */
+    }
+
+    .sm\:text-2xl {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
+    }
+
+    .sm\:text-3xl {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
+    }
+
+    .sm\:text-4xl {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
+    }
+
+    .sm\:text-5xl {
+        font-size: 3rem;
+        /* 48px */
+        line-height: 1;
+    }
+
+    .sm\:text-6xl {
+        font-size: 3.75rem;
+        /* 60px */
+        line-height: 1;
+    }
+
+    .sm\:text-7xl {
+        font-size: 4.5rem;
+        /* 72px */
+        line-height: 1;
+    }
+
+    .sm\:text-8xl {
+        font-size: 6rem;
+        /* 96px */
+        line-height: 1;
+    }
+
+    .sm\:text-9xl {
+        font-size: 8rem;
+        /* 128px */
+        line-height: 1;
+    }
+}
 
 @media (min-width: 768px) {
         /* 

@@ -823,7 +823,6 @@
     +-------------------- RESPONSIVE Grid Column Start / End
     */
 
-
     .md\:col-auto {
         grid-column: auto;
     }

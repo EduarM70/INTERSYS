@@ -116,7 +116,7 @@ h6 {
 
 .container-shadow-lg {
     background-color: white;
-    padding: 1.25rem;
+    padding: 1.1rem;
     border-radius: 0.5rem !important;
     /*filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));*/
 }
@@ -221,29 +221,39 @@ h6 {
 }
 
 .rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem !important;
     /* 8px */
 }
 
+.rounded-l-lg{
+    border-top-left-radius: 0.5rem !important; /* 8px */
+    border-bottom-left-radius: 0.5rem !important; /* 8px */
+}
+
 .rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0.75rem !important;
     /* 12px */
 }
 
 .rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 1rem !important;
     /* 16px */
 }
 
 .rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 1.5rem !important;
     /* 24px */
 }
 
 .rounded-full {
-    border-radius: 9999px;
+    border-radius: 9999px !important;
 }
 
+
+.rounded-r-lg {
+    border-top-right-radius: 0.5rem !important; /* 8px */
+    border-bottom-right-radius: 0.5rem !important; /* 8px */
+}
 
 
 .rounded-r-xl {
@@ -603,6 +613,7 @@ h6 {
 
     .\32xl\:w-4\/6 {
         width: 66.666667%;
+        
     }
 
     .\32xl\:w-5\/6 {

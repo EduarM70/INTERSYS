@@ -18,6 +18,30 @@
     height: 50%;
 }
 
+.h-11\/12{
+    height: 91.666667%;
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
+@media (min-width: 640px) { 
+    .sm\:h-full{
+        max-height: 70%;
+    }
+    
+    .sm\:h-1\/2{
+        max-height: 70%;
+    }
+    
+    .sm\:h-11\/12{
+        height: 83.333333%;
+    }
+    
+}
+
 /* 
 +
 + ------------------- TAMAÑOS POR X REM
@@ -73,3 +97,96 @@
     height: 6rem;
     /* 96px */
 }
+
+
+/* 
++
++ ---------------------------- MAX HEIGHT
++
+*/
+
+
+.max-h-1\/10{
+    max-height: 70%;
+}
+
+.max-h-10\/12{
+    height: 83.333333%;
+}
+
+/* 
++
++ ---------------------------- MAX HEIGHT
++ ---------------------------- RESPONSIVE
++
+*/
+
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
+@media (min-width: 640px) { 
+    .sm\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .sm\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+
+/* 
++
++ ---------------------------- RESPONSIVE MD
++
+*/
+@media (min-width: 768px) {
+    .md\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .md\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE LG
++
+*/
+@media (min-width: 1024px) {
+    .lg\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .lg\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+/* 
++
++ ---------------------------- RESPONSIV XL
++
+*/
+@media (min-width: 1280px) {
+    .lg\:max-h-1\/10{
+        max-height: 70%;
+    }
+    
+    .lg\:max-h-10\/12{
+        height: 83.333333%;
+    }
+    
+}
+
+
+
+
+

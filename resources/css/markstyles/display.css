@@ -1,0 +1,101 @@
+/* 
++
++ ---------------------------- DISPLAY
++
+*/
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- RESPONSIVE FLEXBOX & GRID
++-------------------- SCREEN SM
+*/
+
+@media (min-width: 640px) {
+
+    .sm\:hidden {
+        display: none;
+    }
+
+    .sm\:inline {
+        display: inline;
+    }
+
+    .sm\:inline-block {
+        display: inline-block;
+    }
+
+    .sm\:block {
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:inline {
+        display: inline;
+    }
+
+    .md\:inline-block {
+        display: inline-block;
+    }
+
+    .md\:block {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .lg\:hidden {
+        display: none;
+    }
+
+    .lg\:inline {
+        display: inline;
+    }
+
+    .lg\:inline-block {
+        display: inline-block;
+    }
+
+    .lg\:block {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .xl\:hidden {
+        display: none;
+    }
+
+    .xl\:inline {
+        display: inline;
+    }
+
+    .xl\:inline-block {
+        display: inline-block;
+    }
+
+    .xl\:block {
+        display: block;
+    }
+
+}

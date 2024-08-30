@@ -1,18 +1,4 @@
 /* 
-+
-+ ---------------------------- DISPLAY
-+
-*/
-
-.block {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-/* 
 + ---------------------------- DISPLAY 
 +-------------------- GRID
 */
@@ -196,172 +182,6 @@
     grid-row: span 5 / span 5;
 }
 
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-*/
-
-.flex {
-    display: flex !important;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- Flex Basis
-*/
-
-.basis-1_2 {
-    flex-basis: 50%;
-}
-
-.basis-1_3 {
-    flex-basis: 33.333333%;
-}
-
-.basis-2_3 {
-    flex-basis: 66.666667%;
-}
-
-.basis-1_4 {
-    flex-basis: 25%;
-}
-
-.basis-2_4 {
-    flex-basis: 50%;
-}
-
-.basis-3_4 {
-    flex-basis: 75%;
-}
-
-.basis-1_5 {
-    flex-basis: 20%;
-}
-
-.basis-2_5 {
-    flex-basis: 40%;
-}
-
-.basis-3_5 {
-    flex-basis: 60%;
-}
-
-.basis-4_5 {
-    flex-basis: 80%;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- FLEX WRAP
-*/
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
-}
-
-.flex-nowrap {
-    flex-wrap: nowrap;
-}
-
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- FLEX DIRECTION
-*/
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-row-reverse {
-    flex-direction: row-reverse;
-}
-
-.flex-col-reverse {
-    flex-direction: column-reverse;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.justify-around {
-    justify-content: space-around;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.justify-normal {
-    justify-content: normal;
-}
-
-.justify-start {
-    justify-content: flex-start;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-.items-center {
-    align-items: center;
-}
-
-.items-end {
-    align-items: end;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEX y GRID
-+-------------------- ALIGN SELF
-*/
-
-.self-start {
-    align-self: flex-start;
-}
-
-.self-end {
-    align-self: flex-end;
-}
-
-.self-center {
-    align-self: center;
-}
-
-.self-stretch {
-    align-self: stretch;
-}
-
-.self-baseline {
-    align-self: baseline;
-}
-
 
 /* 
 + ---------------------------- DISPLAY 
@@ -369,49 +189,11 @@
 +-------------------- SCREEN SM
 */
 
+
 @media (min-width: 640px) {
 
-    .sm\:hidden {
-        display: none;
-    }
-
-    .sm\:inline {
-        display: inline;
-    }
-
-    .sm\:inline-block {
-        display: inline-block;
-    }
-
-    .sm\:block {
-        display: block;
-    }
-
-
-    .sm\:flex {
-        display: flex !important;
-    }
-
-        /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .sm\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .sm\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .sm\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .sm\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .sm\:grid {
+        display: grid;
     }
 
     /* 
@@ -608,110 +390,15 @@
         justify-content: flex-start;
     }
 
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .sm\:items-center {
-        align-items: center;
-    }
-
-    .sm\:items-end {
-        align-items: end;
-    }
-
-    /*
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-*/
-
-    .sm\:self-start {
-        align-self: flex-start;
-    }
-
-    .sm\:self-end {
-        align-self: flex-end;
-    }
-
-    .sm\:self-center {
-        align-self: center;
-    }
-
-    .sm\:self-stretch {
-        align-self: stretch;
-    }
-
-    .sm\:self-baseline {
-        align-self: baseline;
-    }
-
-    
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- WRAP
-    */
-
-
-    .sm\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .sm\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
-
 
 
 @media (min-width: 768px) {
 
-    .md\:hidden {
-        display: none;
+    .md\:grid {
+        display: grid;
     }
 
-    .md\:inline {
-        display: inline;
-    }
-
-    .md\:inline-block {
-        display: inline-block;
-    }
-
-    .md\:block {
-        display: block;
-    }
-
-
-    .md\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .md\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .md\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .md\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .md\:flex-col-reverse {
-        flex-direction: column-reverse !important;
-    }
 
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
@@ -873,135 +560,12 @@
     .md\:row-span-5 {
         grid-row: span 5 / span 5;
     }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-    .md\:justify-center {
-        justify-content: center;
-    }
-
-    .md\:justify-between {
-        justify-content: space-between;
-    }
-
-    .md\:justify-around {
-        justify-content: space-around;
-    }
-
-    .md\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .md\:justify-normal {
-        justify-content: normal;
-    }
-
-    .md\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .md\:items-center {
-        align-items: center;
-    }
-
-    .md\:items-end {
-        align-items: end;
-    }
-
-
-    
-    .md\:self-start {
-        align-self: flex-start;
-    }
-
-    .md\:self-end {
-        align-self: flex-end;
-    }
-
-    .md\:self-center {
-        align-self: center;
-    }
-
-    .md\:self-stretch {
-        align-self: stretch;
-    }
-
-    .md\:self-baseline {
-        align-self: baseline;
-    }
-
-
-    
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- NOWROP
-    */
-
-    .md\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .md\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
-
 
 @media (min-width: 1024px) {
 
-    .lg\:hidden {
-        display: none;
-    }
-
-    .lg\:inline {
-        display: inline;
-    }
-
-    .lg\:inline-block {
-        display: inline-block;
-    }
-
-    .lg\:block {
-        display: block;
-    }
-
-
-    .lg\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .lg\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .lg\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .lg\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .lg\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .lg\:grid {
+        display: grid;
     }
 
     /* 
@@ -1166,138 +730,15 @@
     .lg\:row-span-5 {
         grid-row: span 5 / span 5;
     }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-    .lg\:justify-center {
-        justify-content: center;
-    }
-
-    .lg\:justify-between {
-        justify-content: space-between;
-    }
-
-    .lg\:justify-around {
-        justify-content: space-around;
-    }
-
-    .lg\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .lg\:justify-normal {
-        justify-content: normal;
-    }
-
-    .lg\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .lg\:items-center {
-        align-items: center;
-    }
-
-    .lg\:items-end {
-        align-items: end;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-
-*/
-
-    .lg\:self-start {
-        align-self: flex-start;
-    }
-
-    .lg\:self-end {
-        align-self: flex-end;
-    }
-
-    .lg\:self-center {
-        align-self: center;
-    }
-
-    .lg\:self-stretch {
-        align-self: stretch;
-    }
-
-    .lg\:self-baseline {
-        align-self: baseline;
-    }
-
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- WRAP
-    */
-    
-    .lg\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .lg\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
 
 
 @media (min-width: 1280px) {
-    .xl\:hidden {
-        display: none;
-    }
-
-    .xl\:inline {
-        display: inline;
-    }
-
-    .xl\:inline-block {
-        display: inline-block;
-    }
-
-    .xl\:block {
-        display: block;
-    }
-
-
-    .xl\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .xl\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .xl\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .xl\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
     
-    .xl\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .xl\:grid {
+        display: grid!important;
     }
+
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
     */
@@ -1474,69 +915,6 @@
         grid-row: span 5 / span 5;
     }
 
-    .xl\:justify-center {
-        justify-content: center;
-    }
-
-    .xl\:justify-between {
-        justify-content: space-between;
-    }
-
-    .xl\:justify-around {
-        justify-content: space-around;
-    }
-
-    .xl\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .xl\:justify-normal {
-        justify-content: normal;
-    }
-
-    .xl\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .xl\:items-center {
-        align-items: center;
-    }
-
-    .xl\:items-end {
-        align-items: end;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-
-*/
-
-    .xl\:self-start {
-        align-self: flex-start;
-    }
-
-    .xl\:self-end {
-        align-self: flex-end;
-    }
-
-    .xl\:self-center {
-        align-self: center;
-    }
-
-    .xl\:self-stretch {
-        align-self: stretch;
-    }
-
-    .xl\:self-baseline {
-        align-self: baseline;
-    }
+    
 
 }

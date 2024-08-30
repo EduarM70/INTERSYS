@@ -265,7 +265,7 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -560,7 +560,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
             /* 
     +
     + ----------------------------------------- TEXT COLOR 
@@ -744,7 +744,7 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
             /* 
     +
     + ----------------------------------------- TEXT COLOR 

@@ -1,0 +1,920 @@
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
+*/
+
+.grid {
+    display: grid;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- GRID TEMPLETE COLUMNS
+*/
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- GRID TEMPLETE ROWS
+*/
+
+
+.grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+}
+
+
+.grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-7 {
+    grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+}
+
+.grid-rows-8 {
+    grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+}
+
+
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- GAP
+*/
+
+.gap-0 {
+    gap: 0px;
+}
+
+.gap-05 {
+    gap: 0.125rem;
+    /* 2px */
+}
+
+.gap-1 {
+    gap: 0.25rem;
+    /* 4px */
+}
+
+.gap-2 {
+    gap: 0.5rem;
+    /* 8px */
+}
+
+
+.gap-4 {
+    gap: 1rem;
+    /* 16px */
+}
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- Grid Column Start / End
+*/
+
+
+.col-auto {
+    grid-column: auto;
+}
+
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
+
+.col-span-5 {
+    grid-column: span 5 / span 5;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- GRID
++-------------------- Grid Row Start / End
+*/
+
+.row-auto {
+    grid-row: auto;
+}
+
+.row-span-1 {
+    grid-row: span 1 / span 1;
+}
+
+.row-span-2 {
+    grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+    grid-row: span 3 / span 3;
+}
+
+.row-span-4 {
+    grid-row: span 4 / span 4;
+}
+
+.row-span-5 {
+    grid-row: span 5 / span 5;
+}
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- RESPONSIVE FLEXBOX & GRID
++-------------------- SCREEN SM
+*/
+
+
+@media (min-width: 640px) {
+
+    .sm\:grid {
+        display: grid;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .sm\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-7 {
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-cols-8 {
+        grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE SM
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .sm\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .sm\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .sm\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .sm\:gap-0 {
+        gap: 0px;
+    }
+
+    .sm\:gap-05 {
+        gap: 0.125rem;
+        /* 2px */
+    }
+
+    .sm\:gap-1 {
+        gap: 0.25rem;
+        /* 4px */
+    }
+
+    .sm\:gap-2 {
+        gap: 0.5rem;
+        /* 8px */
+    }
+
+
+    .sm\:gap-4 {
+        gap: 1rem;
+        /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .sm\:col-auto {
+        grid-column: auto;
+    }
+
+    .sm\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .sm\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .sm\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .sm\:col-span-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    .sm\:col-span-5 {
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .sm\:row-auto {
+        grid-row: auto;
+    }
+
+    .sm\:row-span-1 {
+        grid-row: span 1 / span 1;
+    }
+
+    .sm\:row-span-2 {
+        grid-row: span 2 / span 2;
+    }
+
+    .sm\:row-span-3 {
+        grid-row: span 3 / span 3;
+    }
+
+    .sm\:row-span-4 {
+        grid-row: span 4 / span 4;
+    }
+
+    .sm\:row-span-5 {
+        grid-row: span 5 / span 5;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- JUSTIFY CONTENT
+*/
+
+    .sm\:justify-center {
+        justify-content: center;
+    }
+
+    .sm\:justify-between {
+        justify-content: space-between;
+    }
+
+    .sm\:justify-around {
+        justify-content: space-around;
+    }
+
+    .sm\:justify-end {
+        justify-content: flex-end;
+    }
+
+    .sm\:justify-normal {
+        justify-content: normal;
+    }
+
+    .sm\:justify-start {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .md\:grid {
+        display: grid;
+    }
+
+
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .md\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-7 {
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-cols-8 {
+        grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE MD
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .md\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .md\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .md\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .md\:gap-0 {
+        gap: 0px;
+    }
+
+    .md\:gap-05 {
+        gap: 0.125rem;
+        /* 2px */
+    }
+
+    .md\:gap-1 {
+        gap: 0.25rem;
+        /* 4px */
+    }
+
+    .md\:gap-2 {
+        gap: 0.5rem;
+        /* 8px */
+    }
+
+
+    .md\:gap-4 {
+        gap: 1rem;
+        /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+    .md\:col-auto {
+        grid-column: auto;
+    }
+
+    .md\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .md\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .md\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .md\:col-span-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    .md\:col-span-5 {
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+    .md\:row-auto {
+        grid-row: auto;
+    }
+
+    .md\:row-span-1 {
+        grid-row: span 1 / span 1;
+    }
+
+    .md\:row-span-2 {
+        grid-row: span 2 / span 2;
+    }
+
+    .md\:row-span-3 {
+        grid-row: span 3 / span 3;
+    }
+
+    .md\:row-span-4 {
+        grid-row: span 4 / span 4;
+    }
+
+    .md\:row-span-5 {
+        grid-row: span 5 / span 5;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .lg\:grid {
+        display: grid;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .lg\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-7 {
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-cols-8 {
+        grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE LG
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .lg\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .lg\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .lg\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .lg\:gap-0 {
+        gap: 0px;
+    }
+
+    .lg\:gap-05 {
+        gap: 0.125rem;
+        /* 2px */
+    }
+
+    .lg\:gap-1 {
+        gap: 0.25rem;
+        /* 4px */
+    }
+
+    .lg\:gap-2 {
+        gap: 0.5rem;
+        /* 8px */
+    }
+
+
+    .lg\:gap-4 {
+        gap: 1rem;
+        /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .lg\:col-auto {
+        grid-column: auto;
+    }
+
+    .lg\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .lg\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .lg\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .lg\:col-span-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    .lg\:col-span-5 {
+        grid-column: span 5 / span 5;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .lg\:row-auto {
+        grid-row: auto;
+    }
+
+    .lg\:row-span-1 {
+        grid-row: span 1 / span 1;
+    }
+
+    .lg\:row-span-2 {
+        grid-row: span 2 / span 2;
+    }
+
+    .lg\:row-span-3 {
+        grid-row: span 3 / span 3;
+    }
+
+    .lg\:row-span-4 {
+        grid-row: span 4 / span 4;
+    }
+
+    .lg\:row-span-5 {
+        grid-row: span 5 / span 5;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    
+    .xl\:grid {
+        display: grid!important;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
+    */
+
+    .xl\:grid-cols-1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .xl\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-6 {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-7 {
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-cols-8 {
+        grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY RESPONSIVE XL
+    +-------------------- GRID
+    +-------------------- GRID TEMPLETE ROWS
+    */
+
+
+    .xl\:grid-rows-1 {
+        grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    }
+
+
+    .xl\:grid-rows-2 {
+        grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-3 {
+        grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-4 {
+        grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-5 {
+        grid-template-rows: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-6 {
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-7 {
+        grid-template-rows: repeat(7, minmax(0, 1fr)) !important;
+    }
+
+    .xl\:grid-rows-8 {
+        grid-template-rows: repeat(8, minmax(0, 1fr)) !important;
+    }
+
+
+    /* 
+    +-------------------- RESPONSIVE GAP
+    */
+
+    .xl\:gap-0 {
+        gap: 0px;
+    }
+
+    .xl\:gap-05 {
+        gap: 0.125rem;
+        /* 2px */
+    }
+
+    .xl\:gap-1 {
+        gap: 0.25rem;
+        /* 4px */
+    }
+
+    .xl\:gap-2 {
+        gap: 0.5rem;
+        /* 8px */
+    }
+
+
+    .xl\:gap-4 {
+        gap: 1rem;
+        /* 16px */
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Column Start / End
+    */
+
+
+    .xl\:col-auto {
+        grid-column: auto;
+    }
+
+    .xl\:col-span-1 {
+        grid-column: span 1 / span 1;
+    }
+
+    .xl\:col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .xl\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    .xl\:col-span-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    .xl\:col-span-5 {
+        grid-column: span 5 / span 5;
+    }
+
+    .xl\:col-start-1 {
+        grid-column-start: 1;
+    }
+
+    .xl\:col-end-3 {
+        grid-column-end: 3;
+    }
+
+    .xl\:col-end-4 {
+        grid-column-end: 4;
+    }
+
+    /* 
+    +-------------------- RESPONSIVE Grid Row Start / End
+    */
+
+    .xl\:row-auto {
+        grid-row: auto;
+    }
+
+    .xl\:row-span-1 {
+        grid-row: span 1 / span 1;
+    }
+
+    .xl\:row-span-2 {
+        grid-row: span 2 / span 2;
+    }
+
+    .xl\:row-span-3 {
+        grid-row: span 3 / span 3;
+    }
+
+    .xl\:row-span-4 {
+        grid-row: span 4 / span 4;
+    }
+
+    .xl\:row-span-5 {
+        grid-row: span 5 / span 5;
+    }
+
+    
+
+}

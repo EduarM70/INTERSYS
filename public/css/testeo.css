@@ -25494,7 +25494,7 @@ h6 {
 
 .container-shadow-lg {
     background-color: white;
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: 0.5rem !important;
     /*filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));*/
 }
@@ -25590,6 +25590,7 @@ h6 {
     /* 4px */
 }
 
+
 .rounded-md {
     border-radius: 0.375rem !important;
     /* 6px */
@@ -25598,6 +25599,11 @@ h6 {
 .rounded-lg {
     border-radius: 0.5rem !important;
     /* 8px */
+}
+
+.rounded-l-lg{
+    border-top-left-radius: 0.5rem !important; /* 8px */
+    border-bottom-left-radius: 0.5rem !important; /* 8px */
 }
 
 .rounded-xl {

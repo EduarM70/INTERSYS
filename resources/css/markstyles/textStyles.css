@@ -376,6 +376,81 @@
 }
 
 @media (min-width: 768px) {
+        /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .md\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .md\:.text-red-500 {
+        color: var(--red-500);
+    }
+
+    .md\:.text-green-500 {
+        color: var(--green-500);
+    }
+
+    .md\:.text-blue-second {
+        color: var(--second-color);
+    }
+
+    .md\:.text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .md\:.text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .md\:.text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .md\:.text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .md\:.text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .md\:.text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .md\:.text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .md\:.text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .md\:.text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .md\:.text-white {
+        color: white;
+    }
+
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -486,6 +561,80 @@
 }
 
 @media screen and (min-width: 1024px) {
+            /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .lg\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .lg\:text-red-500 {
+        color: var(--red-500);
+    }
+
+    .lg\:text-green-500 {
+        color: var(--green-500);
+    }
+
+    .lg\:text-blue-second {
+        color: var(--second-color);
+    }
+
+    .lg\:text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .lg\:text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .lg\:text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .lg\:text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .lg\:text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .lg\:text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .lg\:text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .lg\:text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .lg\:text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .lg\:text-white {
+        color: white;
+    }
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -596,6 +745,80 @@
 }
 
 @media screen and (min-width: 1280px) {
+            /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .xl\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .xl\:text-red-500 {
+        color: var(--red-500);
+    }
+
+    .xl\:text-green-500 {
+        color: var(--green-500);
+    }
+
+    .xl\:text-blue-second {
+        color: var(--second-color);
+    }
+
+    .xl\:text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .xl\:text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .xl\:text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .xl\:text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .xl\:text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .xl\:text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .xl\:text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .xl\:text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .xl\:text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .xl\:text-white {
+        color: white;
+    }
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN

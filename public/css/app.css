@@ -23871,6 +23871,14 @@ td[id-estado="2"] {
     flex-direction: row;
 }
 
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- FLEXBOX
@@ -23978,11 +23986,19 @@ td[id-estado="2"] {
     */
 
     .sm\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .sm\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .sm\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .sm\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -24269,11 +24285,19 @@ td[id-estado="2"] {
     */
 
     .md\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .md\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .md\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .md\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -24553,11 +24577,19 @@ td[id-estado="2"] {
     */
 
     .lg\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .lg\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .lg\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .lg\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -24840,14 +24872,20 @@ td[id-estado="2"] {
     */
 
     .xl\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .xl\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
     }
 
-
+    .xl\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .xl\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
     */
@@ -25486,6 +25524,9 @@ h6 {
 }
 
 
+.bg-transparent {
+    background-color: transparent;
+}
 
 /* 
 +
@@ -25565,6 +25606,12 @@ h6 {
     /* 24px */
 }
 
+.rounded-l-lg {
+    border-top-left-radius: 0.5rem !important;
+    /* 12px */
+    border-bottom-left-radius: 0.5rem !important;
+    /* 12px */
+}
 
 .rounded-l-xl {
     border-top-left-radius: 0.75rem !important;
@@ -25572,7 +25619,6 @@ h6 {
     border-bottom-left-radius: 0.75rem !important;
     /* 12px */
 }
-
 
 .rounded-l-2xl {
     border-top-left-radius: 1rem;
@@ -25632,9 +25678,150 @@ h6 {
 *
 */
 
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
 
+@media (min-width: 640px) {
+    .sm\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .sm\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .sm\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .sm\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
 
+    .sm\:bg-transparent {
+        background-color: transparent;
+    }
 
+    .sm\:border-none {
+        border: none !important;
+    }
+
+    .sm\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE MD
++
+*/
+
+@media (min-width: 768px) {
+    .md\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .md\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .md\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .md\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .md\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .md\:border-none {
+        border: none !important;
+    }
+
+    .md\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE LG
++
+*/
+
+@media (min-width: 1024px) {
+    .lg\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .lg\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .lg\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .lg\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .lg\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .lg\:border-none {
+        border: none !important;
+    }
+
+    .lg\:bg-success {
+        background-color: #28a754 !important;
+    }
+
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE XL
++
+*/
+
+@media (min-width: 1280px) {
+    .xl\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .xl\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .xl\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .xl\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .xl\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .xl\:border-none {
+        border: none !important;
+    }
+
+    .xl\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
 
 @media (min-width: 1536px) {
     .\32xl\:flex {
@@ -25782,6 +25969,9 @@ h6 {
         /* 160px */
     }
 }
+
+
+
 /* 
 +
 + ---------------------------- HEIGHT
@@ -29892,6 +30082,81 @@ td[id-estado="2"] {
 
 
 @media (min-width: 768px) {
+        /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .md\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .md\:.text-red-500 {
+        color: var(--red-500);
+    }
+
+    .md\:.text-green-500 {
+        color: var(--green-500);
+    }
+
+    .md\:.text-blue-second {
+        color: var(--second-color);
+    }
+
+    .md\:.text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .md\:.text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .md\:.text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .md\:.text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .md\:.text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .md\:.text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .md\:.text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .md\:.text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .md\:.text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .md\:.text-white {
+        color: white;
+    }
+
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -30002,6 +30267,80 @@ td[id-estado="2"] {
 }
 
 @media screen and (min-width: 1024px) {
+            /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .lg\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .lg\:text-red-500 {
+        color: var(--red-500);
+    }
+
+    .lg\:text-green-500 {
+        color: var(--green-500);
+    }
+
+    .lg\:text-blue-second {
+        color: var(--second-color);
+    }
+
+    .lg\:text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .lg\:text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .lg\:text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .lg\:text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .lg\:text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .lg\:text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .lg\:text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .lg\:text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .lg\:text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .lg\:text-white {
+        color: white;
+    }
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -30112,6 +30451,80 @@ td[id-estado="2"] {
 }
 
 @media screen and (min-width: 1280px) {
+            /* 
+    +
+    + ----------------------------------------- TEXT COLOR 
+    +
+    */
+
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .xl\:text-gold {
+        color: var(--gold-500);
+    }
+
+    .xl\:text-red-500 {
+        color: var(--red-500);
+    }
+
+    .xl\:text-green-500 {
+        color: var(--green-500);
+    }
+
+    .xl\:text-blue-second {
+        color: var(--second-color);
+    }
+
+    .xl\:text-blue-primary {
+        color: var(--primary-color);
+    }
+
+    /* 
+    + ---------------------------- TEXT COLOR  
+    +-------------------- TEXT-SLATE-...
+    */
+
+    .xl\:text-slate-800 {
+        color: var(--slate-800);
+    }
+
+    .xl\:text-slate-500 {
+        color: var(--slate-500);
+    }
+
+    .xl\:text-slate-400 {
+        color: var(--slate-400);
+    }
+
+    .xl\:text-slate-300 {
+        color: var(--slate-300);
+    }
+
+    .xl\:text-slate-200 {
+        color: var(--slate-200);
+    }
+
+    .xl\:text-slate-100 {
+        color: var(--slate-100);
+    }
+
+    .xl\:text-slate-50 {
+        color: var(--slate-50);
+    }
+
+
+    .xl\:text-gray-700 {
+        color: var(--gray-700);
+    }
+
+
+    .xl\:text-white {
+        color: white;
+    }
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN

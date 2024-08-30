@@ -186,6 +186,9 @@ h6 {
 }
 
 
+.bg-transparent {
+    background-color: transparent;
+}
 
 /* 
 +
@@ -265,6 +268,12 @@ h6 {
     /* 24px */
 }
 
+.rounded-l-lg {
+    border-top-left-radius: 0.5rem !important;
+    /* 12px */
+    border-bottom-left-radius: 0.5rem !important;
+    /* 12px */
+}
 
 .rounded-l-xl {
     border-top-left-radius: 0.75rem !important;
@@ -272,7 +281,6 @@ h6 {
     border-bottom-left-radius: 0.75rem !important;
     /* 12px */
 }
-
 
 .rounded-l-2xl {
     border-top-left-radius: 1rem;
@@ -332,9 +340,150 @@ h6 {
 *
 */
 
+/* 
++
++ ---------------------------- RESPONSIVE SM
++
+*/
 
+@media (min-width: 640px) {
+    .sm\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .sm\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .sm\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .sm\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
 
+    .sm\:bg-transparent {
+        background-color: transparent;
+    }
 
+    .sm\:border-none {
+        border: none !important;
+    }
+
+    .sm\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE MD
++
+*/
+
+@media (min-width: 768px) {
+    .md\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .md\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .md\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .md\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .md\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .md\:border-none {
+        border: none !important;
+    }
+
+    .md\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE LG
++
+*/
+
+@media (min-width: 1024px) {
+    .lg\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .lg\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .lg\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .lg\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .lg\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .lg\:border-none {
+        border: none !important;
+    }
+
+    .lg\:bg-success {
+        background-color: #28a754 !important;
+    }
+
+}
+
+/* 
++
++ ---------------------------- RESPONSIVE XL
++
+*/
+
+@media (min-width: 1280px) {
+    .xl\:bg-slate-700 {
+        background-color: var(--gray-700);
+    }
+    
+    .xl\:bg-slate-200 {
+        background-color: var(--slate-200);
+    }
+    
+    .xl\:bg-slate-100 {
+        background-color: var(--slate-100);
+    }
+    
+    .xl\:bg-slate-50 {
+        background-color: var(--slate-50);
+    }
+
+    .xl\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .xl\:border-none {
+        border: none !important;
+    }
+
+    .xl\:bg-success {
+        background-color: #28a754 !important;
+    }
+}
 
 @media (min-width: 1536px) {
     .\32xl\:flex {
@@ -482,3 +631,5 @@ h6 {
         /* 160px */
     }
 }
+
+

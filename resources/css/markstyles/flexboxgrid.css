@@ -284,6 +284,14 @@
     flex-direction: row;
 }
 
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- FLEXBOX
@@ -391,11 +399,19 @@
     */
 
     .sm\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .sm\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .sm\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .sm\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -682,11 +698,19 @@
     */
 
     .md\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .md\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .md\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .md\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -966,11 +990,19 @@
     */
 
     .lg\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .lg\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
+    }
+
+    .lg\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .lg\:flex-col-reverse {
+        flex-direction: column-reverse !important;
     }
 
     /* 
@@ -1253,14 +1285,20 @@
     */
 
     .xl\:flex-col {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .xl\:flex-row {
-        flex-direction: row;
+        flex-direction: row !important;
     }
 
-
+    .xl\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+    
+    .xl\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
     */

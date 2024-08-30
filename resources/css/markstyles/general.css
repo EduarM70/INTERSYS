@@ -242,6 +242,11 @@ h6 {
 }
 
 
+.rounded-r-lg {
+    border-top-right-radius: 0.5rem !important; /* 8px */
+    border-bottom-right-radius: 0.5rem !important; /* 8px */
+}
+
 
 .rounded-r-xl {
     border-top-right-radius: 0.75rem !important;
@@ -454,6 +459,7 @@ h6 {
 
     .\32xl\:w-4\/6 {
         width: 66.666667%;
+        
     }
 
     .\32xl\:w-5\/6 {

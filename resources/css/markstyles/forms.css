@@ -34,34 +34,37 @@ form input {
   margin-bottom: 0rem !important;
 }
 
-form{
-    padding: 0.5rem;
+form {
+  padding: 0.5rem;
 }
 
 form.fm-base a,
 form.fm-base p,
 form.fm-base span,
-label.base-lb{
+label.base-lb {
   display: block;
   color: var(--slate-600);
   font-weight: 500;
-  font-size: 0.75rem; /* 12px text-xs */
+  font-size: 0.7rem;
+  /* 12px text-xs */
   line-height: 1rem;
 }
 
-input.base-input{
-    outline: none;
-    border: 1px solid var(--slate-200);
-    display: block;
-    padding: 0.35rem 0.75rem;
-    width: 100%;
-    background-color: var(--slate-50);
-    margin: 0.25rem 0rem 0rem 0rem !important;
-    border-radius: 0.375rem !important; /* 6px */
-    transition: all ease-in-out 300ms;
-    color: var(--slate-600);
-    font-size: 0.75rem; /* 12px text-xs */
-    line-height: 1.25rem;
+input.base-input {
+  outline: none;
+  border: 1px solid var(--slate-200);
+  display: block;
+  padding: 0.35rem 0.75rem;
+  width: 100%;
+  background-color: var(--slate-50);
+  /* margin: 0.25rem 0rem 0rem 0rem !important; */
+  border-radius: 0.375rem !important;
+  /* 6px */
+  transition: all ease-in-out 300ms;
+  color: var(--slate-600);
+  font-size: 0.75rem;
+  /* 12px text-xs */
+  line-height: 1.1rem;
 }
 
 input.base-input:focus {
@@ -80,14 +83,16 @@ input.base-input[type="checkbox"]:checked {
   background-color: var(--primary-color);
   color: #00314c;
 }
+
 input.base-input[type="date"],
 input.base-input[type="datetime"] {
-  font-size: 0.75rem !important; /* 12px text-xs */
-    line-height: 1.25rem;
+  font-size: 0.7rem !important;
+  /* 12px text-xs */
+  line-height: 1rem;
 }
 
-form .group-inputs{
-    margin-bottom: 0.35rem;
+form .group-inputs {
+  margin-bottom: 0.35rem;
 }
 
 form .group-btn {
@@ -102,12 +107,12 @@ form .group-btn {
   background-color: var(--blue-50);
   color: var(--primary-color);
   line-height: 1;
+  font-size: 0.7rem;
   border-radius: 0.5rem !important;
 
   color: var(--primary-color);
 
-  margin: 0.25rem !important;
-  padding: 0.55rem !important;
+  padding: 0.465rem !important;
 }
 
 @media screen and (min-width: 640px) {
@@ -177,18 +182,19 @@ form .group-btn {
 */
 
 select.base-sl {
-  margin: 0.25rem 0rem !important;
   background-color: var(--slate-100);
   border: none;
   outline: none;
 
-  padding: 0.35rem 0.75rem !important;
-  border-radius: 0.375rem !important; /* 6px */
+  padding: 0.335rem 0.75rem !important;
+  border-radius: 0.375rem !important;
+  /* 6px */
   color: var(--slate-600) !important;
   text-align: center;
 
-  font-size: 0.75rem; /* 12px text-xs */
-  line-height: 1.25rem;
+  font-size: 0.7rem;
+  /* 12px text-xs */
+  line-height: 1.1rem;
   width: 100%;
 }
 
@@ -204,4 +210,53 @@ select.base-sl:focus {
 form.fm-base select {
   width: 100% !important;
   border: 1px solid var(--slate-200) !important;
+}
+
+
+/*
+
+BOTONES PRIMARIOS
+
+inline-flex items-center justify-center gap-1 px-4 py-1 dark:bg-blue-500 border border-transparent 
+rounded-md font-semibold text-sm text-white uppercase tracking-widest hover:bg-blue-950 focus:bg-blue-950 
+active:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2 
+transition ease-in-out duration-150
+
+*/
+
+
+.buttton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.225rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  transition: 200ms ease-in-out all;
+}
+
+
+.buttton .primary {
+  background-color: var(--second-color);
+  color: white;
+}
+
+.buttton .primary:hover {
+  background-color: var(--primary-color);
+}
+
+.buttton .primary:focus {
+  background-color: var(--primary-color);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.buttton .primary:active {
+  background-color: var(--primary-color);
 }

@@ -254,6 +254,116 @@
 }
 
 
+@media screen and (min-width: 1024px) {
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- TEXT-ALIGN
+    */
+
+    .sm\:text-center {
+        text-align: center;
+    }
+
+    .sm\:text-left {
+        text-align: left;
+    }
+
+    .sm\:text-right {
+        text-align: right;
+    }
+
+    /* 
+    + --------------------------------- TEXT
+    +-------------------- FONT SIZE 
+    */
+
+    .sm\:text-xs {
+        font-size: 0.75rem;
+        /* 12px */
+        line-height: 1rem;
+        /* 16px */
+    }
+
+    .sm\:text-sm {
+        font-size: 0.875rem;
+        /* 14px */
+        line-height: 1.25rem;
+        /* 20px */
+    }
+
+    .sm\:text-base {
+        font-size: 1rem;
+        /* 16px */
+        line-height: 1.5rem;
+        /* 24px */
+    }
+
+    .sm\:text-lg {
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        /* 28px */
+    }
+
+    .sm\:text-xl {
+        font-size: 1.25rem;
+        /* 20px */
+        line-height: 1.75rem;
+        /* 28px */
+    }
+
+    .sm\:text-2xl {
+        font-size: 1.5rem;
+        /* 24px */
+        line-height: 2rem;
+        /* 32px */
+    }
+
+    .sm\:text-3xl {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
+    }
+
+    .sm\:text-4xl {
+        font-size: 2.25rem;
+        /* 36px */
+        line-height: 2.5rem;
+        /* 40px */
+    }
+
+    .sm\:text-5xl {
+        font-size: 3rem;
+        /* 48px */
+        line-height: 1;
+    }
+
+    .sm\:text-6xl {
+        font-size: 3.75rem;
+        /* 60px */
+        line-height: 1;
+    }
+
+    .sm\:text-7xl {
+        font-size: 4.5rem;
+        /* 72px */
+        line-height: 1;
+    }
+
+    .sm\:text-8xl {
+        font-size: 6rem;
+        /* 96px */
+        line-height: 1;
+    }
+
+    .sm\:text-9xl {
+        font-size: 8rem;
+        /* 128px */
+        line-height: 1;
+    }
+}
+
 @media (min-width: 768px) {
     /* 
     + --------------------------------- TEXT

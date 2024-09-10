@@ -54,7 +54,7 @@ input.base-input {
   outline: none;
   border: 1px solid var(--slate-200);
   display: block;
-  padding: 0.35rem 0.75rem;
+  padding: 0.335rem 0.7rem;
   width: 100%;
   background-color: var(--slate-50);
   /* margin: 0.25rem 0rem 0rem 0rem !important; */
@@ -62,7 +62,7 @@ input.base-input {
   /* 6px */
   transition: all ease-in-out 300ms;
   color: var(--slate-600);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   /* 12px text-xs */
   line-height: 1.1rem;
 }
@@ -186,7 +186,7 @@ select.base-sl {
   border: none;
   outline: none;
 
-  padding: 0.335rem 0.75rem !important;
+  padding: 0.34rem 0.7rem !important;
   border-radius: 0.375rem !important;
   /* 6px */
   color: var(--slate-600) !important;

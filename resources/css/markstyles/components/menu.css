@@ -29,15 +29,17 @@
 }
 
 /*
-+   MENU DE OPCIONES PARA RUTINAS 
++   MENU DE OPCIONES PARA RUTINAS
++
 +   EN USO EN FACTURACION 0039
++
 */
 
 .option-menu-rutinas{
     color: var(--slate-800);
     background-color: white;
     transition: all 500ms ease-in-out;
-    border-right: var(--slate-400) 2px solid;
+    border-right: var(--slate-300) 1px solid;
     cursor: pointer;
 }
 

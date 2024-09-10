@@ -68,9 +68,12 @@ input.base-input {
 }
 
 input.base-input:focus {
-  outline: none;
-  border: 1px solid var(--slate-300);
-  background-color: var(--slate-100) !important;
+  background-color: white !important;
+  outline-style: solid;
+  outline-offset: 2px;
+  outline-width: 2px;
+  border: 1px solid #1e3a8a !important;
+  --tw-ring-color: #1e3a8a;
 }
 
 input.base-input[type="checkbox"] {
@@ -146,35 +149,7 @@ form .group-btn {
     gap: 1.25rem;
   }
 }
-
-/*
-
-.container-loyout input{
-    background-color: var(--gray-soft);
-    border: none;
-    outline: none;
-    border-radius: 0.375rem !important;
-    width: 100%;
-}
-
-.container-loyout select{
-    background-color: var(--gray-soft);
-    border: none;
-    outline: none;
-    border-radius: 0.375rem !important;
-    width: 100%;
-}
-
-.container-loyout input:focus{
-    background-color: var(--gray-soft) !important;
-    outline: none;
-}
-.container-loyout select:focus{
-    background-color: var(--gray-soft) !important;
-    outline: none;
-}
-
-*/
+c
 
 /* 
 + ---------------------------- ESTILOS DE FORMULARIOS
@@ -198,6 +173,7 @@ select.base-sl {
   width: 100%;
 }
 
+/*
 select.base-sl:focus {
   background-color: var(--slate-100) !important;
   border: none !important;
@@ -205,12 +181,22 @@ select.base-sl:focus {
   padding: 0.5rem;
   border-radius: 0.5rem !important;
   color: var(--slate-600);
+}*/
+
+select.base-sl:focus {
+  background-color: white !important;
+  outline-style: solid;
+  outline-offset: 2px;
+  outline-width: 2px;
+  border: 1px solid #1e3a8a !important;
+  --tw-ring-color: #1e3a8a;
 }
 
 form.fm-base select {
   width: 100% !important;
   border: 1px solid var(--slate-200) !important;
 }
+
 
 
 /*

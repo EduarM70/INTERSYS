@@ -347,6 +347,45 @@
     left: 0.75rem;
 }
 
+/* 16px */
+
+.inset-4{
+    inset: 1rem;
+}
+
+.inset-x-4{
+    left: 1rem;
+    right: 1rem;
+}
+
+.inset-y-4{
+    top: 1rem;
+    bottom: 1rem;
+}
+
+.start-4{
+    inset-inline-start: 1rem;
+}
+
+.end-4{
+    inset-inline-end: 1rem;
+}
+
+.top-4{
+    top: 1rem;
+}
+
+.right-4{
+    right: 1rem;
+}
+
+.bottom-4{
+    bottom: 1rem;
+}
+
+.left-4{
+    left: 1rem;
+}
 /*
 * -------------------- PERSONALIZADOS
 */

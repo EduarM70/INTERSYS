@@ -474,6 +474,68 @@
     outline: none;
     border-radius: 0.5rem !important;
 }
+/*
++
++   COMPONENTES DE MENU
++
+*/
+
+:root {
+    --primary-color: #1e3a8a;
+    --second-color: #3b82f6;
+    --gray-primary: #f1f4fb;
+    --gray-second: #CCD7DB;
+    --gray-soft: #F2F2F2;
+    --gray-dark: #656E70;
+
+    --gray-700: #4D4D4D;
+    --gold-500: #C2872B;
+    --green-500: #5BA132;
+    --red-500: #C93240;
+
+    /* SLATE */
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-800: #1e293b;
+}
+
+/*
++   MENU DE OPCIONES PARA RUTINAS 
++   EN USO EN FACTURACION 0039
+*/
+
+.option-menu-rutinas{
+    color: var(--slate-800);
+    background-color: white;
+    transition: all 500ms ease-in-out;
+    border-right: var(--slate-400) 2px solid;
+    cursor: pointer;
+}
+
+.option-menu-rutinas:hover{
+    background-color: var(--slate-300);
+}
+.option-menu-rutinas:active{
+    background-color: var(--slate-300);
+    transform: scaleX(1.05);
+}
+
+
+div.menu-rutinas div:first-child{
+    border-top-left-radius: 9999px !important;
+    border-bottom-left-radius: 9999px !important;
+}
+
+div.menu-rutinas div:last-child{
+    border-top-right-radius: 9999px !important; 
+    border-bottom-right-radius: 9999px !important;
+    border-right: none;
+}
 /* 
 +
 + ---------------------------- DISPLAY
@@ -488,6 +550,715 @@
     display: none;
 }
 
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- RESPONSIVE FLEXBOX & GRID
++-------------------- SCREEN SM
+*/
+
+@media (min-width: 640px) {
+
+    .sm\:hidden {
+        display: none;
+    }
+
+    .sm\:inline {
+        display: inline;
+    }
+
+    .sm\:inline-block {
+        display: inline-block;
+    }
+
+    .sm\:block {
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:inline {
+        display: inline;
+    }
+
+    .md\:inline-block {
+        display: inline-block;
+    }
+
+    .md\:block {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .lg\:hidden {
+        display: none;
+    }
+
+    .lg\:inline {
+        display: inline;
+    }
+
+    .lg\:inline-block {
+        display: inline-block;
+    }
+
+    .lg\:block {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .xl\:hidden {
+        display: none;
+    }
+
+    .xl\:inline {
+        display: inline;
+    }
+
+    .xl\:inline-block {
+        display: inline-block;
+    }
+
+    .xl\:block {
+        display: block;
+    }
+
+}
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
+*/
+
+.flex {
+    display: flex !important;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- Flex Basis
+*/
+
+.basis-1_2 {
+    flex-basis: 50%;
+}
+
+.basis-1_3 {
+    flex-basis: 33.333333%;
+}
+
+.basis-2_3 {
+    flex-basis: 66.666667%;
+}
+
+.basis-1_4 {
+    flex-basis: 25%;
+}
+
+.basis-2_4 {
+    flex-basis: 50%;
+}
+
+.basis-3_4 {
+    flex-basis: 75%;
+}
+
+.basis-1_5 {
+    flex-basis: 20%;
+}
+
+.basis-2_5 {
+    flex-basis: 40%;
+}
+
+.basis-3_5 {
+    flex-basis: 60%;
+}
+
+.basis-4_5 {
+    flex-basis: 80%;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- FLEX WRAP
+*/
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- FLEX DIRECTION
+*/
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- JUSTIFY CONTENT
+*/
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-normal {
+    justify-content: normal;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN ITEMS
+*/
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: end;
+}
+
+/* 
++ ---------------------------- DISPLAY 
++-------------------- FLEX y GRID
++-------------------- ALIGN SELF
+*/
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
+
+
+@media (min-width: 640px) {
+
+    .sm\:flex {
+        display: flex !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .sm\:flex-col {
+        flex-direction: column !important;
+    }
+
+    .sm\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .sm\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .sm\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- JUSTIFY CONTENT
+    */
+
+    .sm\:justify-center {
+        justify-content: center;
+    }
+
+    .sm\:justify-between {
+        justify-content: space-between;
+    }
+
+    .sm\:justify-around {
+        justify-content: space-around;
+    }
+
+    .sm\:justify-end {
+        justify-content: flex-end;
+    }
+
+    .sm\:justify-normal {
+        justify-content: normal;
+    }
+
+    .sm\:justify-start {
+        justify-content: flex-start;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- ALIGN ITEMS
+    */
+
+    .sm\:items-center {
+        align-items: center;
+    }
+
+    .sm\:items-end {
+        align-items: end;
+    }
+
+    /*
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- ALIGN SELF
+    */
+
+    .sm\:self-start {
+        align-self: flex-start;
+    }
+
+    .sm\:self-end {
+        align-self: flex-end;
+    }
+
+    .sm\:self-center {
+        align-self: center;
+    }
+
+    .sm\:self-stretch {
+        align-self: stretch;
+    }
+
+    .sm\:self-baseline {
+        align-self: baseline;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- WRAP
+    */
+
+
+    .sm\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .sm\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+
+    .md\:flex {
+        display: flex !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .md\:flex-col {
+        flex-direction: column !important;
+    }
+
+    .md\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .md\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .md\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- JUSTIFY CONTENT
+*/
+
+    .md\:justify-center {
+        justify-content: center;
+    }
+
+    .md\:justify-between {
+        justify-content: space-between;
+    }
+
+    .md\:justify-around {
+        justify-content: space-around;
+    }
+
+    .md\:justify-end {
+        justify-content: flex-end;
+    }
+
+    .md\:justify-normal {
+        justify-content: normal;
+    }
+
+    .md\:justify-start {
+        justify-content: flex-start;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN ITEMS
+*/
+
+    .md\:items-center {
+        align-items: center;
+    }
+
+    .md\:items-end {
+        align-items: end;
+    }
+
+
+
+    .md\:self-start {
+        align-self: flex-start;
+    }
+
+    .md\:self-end {
+        align-self: flex-end;
+    }
+
+    .md\:self-center {
+        align-self: center;
+    }
+
+    .md\:self-stretch {
+        align-self: stretch;
+    }
+
+    .md\:self-baseline {
+        align-self: baseline;
+    }
+
+
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- NOWROP
+    */
+
+    .md\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .md\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+    .lg\:flex {
+        display: flex !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .lg\:flex-col {
+        flex-direction: column !important;
+    }
+
+    .lg\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .lg\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .lg\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- JUSTIFY CONTENT
+*/
+
+    .lg\:justify-center {
+        justify-content: center;
+    }
+
+    .lg\:justify-between {
+        justify-content: space-between;
+    }
+
+    .lg\:justify-around {
+        justify-content: space-around;
+    }
+
+    .lg\:justify-end {
+        justify-content: flex-end;
+    }
+
+    .lg\:justify-normal {
+        justify-content: normal;
+    }
+
+    .lg\:justify-start {
+        justify-content: flex-start;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN ITEMS
+*/
+
+    .lg\:items-center {
+        align-items: center;
+    }
+
+    .lg\:items-end {
+        align-items: end;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+
+*/
+
+    .lg\:self-start {
+        align-self: flex-start;
+    }
+
+    .lg\:self-end {
+        align-self: flex-end;
+    }
+
+    .lg\:self-center {
+        align-self: center;
+    }
+
+    .lg\:self-stretch {
+        align-self: stretch;
+    }
+
+    .lg\:self-baseline {
+        align-self: baseline;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- WRAP
+    */
+
+    .lg\:flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .lg\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .xl\:flex {
+        display: flex !important;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- RESPONSIVE FLEX DIRECTION
+    */
+
+    .xl\:flex-col {
+        flex-direction: column !important;
+    }
+
+    .xl\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .xl\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .xl\:flex-col-reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .xl\:justify-center {
+        justify-content: center;
+    }
+
+    .xl\:justify-between {
+        justify-content: space-between;
+    }
+
+    .xl\:justify-around {
+        justify-content: space-around;
+    }
+
+    .xl\:justify-end {
+        justify-content: flex-end;
+    }
+
+    .xl\:justify-normal {
+        justify-content: normal;
+    }
+
+    .xl\:justify-start {
+        justify-content: flex-start;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN ITEMS
+*/
+
+    .xl\:items-center {
+        align-items: center;
+    }
+
+    .xl\:items-end {
+        align-items: end;
+    }
+
+    /* 
++ ---------------------------- DISPLAY 
++-------------------- FLEXBOX
++-------------------- ALIGN SELF
+
+*/
+
+    .xl\:self-start {
+        align-self: flex-start;
+    }
+
+    .xl\:self-end {
+        align-self: flex-end;
+    }
+
+    .xl\:self-center {
+        align-self: center;
+    }
+
+    .xl\:self-stretch {
+        align-self: stretch;
+    }
+
+    .xl\:self-baseline {
+        align-self: baseline;
+    }
+
+    /* 
+    + ---------------------------- DISPLAY 
+    +-------------------- FLEXBOX
+    +-------------------- WRAP
+    */
+
+
+    .xl\:flex-row-reverse {
+        flex-wrap: wrap;
+    }
+
+    .xl\:flex-nowrap {
+        flex-wrap: nowrap;
+    }
+
+}
 /* 
 + ---------------------------- DISPLAY 
 +-------------------- GRID
@@ -672,172 +1443,6 @@
     grid-row: span 5 / span 5;
 }
 
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-*/
-
-.flex {
-    display: flex !important;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- Flex Basis
-*/
-
-.basis-1_2 {
-    flex-basis: 50%;
-}
-
-.basis-1_3 {
-    flex-basis: 33.333333%;
-}
-
-.basis-2_3 {
-    flex-basis: 66.666667%;
-}
-
-.basis-1_4 {
-    flex-basis: 25%;
-}
-
-.basis-2_4 {
-    flex-basis: 50%;
-}
-
-.basis-3_4 {
-    flex-basis: 75%;
-}
-
-.basis-1_5 {
-    flex-basis: 20%;
-}
-
-.basis-2_5 {
-    flex-basis: 40%;
-}
-
-.basis-3_5 {
-    flex-basis: 60%;
-}
-
-.basis-4_5 {
-    flex-basis: 80%;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- FLEX WRAP
-*/
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-wrap-reverse {
-    flex-wrap: wrap-reverse;
-}
-
-.flex-nowrap {
-    flex-wrap: nowrap;
-}
-
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- FLEX DIRECTION
-*/
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-row-reverse {
-    flex-direction: row-reverse;
-}
-
-.flex-col-reverse {
-    flex-direction: column-reverse;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.justify-around {
-    justify-content: space-around;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.justify-normal {
-    justify-content: normal;
-}
-
-.justify-start {
-    justify-content: flex-start;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-.items-center {
-    align-items: center;
-}
-
-.items-end {
-    align-items: end;
-}
-
-/* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEX y GRID
-+-------------------- ALIGN SELF
-*/
-
-.self-start {
-    align-self: flex-start;
-}
-
-.self-end {
-    align-self: flex-end;
-}
-
-.self-center {
-    align-self: center;
-}
-
-.self-stretch {
-    align-self: stretch;
-}
-
-.self-baseline {
-    align-self: baseline;
-}
-
 
 /* 
 + ---------------------------- DISPLAY 
@@ -845,49 +1450,11 @@
 +-------------------- SCREEN SM
 */
 
+
 @media (min-width: 640px) {
 
-    .sm\:hidden {
-        display: none;
-    }
-
-    .sm\:inline {
-        display: inline;
-    }
-
-    .sm\:inline-block {
-        display: inline-block;
-    }
-
-    .sm\:block {
-        display: block;
-    }
-
-
-    .sm\:flex {
-        display: flex !important;
-    }
-
-        /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .sm\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .sm\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .sm\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .sm\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .sm\:grid {
+        display: grid;
     }
 
     /* 
@@ -1084,110 +1651,15 @@
         justify-content: flex-start;
     }
 
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .sm\:items-center {
-        align-items: center;
-    }
-
-    .sm\:items-end {
-        align-items: end;
-    }
-
-    /*
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-*/
-
-    .sm\:self-start {
-        align-self: flex-start;
-    }
-
-    .sm\:self-end {
-        align-self: flex-end;
-    }
-
-    .sm\:self-center {
-        align-self: center;
-    }
-
-    .sm\:self-stretch {
-        align-self: stretch;
-    }
-
-    .sm\:self-baseline {
-        align-self: baseline;
-    }
-
-    
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- WRAP
-    */
-
-
-    .sm\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .sm\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
-
 
 
 @media (min-width: 768px) {
 
-    .md\:hidden {
-        display: none;
+    .md\:grid {
+        display: grid;
     }
 
-    .md\:inline {
-        display: inline;
-    }
-
-    .md\:inline-block {
-        display: inline-block;
-    }
-
-    .md\:block {
-        display: block;
-    }
-
-
-    .md\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .md\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .md\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .md\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .md\:flex-col-reverse {
-        flex-direction: column-reverse !important;
-    }
 
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
@@ -1349,135 +1821,12 @@
     .md\:row-span-5 {
         grid-row: span 5 / span 5;
     }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-    .md\:justify-center {
-        justify-content: center;
-    }
-
-    .md\:justify-between {
-        justify-content: space-between;
-    }
-
-    .md\:justify-around {
-        justify-content: space-around;
-    }
-
-    .md\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .md\:justify-normal {
-        justify-content: normal;
-    }
-
-    .md\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .md\:items-center {
-        align-items: center;
-    }
-
-    .md\:items-end {
-        align-items: end;
-    }
-
-
-    
-    .md\:self-start {
-        align-self: flex-start;
-    }
-
-    .md\:self-end {
-        align-self: flex-end;
-    }
-
-    .md\:self-center {
-        align-self: center;
-    }
-
-    .md\:self-stretch {
-        align-self: stretch;
-    }
-
-    .md\:self-baseline {
-        align-self: baseline;
-    }
-
-
-    
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- NOWROP
-    */
-
-    .md\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .md\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
-
 
 @media (min-width: 1024px) {
 
-    .lg\:hidden {
-        display: none;
-    }
-
-    .lg\:inline {
-        display: inline;
-    }
-
-    .lg\:inline-block {
-        display: inline-block;
-    }
-
-    .lg\:block {
-        display: block;
-    }
-
-
-    .lg\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .lg\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .lg\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .lg\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
-    
-    .lg\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .lg\:grid {
+        display: grid;
     }
 
     /* 
@@ -1642,138 +1991,15 @@
     .lg\:row-span-5 {
         grid-row: span 5 / span 5;
     }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- JUSTIFY CONTENT
-*/
-
-    .lg\:justify-center {
-        justify-content: center;
-    }
-
-    .lg\:justify-between {
-        justify-content: space-between;
-    }
-
-    .lg\:justify-around {
-        justify-content: space-around;
-    }
-
-    .lg\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .lg\:justify-normal {
-        justify-content: normal;
-    }
-
-    .lg\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .lg\:items-center {
-        align-items: center;
-    }
-
-    .lg\:items-end {
-        align-items: end;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-
-*/
-
-    .lg\:self-start {
-        align-self: flex-start;
-    }
-
-    .lg\:self-end {
-        align-self: flex-end;
-    }
-
-    .lg\:self-center {
-        align-self: center;
-    }
-
-    .lg\:self-stretch {
-        align-self: stretch;
-    }
-
-    .lg\:self-baseline {
-        align-self: baseline;
-    }
-
-    /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- WRAP
-    */
-    
-    .lg\:flex-wrap {
-        flex-wrap: wrap;
-    }
-
-    .lg\:flex-nowrap {
-        flex-wrap: nowrap;
-    }
-
 }
 
 
 @media (min-width: 1280px) {
-    .xl\:hidden {
-        display: none;
-    }
-
-    .xl\:inline {
-        display: inline;
-    }
-
-    .xl\:inline-block {
-        display: inline-block;
-    }
-
-    .xl\:block {
-        display: block;
-    }
-
-
-    .xl\:flex {
-        display: flex !important;
-    }
-
-            /* 
-    + ---------------------------- DISPLAY 
-    +-------------------- FLEXBOX
-    +-------------------- RESPONSIVE FLEX DIRECTION
-    */
-
-    .xl\:flex-col {
-        flex-direction: column !important;
-    }
-
-    .xl\:flex-row {
-        flex-direction: row !important;
-    }
-
-    .xl\:flex-row-reverse {
-        flex-direction: row-reverse !important;
-    }
     
-    .xl\:flex-col-reverse {
-        flex-direction: column-reverse !important;
+    .xl\:grid {
+        display: grid!important;
     }
+
     /* 
     +-------------------- RESPONSIVE GRID TEMPLETE COLUMNS
     */
@@ -1950,72 +2176,10 @@
         grid-row: span 5 / span 5;
     }
 
-    .xl\:justify-center {
-        justify-content: center;
-    }
-
-    .xl\:justify-between {
-        justify-content: space-between;
-    }
-
-    .xl\:justify-around {
-        justify-content: space-around;
-    }
-
-    .xl\:justify-end {
-        justify-content: flex-end;
-    }
-
-    .xl\:justify-normal {
-        justify-content: normal;
-    }
-
-    .xl\:justify-start {
-        justify-content: flex-start;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN ITEMS
-*/
-
-    .xl\:items-center {
-        align-items: center;
-    }
-
-    .xl\:items-end {
-        align-items: end;
-    }
-
-    /* 
-+ ---------------------------- DISPLAY 
-+-------------------- FLEXBOX
-+-------------------- ALIGN SELF
-
-*/
-
-    .xl\:self-start {
-        align-self: flex-start;
-    }
-
-    .xl\:self-end {
-        align-self: flex-end;
-    }
-
-    .xl\:self-center {
-        align-self: center;
-    }
-
-    .xl\:self-stretch {
-        align-self: stretch;
-    }
-
-    .xl\:self-baseline {
-        align-self: baseline;
-    }
+    
 
 }
+
 /* CLASES PARA ELEMENTOS DEL FORMULARIO (INPUTS, SELECTS)*/
 /* 
 + ---------------------------- ESTILOS DE FORMULARIOS
@@ -6070,6 +6234,370 @@ td[id-estado="2"] {
 }
 /* 
 +
++ ---------------------------- POSITIONS
++
+*/
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.static{
+    position: static;
+}
+
+/* 
++
++ ---------------------------- POSITIONS
++ ------------------------- TOP, LETF, RIGTH, BOTTOM
++
+*/
+
+.inset-0{
+    inset: 0px;
+}
+
+.inset-x-0{
+    left: 0px;
+    right: 0px;
+}
+
+.inset-y-0{
+    top: 0px;
+    bottom: 0px;
+}
+
+.start-0{
+    inset-inline-start: 0px;
+}
+
+.end-0{
+    inset-inline-end: 0px;
+}
+
+.top-0{
+    top: 0px;
+}
+
+.right-0{
+    right: 0px;
+}
+
+.bottom-0{
+    bottom: 0px;
+}
+
+.left-0{
+    left: 0px;
+}
+
+/* 1px */
+
+.inset-px{
+    inset: 1px;
+}
+
+.inset-x-px{
+    left: 1px;
+    right: 1px;
+}
+
+.inset-y-px{
+    top: 1px;
+    bottom: 1px;
+}
+
+.start-px{
+    inset-inline-start: 1px;
+}
+
+.end-px{
+    inset-inline-end: 1px;
+}
+
+.top-px{
+    top: 1px;
+}
+
+.right-px{
+    right: 1px;
+}
+
+.bottom-px{
+    bottom: 1px;
+}
+
+.left-px{
+    left: 1px;
+}
+
+/* 2px */
+
+.inset-0\.5{
+    inset: 2px;
+}
+
+.inset-x-0\.5{
+    left: 2px;
+    right: 2px;
+}
+
+.inset-y-0\.5{
+    top: 2px;
+    bottom: 2px;
+}
+
+.start-0\.5{
+    inset-inline-start: 2px;
+}
+
+.end-0\.5{
+    inset-inline-end: 2px;
+}
+
+.top-0\.5{
+    top: 2px;
+}
+
+.right-0\.5{
+    right: 2px;
+}
+
+.bottom-0\.5{
+    bottom: 2px;
+}
+
+.left-0\.5{
+    left: 2px;
+}
+
+/* 4px */
+
+.inset-1{
+    inset: 0.25rem;
+}
+
+.inset-x-1{
+    left: 0.25rem;
+    right: 0.25rem;
+}
+
+.inset-y-1{
+    top: 0.25rem;
+    bottom: 0.25rem;
+}
+
+.start-1{
+    inset-inline-start: 0.25rem;
+}
+
+.end-1{
+    inset-inline-end: 0.25rem;
+}
+
+.top-1{
+    top: 0.25rem;
+}
+
+.right-1{
+    right: 0.25rem;
+}
+
+.bottom-1{
+    bottom: 0.25rem;
+}
+
+.left-1{
+    left: 0.25rem;
+}
+
+/* 6px */
+
+.inset-1\.5{
+    inset: 0.375rem;
+}
+
+.inset-x-1\.5{
+    left: 0.375rem;
+    right: 0.375rem;
+}
+
+.inset-y-1\.5{
+    top: 0.375rem;
+    bottom: 0.375rem;
+}
+
+.start-1\.5{
+    inset-inline-start: 0.375rem;
+}
+
+.end-1\.5{
+    inset-inline-end: 0.375rem;
+}
+
+.top-1\.5{
+    top: 0.375rem;
+}
+
+.right-1\.5{
+    right: 0.375rem;
+}
+
+.bottom-1\.5{
+    bottom: 0.375rem;
+}
+
+.left-1\.5{
+    left: 0.375rem;
+}
+
+/* 8px */
+
+.inset-2{
+    inset: 0.5rem;
+}
+
+.inset-x-2{
+    left: 0.5rem;
+    right: 0.5rem;
+}
+
+.inset-y-2{
+    top: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.start-2{
+    inset-inline-start: 0.5rem;
+}
+
+.end-2{
+    inset-inline-end: 0.5rem;
+}
+
+.top-2{
+    top: 0.5rem;
+}
+
+.right-2{
+    right: 0.5rem;
+}
+
+.bottom-2{
+    bottom: 0.5rem;
+}
+
+.left-2{
+    left: 0.5rem;
+}
+
+
+/* 10px */
+
+.inset-2\.5{
+    inset: 0.625rem;
+}
+
+.inset-x-2\.5{
+    left: 0.625rem;
+    right: 0.625rem;
+}
+
+.inset-y-2\.5{
+    top: 0.625rem;
+    bottom: 0.625rem;
+}
+
+.start-2\.5{
+    inset-inline-start: 0.625rem;
+}
+
+.end-2\.5{
+    inset-inline-end: 0.625rem;
+}
+
+.top-2\.5{
+    top: 0.625rem;
+}
+
+.right-2\.5{
+    right: 0.625rem;
+}
+
+.bottom-2\.5{
+    bottom: 0.625rem;
+}
+
+.left-2\.5{
+    left: 0.625rem;
+}
+
+
+/* 12px */
+
+.inset-3{
+    inset: 0.75rem;
+}
+
+.inset-x-3{
+    left: 0.75rem;
+    right: 0.75rem;
+}
+
+.inset-y-3{
+    top: 0.75rem;
+    bottom: 0.75rem;
+}
+
+.start-3{
+    inset-inline-start: 0.75rem;
+}
+
+.end-3{
+    inset-inline-end: 0.75rem;
+}
+
+.top-3{
+    top: 0.75rem;
+}
+
+.right-3{
+    right: 0.75rem;
+}
+
+.bottom-3{
+    bottom: 0.75rem;
+}
+
+.left-3{
+    left: 0.75rem;
+}
+
+/*
+* -------------------- PERSONALIZADOS
+*/
+
+.top-\[0\.60rem\]{
+    top: 0.6rem;
+}
+
+@media (min-width: 1536px) {
+    .\32xl\:top-3{
+        top: 0.75rem !important;
+    }
+}
+
+
+/* 
++
 + ---------------------------- HEIGHT
 +
 */
@@ -7174,7 +7702,7 @@ td[id-estado="2"] {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     /* 
     + --------------------------------- TEXT
     +-------------------- TEXT-ALIGN
@@ -7469,7 +7997,7 @@ td[id-estado="2"] {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
             /* 
     +
     + ----------------------------------------- TEXT COLOR 
@@ -7653,7 +8181,7 @@ td[id-estado="2"] {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
             /* 
     +
     + ----------------------------------------- TEXT COLOR 

@@ -228,7 +228,7 @@ table.dataTable tbody td.accion-tabla.acciones{
 }
 
 .new-datatable .dataTables_wrapper .dataTables_paginate a:hover{
-    background-color: var(--slate-50);
+    background-color: var(--slate-50) !important;
 }
 
 .new-datatable .dataTables_wrapper .dataTables_paginate span{

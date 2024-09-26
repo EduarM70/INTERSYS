@@ -2234,6 +2234,29 @@ label.base-lb {
   line-height: 1rem;
 }
 
+select.base-factu-select {
+  outline: none;
+  border: 1px solid var(--slate-200);
+  display: block;
+  padding: 0.35rem 0.75rem;
+  width: 100%;
+  background-color: var(--slate-50);
+  /* margin: 0.25rem 0rem 0rem 0rem !important; */
+  border-radius: 0.375rem !important;
+  /* 6px */
+  transition: all ease-in-out 300ms;
+  color: var(--slate-600);
+  font-size: 0.75rem;
+  /* 12px text-xs */
+  line-height: 1.1rem;
+}
+
+select.base-factu-select:focus {
+  outline: none;
+  border: 1px solid var(--slate-300);
+  background-color: var(--slate-100) !important;
+}
+
 input.base-input {
   outline: none;
   border: 1px solid var(--slate-200);
@@ -2333,7 +2356,7 @@ form .group-btn {
     gap: 1.25rem;
   }
 }
-c
+
 
 /* 
 + ---------------------------- ESTILOS DE FORMULARIOS
@@ -4244,7 +4267,7 @@ td[id-estado="2"] {
 */
 
     .sm\:mb-0 {
-        margin-bottom: 0rem;
+        margin-bottom: 0rem !important;
     }
 
     .sm\:mb-1 {
@@ -6575,6 +6598,45 @@ td[id-estado="2"] {
     left: 0.75rem;
 }
 
+/* 16px */
+
+.inset-4{
+    inset: 1rem;
+}
+
+.inset-x-4{
+    left: 1rem;
+    right: 1rem;
+}
+
+.inset-y-4{
+    top: 1rem;
+    bottom: 1rem;
+}
+
+.start-4{
+    inset-inline-start: 1rem;
+}
+
+.end-4{
+    inset-inline-end: 1rem;
+}
+
+.top-4{
+    top: 1rem;
+}
+
+.right-4{
+    right: 1rem;
+}
+
+.bottom-4{
+    bottom: 1rem;
+}
+
+.left-4{
+    left: 1rem;
+}
 /*
 * -------------------- PERSONALIZADOS
 */

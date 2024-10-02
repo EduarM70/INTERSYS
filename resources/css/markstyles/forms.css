@@ -172,7 +172,7 @@ form .group-btn {
     gap: 1.25rem;
   }
 }
-c
+
 
 /* 
 + ---------------------------- ESTILOS DE FORMULARIOS
@@ -219,8 +219,6 @@ form.fm-base select {
   width: 100% !important;
   border: 1px solid var(--slate-200) !important;
 }
-
-
 
 /*
 
